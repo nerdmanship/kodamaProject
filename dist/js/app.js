@@ -2261,6 +2261,7 @@ var kodamaProject = function () {
   var heads = header.querySelectorAll("[data-head]");console.log(heads);
   var log = header.querySelector("[data-log]");console.log(log);
   var ff = header.querySelectorAll("[data-ff]");console.log(ff);
+  var ambientAudio = document.querySelector("[data-audio=ambient]");
 
   var mouseX = 0;
   var mouseY = 0;
@@ -2318,6 +2319,9 @@ var kodamaProject = function () {
 
   function playIntro() {
     setStartPos();
+    firefly();
+    ambientAudio.volume = 0.1;
+    ambientAudio.play();
     TweenMax.to(log, 10, { y: 0 });
     for (var i = 0; i < layers.length; i++) {
       TweenMax.to(layers[i], 10, { y: 0 });
@@ -2329,9 +2333,9 @@ var kodamaProject = function () {
   }
 
   // bindEvents();
-  //setStartPos(); // prepare all elements
+  setStartPos(); // prepare all elements
   revealScene(); // fade to black
-  //playIntro(); // start animation
+  playIntro(); // start animation
 
   // Dancing fireflies
   function firefly() {
