@@ -2306,6 +2306,7 @@ var kodamaProject = function () {
   }
 
   /* function scrollArt(e) {
+   // Enable/disable panning while scrolling
      scrollDist = window.pageYOffset;
      for (let i = 0; i < layers.length; i++) {
        var layerOffsetAmount = 1;
@@ -2386,6 +2387,7 @@ var kodamaProject = function () {
 
         TweenMax.to(ff[i], duration, {
           bezier: { curviness: 1, values: [{ x: 0 + i * 10, y: 0 + i * 10 }, { x: x[0], y: x[2] }, { x: x[1], y: 0 }, { x: x[2], y: x[1] }, { x: 0 + i * 10, y: 0 + i * 10 }] },
+          opacity: random(0.3, 1),
           ease: Linear.easeNone
         });
       }

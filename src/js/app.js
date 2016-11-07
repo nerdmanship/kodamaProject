@@ -55,6 +55,7 @@ const kodamaProject = (function() {
   }
 
  /* function scrollArt(e) {
+  // Enable/disable panning while scrolling
     scrollDist = window.pageYOffset;
     for (let i = 0; i < layers.length; i++) {
       var layerOffsetAmount = 1;
@@ -156,6 +157,7 @@ const kodamaProject = (function() {
             { x: x[2], y: x[1] },
             { x: 0+i*10, y: 0+i*10 }
           ]},
+          opacity: random(0.3,1),
           ease: Linear.easeNone
         });
       }
