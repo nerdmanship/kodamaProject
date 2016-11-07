@@ -2261,7 +2261,9 @@ var kodamaProject = function () {
   var heads = header.querySelectorAll("[data-head]");console.log(heads);
   var log = header.querySelector("[data-log]");console.log(log);
   var ff = header.querySelectorAll("[data-ff]");console.log(ff);
-  var ambientAudio = document.querySelector("[data-audio=ambient]");
+  var vines = header.querySelectorAll("[data-vine]");console.log(vines);
+  var shrooms = header.querySelectorAll("[data-shroom]");console.log(shrooms);
+  var ambientAudio = document.querySelector("[data-audio=ambient]");console.log(ambientAudio);
 
   var mouseX = 0;
   var mouseY = 0;
@@ -2277,6 +2279,13 @@ var kodamaProject = function () {
     });
   }
 
+  // Start
+  bindEvents();
+  setStartPos(); // prepare all elements
+  revealScene(); // fade to black
+  playScene(); // start animation
+
+
   // Event handlers
   function moveArt(e) {
     mouseX = (e.pageX - window.innerWidth / 2) / (window.innerWidth / 2); // -1 / 1
@@ -2286,7 +2295,7 @@ var kodamaProject = function () {
     for (var i = 0; i < layers.length; i++) {
       var layerOffsetAmount = 15 * i;
       var layerPosX = layerOffsetAmount * mouseX;
-      var layerPosY = layerOffsetAmount * mouseY + scrollDist;
+      var layerPosY = layerOffsetAmount * mouseY;
 
       TweenMax.to(layers[i], 5, {
         x: -layerPosX,
@@ -2296,15 +2305,15 @@ var kodamaProject = function () {
     }
   }
 
-  function scrollArt(e) {
-    scrollDist = window.pageYOffset;
-    for (var i = 0; i < layers.length; i++) {
-      var layerOffsetAmount = 1;
-      var layerPosY = scrollDist;
-
-      //      TweenMax.set(layers[i], { y: -layerPosY });
-    }
-  }
+  /* function scrollArt(e) {
+     scrollDist = window.pageYOffset;
+     for (let i = 0; i < layers.length; i++) {
+       var layerOffsetAmount = 1;
+       var layerPosY = scrollDist;
+       
+       // TweenMax.set(layers[i], { y: -layerPosY });
+     }
+   }*/
 
   function setStartPos() {
     TweenMax.set(log, { y: -700 });
@@ -2317,37 +2326,63 @@ var kodamaProject = function () {
     TweenMax.to(header, 1, { autoAlpha: 1 });
   }
 
-  function playIntro() {
+  function playScene() {
     setStartPos();
-    firefly();
-    ambientAudio.volume = 0.1;
-    ambientAudio.play();
-    TweenMax.to(log, 10, { y: 0 });
-    for (var i = 0; i < layers.length; i++) {
-      TweenMax.to(layers[i], 10, { y: 0 });
-    }
+    parallaxLayers();
+    playMusic();
+
+    // System discrimination
+    if (true) {
+      dancingFireflies();
+      swingingVines();
+      pulsatingShrooms();
+    } else {}
+    // Remove everything fancy
+    // Hide lights
+    // Hide glows
+    // Make gradients flat
+
 
     // Reveal Kodamas
     // Reveal Text
     // Spin heads
   }
 
-  // bindEvents();
-  setStartPos(); // prepare all elements
-  revealScene(); // fade to black
-  playIntro(); // start animation
+  function parallaxLayers() {
+    TweenMax.to(log, 10, { y: 0 });
 
-  // Dancing fireflies
-  function firefly() {
-    var interval = 2,
+    for (var i = 0; i < layers.length; i++) {
+      TweenMax.to(layers[i], 10, { y: 0 });
+    }
+  }
+
+  function playMusic() {
+    ambientAudio.volume = 0.1;
+    ambientAudio.play();
+  }
+
+  function dancingFireflies() {
+    var interval = 4,
         duration = interval;
 
-    TweenMax.to("#fireflies", duration, { x: random(1250, 1350), y: random(25, 100) });
+    TweenMax.to(["#fireflies1"], random(1, 3), {
+      rotation: random(0, 60),
+      scale: random(0.5, 1),
+      x: random(1250, 1350),
+      y: random(25, 100)
+    });
+
+    TweenMax.to(["#fireflies2"], random(2, 4), {
+      rotation: random(0, 60),
+      scale: random(0.5, 1),
+      x: random(1050, 1150),
+      y: random(325, 400)
+    });
 
     setTimeout(function () {
       for (var i = 0; i < ff.length; i++) {
-        var x = [random(-15, 15) * (i + 2) / 3, random(-15, 15) * (i + 2) / 3, random(-15, 15) * (i + 2) / 3],
-            scale = [random(0.1, 0.2), random(0.1, 0.2), random(0.2, 0.5)];
+
+        var x = [random(-15, 15) * (i + 2) / 3, random(-15, 15) * (i + 2) / 3, random(-15, 15) * (i + 2) / 3];
 
         TweenMax.to(ff[i], duration, {
           bezier: { curviness: 1, values: [{ x: 0 + i * 10, y: 0 + i * 10 }, { x: x[0], y: x[2] }, { x: x[1], y: 0 }, { x: x[2], y: x[1] }, { x: 0 + i * 10, y: 0 + i * 10 }] },
@@ -2355,8 +2390,36 @@ var kodamaProject = function () {
         });
       }
 
-      firefly();
+      dancingFireflies();
     }, interval * 1000);
+  }
+
+  function swingingVines() {
+
+    setTimeout(function () {
+      for (var i = 0; i < vines.length; i++) {
+        TweenMax.to(vines[i], random(5, 5), {
+          rotation: random(-3, 3), transformOrigin: "top center", ease: Linear.easeNone });
+      }
+
+      swingingVines();
+    }, 5000);
+  }
+
+  function pulsatingShrooms() {
+
+    setTimeout(function () {
+      for (var i = 0; i < shrooms.length; i++) {
+        TweenMax.to(shrooms[i], 0.5, {
+          scale: random(1.1, 1.3),
+          transformOrigin: "center center",
+          ease: SlowMo.ease.config(0.1, 0.1, true),
+          delay: random(1, 4)
+        });
+      }
+
+      pulsatingShrooms();
+    }, 5000);
   }
 
   // reveal kodamas
