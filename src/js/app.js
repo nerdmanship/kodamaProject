@@ -37,8 +37,8 @@ const kodamaProject = (function() {
 
   // Event handlers
   function moveArt(e) {
-    mouseX = (e.pageX - window.innerWidth/2)/(window.innerWidth/2); // -1 / 1
-    mouseY = (e.pageY - window.innerHeight/2)/(window.innerHeight/2);
+    mouseX = (e.screenX - window.innerWidth/2)/(window.innerWidth/2); // -1 / 1
+    mouseY = (e.screenY - window.innerHeight/2)/(window.innerHeight/2);
     scrollDist = window.pageYOffset;
 
     for (let i = 0; i < layers.length; i++) {
