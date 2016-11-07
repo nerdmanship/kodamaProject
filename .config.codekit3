@@ -124,33 +124,6 @@
 		"sC": 0,
 		"tS": 1
 		},
-	"\/src\/js\/Draggable.js": {
-		"ft": 64,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/dist\/js\/Draggable.js",
-		"oF": 0,
-		"sC": 2,
-		"tS": 1
-		},
-	"\/src\/js\/helpers.js": {
-		"ft": 64,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "\/dist\/js\/helpers.js",
-		"oF": 0,
-		"sC": 2,
-		"tS": 1
-		},
-	"\/src\/js\/mySnippets.js": {
-		"ft": 64,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "\/dist\/js\/mySnippets.js",
-		"oF": 0,
-		"sC": 2,
-		"tS": 1
-		},
 	"\/src\/js\/TimelineMax.js": {
 		"ft": 64,
 		"mi": 0,
@@ -198,12 +171,6 @@
 			"linkedFileAbbreviatedPath": "\/src\/js\/TimelineMax.js",
 			"position": 1,
 			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/src\/js\/Draggable.js",
-			"position": 2,
-			"type": 0
 			}
 		]
 	},
@@ -212,7 +179,7 @@
 	"displayValue": "kodamaProject",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-karate",
-	"lastBuiltDate": 500228184
+	"lastBuiltDate": 500228351
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
