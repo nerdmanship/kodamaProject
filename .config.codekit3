@@ -15,6 +15,30 @@
 		"oAP": "\/dist\/dist",
 		"oF": 0
 		},
+	"\/src\/assets\/audio\/ambient.m4a": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/assets\/audio\/ambient.m4a",
+		"oF": 0
+		},
+	"\/src\/assets\/audio\/ambient.ogg": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/assets\/audio\/ambient.ogg",
+		"oF": 0
+		},
+	"\/src\/assets\/audio\/spin.m4a": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/assets\/audio\/spin.m4a",
+		"oF": 0
+		},
+	"\/src\/assets\/audio\/spin.ogg": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/assets\/audio\/spin.ogg",
+		"oF": 0
+		},
 	"\/src\/assets\/svg\/artwork.svg": {
 		"ft": 2097152,
 		"miP": 1,
@@ -25,45 +49,31 @@
 		"plM": 3758088191,
 		"prP": 1
 		},
-	"\/src\/assets\/svg\/optimised\/rects.svg": {
+	"\/src\/assets\/svg\/optimised\/artworkOpt.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 0,
-		"oAP": "\/dist\/assets\/svg\/optimised\/rects.svg",
+		"oAP": "\/dist\/assets\/svg\/optimised\/artworkOpt.svg",
 		"oF": 0,
-		"opt": 0,
+		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/src\/assets\/svg\/optimised\/sizetest.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 0,
-		"oAP": "\/dist\/assets\/svg\/optimised\/sizetest.svg",
+	"\/src\/jade\/artworkOpt.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/dist\/jade\/artworkOpt.html",
 		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
+		"oS": 0
 		},
-	"\/src\/assets\/svg\/rects.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 0,
-		"oAP": "\/src\/assets\/svg\/optimised\/rects.svg",
-		"oF": 2,
-		"opt": 1,
-		"plM": 3758088159,
-		"prP": 1
-		},
-	"\/src\/assets\/svg\/sizetest.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 0,
-		"oAP": "\/src\/assets\/svg\/optimised\/sizetest.svg",
-		"oF": 3,
-		"opt": 1,
-		"plM": 278635995135,
-		"prP": 1
+	"\/src\/jade\/audio.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/dist\/jade\/audio.html",
+		"oF": 0,
+		"oS": 0
 		},
 	"\/src\/jade\/head.jade": {
 		"cOD": 1,
@@ -84,7 +94,7 @@
 	"\/src\/jade\/kodamaArtwork.jade": {
 		"cOD": 1,
 		"ft": 512,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/dist\/jade\/kodamaArtwork.html",
 		"oF": 0,
 		"oS": 0
@@ -111,6 +121,51 @@
 		"oA": 0,
 		"oAP": "\/dist\/js\/app.js",
 		"oF": 0,
+		"sC": 0,
+		"tS": 1
+		},
+	"\/src\/js\/Draggable.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/js\/Draggable.js",
+		"oF": 0,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/js\/helpers.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/dist\/js\/helpers.js",
+		"oF": 0,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/js\/mySnippets.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/dist\/js\/mySnippets.js",
+		"oF": 0,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/js\/TimelineMax.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/js\/TimelineMax.js",
+		"oF": 0,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/js\/TweenMax.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/js\/TweenMax.js",
+		"oF": 0,
 		"sC": 2,
 		"tS": 1
 		},
@@ -131,13 +186,33 @@
 "hooks": [
 	],
 "manualImportLinks": {
+	"\/src\/js\/app.js": [
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/src\/js\/TweenMax.js",
+			"position": 0,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/src\/js\/TimelineMax.js",
+			"position": 1,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/src\/js\/Draggable.js",
+			"position": 2,
+			"type": 0
+			}
+		]
 	},
 "projectAttributes": {
 	"creationDate": 500012066,
 	"displayValue": "kodamaProject",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-karate",
-	"lastBuiltDate": 500029244
+	"lastBuiltDate": 500188758
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
