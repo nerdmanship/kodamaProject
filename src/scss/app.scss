@@ -13,31 +13,34 @@ body {
   background-color: #000;
 }
 
-section {
+#text {
   position: relative;
-  min-height: 700px;
-  background-color: #000;
+  top: 600px;
+  width: 100%;
   color: #eee;
-  overflow: hidden;
+  background-color: #000;
+  height: 600px;
+  z-index: 1;
+  #kodama-graphic--log {
+    top: -660px;
+    overflow: visible;
+  }
 }
 
-#kodama-graphic {
+#header {
   position: fixed;
   overflow: hidden;
+  height: 600px;
+  width: 100%;
+  top: 0;
+  #kodama-graphic {
+    height: 600px;
+  }
 }
 
-#kodama-graphic--log {
-  position: absolute;
-}
 
-.kodama {
+
+.transparent {
   opacity: 0;
 }
 
-#layer_6 {
-  opacity: 0;
-}
-
-#text {
-  background-color: #000;
-}

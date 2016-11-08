@@ -9,25 +9,26 @@ body {
   margin: 0;
   background-color: #000; }
 
-section {
-  position: relative;
-  min-height: 700px;
-  background-color: #000;
-  color: #eee;
-  overflow: hidden; }
-
-#kodama-graphic {
-  position: fixed;
-  overflow: hidden; }
-
-#kodama-graphic--log {
-  position: absolute; }
-
-.kodama {
-  opacity: 0; }
-
-#layer_6 {
-  opacity: 0; }
-
 #text {
-  background-color: #000; }
+  position: relative;
+  top: 600px;
+  width: 100%;
+  color: #eee;
+  background-color: #000;
+  height: 600px;
+  z-index: 1; }
+  #text #kodama-graphic--log {
+    top: -660px;
+    overflow: visible; }
+
+#header {
+  position: fixed;
+  overflow: hidden;
+  height: 600px;
+  width: 100%;
+  top: 0; }
+  #header #kodama-graphic {
+    height: 600px; }
+
+.transparent {
+  opacity: 0; }

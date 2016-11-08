@@ -1,3 +1,10 @@
+// make text floaty feel?
+// Correct grads
+// move log layer
+
+// Make mobile
+// Light and title are static, exclude from animation array
+
 function random(min, max) {
   if (max === null) { max = min; min = 0; }
   return Math.random() * (max - min) + min;
@@ -11,11 +18,21 @@ const kodamaProject = (function() {
   const layers = header.querySelectorAll("[data-layer]"); console.log(layers);
   const kodamas = header.querySelectorAll("[data-kodama]"); console.log(kodamas);
   const heads = header.querySelectorAll("[data-head]"); console.log(heads);
-  const log = header.querySelector("[data-log]"); console.log(log);
+  const log = document.querySelector("[data-log]"); console.log(log);
   const ff = header.querySelectorAll("[data-ff]"); console.log(ff);
   const vines = header.querySelectorAll("[data-vine]"); console.log(vines);
   const shrooms = header.querySelectorAll("[data-shroom]"); console.log(shrooms);
-  const ambientAudio = document.querySelector("[data-audio=ambient]"); console.log(ambientAudio);
+  const text = header.querySelectorAll("[data-text]"); console.log(text);
+  const textMobile = header.querySelectorAll("[data-text-mobile]"); console.log(textMobile);
+
+  const audioGroup = document.querySelector("[data-audio-group]");
+  const ambientAudio = audioGroup.querySelector("[data-audio=ambient]"); console.log(ambientAudio);
+  const spinAudio1 = audioGroup.querySelector("[data-audio=spin1]"); console.log(spinAudio1);
+  const spinAudio2 = audioGroup.querySelector("[data-audio=spin2]"); console.log(spinAudio2);
+  const spinAudio3 = audioGroup.querySelector("[data-audio=spin3]"); console.log(spinAudio3);
+
+  const mainTl = new TimelineMax();
+
 
   let mouseX = 0;
   let mouseY = 0;
@@ -28,7 +45,6 @@ const kodamaProject = (function() {
   }
 
   // Start
-  bindEvents();
   setStartPos(); // prepare all elements
   revealScene(); // fade to black
   playScene(); // start animation
@@ -42,15 +58,18 @@ const kodamaProject = (function() {
     scrollDist = window.pageYOffset;
 
     for (let i = 0; i < layers.length; i++) {
-      var layerOffsetAmount = 15 * i;
+      var layerOffsetAmount = 10 * i;
       var layerPosX = layerOffsetAmount * mouseX;
       var layerPosY = layerOffsetAmount * mouseY;
-
-      TweenMax.to(layers[i], 5, {
-        x: -layerPosX,
-        y: -layerPosY,
-        ease: Power4.easeOut
-      });
+      if (false) {
+        // do something...
+      } else {
+        TweenMax.to(layers[i], 5, {
+          x: -layerPosX,
+          y: -layerPosY,
+          ease: Power4.easeOut
+        });
+      }
     }
   }
 
@@ -67,10 +86,12 @@ const kodamaProject = (function() {
 
 
   function setStartPos() {
+    TweenMax.set(kodamas[0], { scale: 0.8, transformOrigin: "bottom center" });
     TweenMax.set(log, { y: -700 });
     for (let i = 0; i < layers.length; i++) {
       TweenMax.set(layers[i], {y: -150*i});
     }
+
   }
 
 
@@ -80,9 +101,11 @@ const kodamaProject = (function() {
 
 
   function playScene() {
+    // Unbind events if any
     setStartPos();
     parallaxLayers();
     playMusic();
+    playMainTl();
     
     // System discrimination
     if (true) {
@@ -92,8 +115,10 @@ const kodamaProject = (function() {
     } else {
       // Remove everything fancy
         // Hide lights
-        // Hide glows
+        // Hide blob glows
+        // Hide kodama glows
         // Make gradients flat
+        // Make bg lighter
     }
     
 
@@ -117,9 +142,14 @@ const kodamaProject = (function() {
 
   function playMusic() {
     ambientAudio.volume = 0.1;
+    ambientAudio.currentTime = 0;
     ambientAudio.play();
   }
 
+  function playSFX(audio) {
+    audio.currentTime = 0;
+    audio.play(); 
+  }
 
   
   function dancingFireflies() {
@@ -197,51 +227,45 @@ const kodamaProject = (function() {
   }
 
   // reveal kodamas
-  function kodamasIn() {
-    for (let i = 0; i < kodamas.length; i++) {
-      TweenMax.to(kodamas[i], 1, {autoAlpha: 1, delay: i*0.5});
+  function playMainTl() {
+      mainTl
+        .add("revealKodamas")
+        .to(kodamas[0], 3, { autoAlpha: 0.7, ease: Power3.easeOut}, 7)
+        .to(kodamas[1], 3, { autoAlpha: 0.7, ease: Power3.easeOut}, 9.5)
+        .to(kodamas[2], 3, { autoAlpha: 0.7, ease: Power3.easeOut}, 10.5)
+        .call(bindEvents, [""], this, 7)
+
+        .add("revealTitle")
+        .to(text[0], 3, { autoAlpha: 1, ease: Power3.easeOut}, 11.3)
+        .to(text[1], 3, { autoAlpha: 0.7, ease: Power3.easeOut}, 12.2)
+
+
+        .add("spinHeads")
+        .add("spin1")
+        .to(heads[0], 2, {rotation: 90, transformOrigin: "center center"}, "spin1")
+        .to(heads[0], 2, {rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center"}, "spin1 =+2")
+        .call(playSFX, [spinAudio1], this, "spin1")
+        .add("spin2", "spin1 =+2")
+        .to(heads[1], 2, {rotation: 90, transformOrigin: "center center"}, "spin2")
+        .to(heads[1], 2, {rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center"}, "spin2 =+2")
+        .call(playSFX, [spinAudio2], this, "spin2")
+        .add("spin3", "spin1 =+2.3")
+        .to(heads[2], 2, {rotation: 90, transformOrigin: "center center"}, "spin3")
+        .to(heads[2], 2, {rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center"}, "spin3 =+2")
+        .call(playSFX, [spinAudio3], this, "spin3");
     }
-  }
- 
-  // reveal text
 
-
-  // spin heads
-  function spinHeads() {
-    for (let i = 0; i < heads.length; i++) {
-      let tl = new TimelineMax();
-
-      tl.to(heads[i], 1, {rotation: 90, delay: i*0.5, transformOrigin: "center"})
-        .to(heads[i], 1, {rotation: 0 });
-    }
-  }
 
   return {
-    header: header,
-    layers: layers,
-    playIntro: playIntro,
-    kodamasIn: kodamasIn,
-    spinHeads: spinHeads,
-    firefly: firefly
+    playScene: playScene
   };
 
 }) ();
 
 
 
+
 /*
-
-function playSpin(audio) {
-  audio.currentTime = 0;
-  audio.play();
-}
-
-
-var audio = ambient;
-if (Modernizr.audio.ogg) {
-  // do ogg stuff
-}
-
 
 function mobileStart() {
   spin1.load();
@@ -252,9 +276,3 @@ function mobileStart() {
   ambient.loadeddata = start();
 }
 */
-
-
-
-
-
-
