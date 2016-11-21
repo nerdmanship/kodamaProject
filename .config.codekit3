@@ -49,6 +49,34 @@
 		"plM": 3758088191,
 		"prP": 1
 		},
+	"\/src\/assets\/svg\/foreground.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/dist\/assets\/svg\/foreground.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/src\/assets\/svg\/foreground.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/src\/assets\/svg\/optimised\/foregroundOpt.svg",
+		"oF": 2,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 1
+		},
+	"\/src\/assets\/svg\/foreground2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/dist\/assets\/svg\/foreground2.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/src\/assets\/svg\/optimised\/artworkOpt.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -56,6 +84,52 @@
 		"oAP": "\/dist\/assets\/svg\/optimised\/artworkOpt.svg",
 		"oF": 0,
 		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/assets\/svg\/optimised\/foreground.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/dist\/assets\/svg\/optimised\/foreground.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/assets\/svg\/optimised\/foreground2Opt.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/svg\/optimised\/foreground2Opt.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/src\/assets\/svg\/optimised\/foreground2Opt.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/dist\/assets\/svg\/optimised\/foreground2Opt.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/assets\/svg\/optimised\/foregroundOpt.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/dist\/assets\/svg\/optimised\/foregroundOpt.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/src\/assets\/svg\/optimised\/foregroundOpt.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/dist\/assets\/svg\/optimised\/foregroundOpt.svg",
+		"oF": 0,
+		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
@@ -124,6 +198,15 @@
 		"sC": 0,
 		"tS": 1
 		},
+	"\/src\/js\/kodamaModule.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/js\/kodamaModule.js",
+		"oF": 0,
+		"sC": 2,
+		"tS": 1
+		},
 	"\/src\/js\/TimelineMax.js": {
 		"ft": 64,
 		"mi": 0,
@@ -170,6 +253,12 @@
 			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/src\/js\/TimelineMax.js",
 			"position": 1,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/src\/js\/kodamaModule.js",
+			"position": 2,
 			"type": 0
 			}
 		]

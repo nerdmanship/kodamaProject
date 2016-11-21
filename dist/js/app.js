@@ -2244,9 +2244,13 @@ var _gsScope = typeof module !== "undefined" && module.exports && typeof global 
 })("TimelineMax");
 "use strict";
 
-// make text floaty feel?
+// Log
+// Make graphic
+// Layout with specific goals
+
+// Change copy "a tribute to"?
+// Make text floaty feel?
 // Correct grads
-// move log layer
 
 // Make mobile
 // Light and title are static, exclude from animation array
@@ -2266,12 +2270,13 @@ var kodamaProject = function () {
   var layers = header.querySelectorAll("[data-layer]");console.log(layers);
   var kodamas = header.querySelectorAll("[data-kodama]");console.log(kodamas);
   var heads = header.querySelectorAll("[data-head]");console.log(heads);
-  var log = document.querySelector("[data-log]");console.log(log);
   var ff = header.querySelectorAll("[data-ff]");console.log(ff);
   var vines = header.querySelectorAll("[data-vine]");console.log(vines);
   var shrooms = header.querySelectorAll("[data-shroom]");console.log(shrooms);
   var text = header.querySelectorAll("[data-text]");console.log(text);
   var textMobile = header.querySelectorAll("[data-text-mobile]");console.log(textMobile);
+
+  var foreground = document.querySelector("[data-foreground]");console.log(foreground);
 
   var audioGroup = document.querySelector("[data-audio-group]");
   var ambientAudio = audioGroup.querySelector("[data-audio=ambient]");console.log(ambientAudio);
@@ -2279,11 +2284,13 @@ var kodamaProject = function () {
   var spinAudio2 = audioGroup.querySelector("[data-audio=spin2]");console.log(spinAudio2);
   var spinAudio3 = audioGroup.querySelector("[data-audio=spin3]");console.log(spinAudio3);
 
-  var mainTl = new TimelineMax();
+  var mainTl = new TimelineMax({ paused: true });
 
   var mouseX = 0;
   var mouseY = 0;
   var scrollDist = 0;
+
+  var musicMuted = false;
 
   // Bind
   function bindEvents() {
@@ -2296,6 +2303,7 @@ var kodamaProject = function () {
   }
 
   // Start
+  createTimeline();
   setStartPos(); // prepare all elements
   revealScene(); // fade to black
   playScene(); // start animation
@@ -2334,11 +2342,15 @@ var kodamaProject = function () {
      }
    }*/
 
+  function createTimeline() {
+    mainTl.add("revealKodamas").to(kodamas[0], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 7).to(kodamas[1], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 9.5).to(kodamas[2], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 10.5).call(bindEvents, [""], this, 7).add("revealTitle").to(text[0], 3, { autoAlpha: 1, ease: Power3.easeOut }, 11.3).to(text[1], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 12.2).add("spinHeads").add("spin1").to(heads[0], 2, { rotation: 90, transformOrigin: "center center" }, "spin1").to(heads[0], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin1 =+2").call(playSFX, [spinAudio1], this, "spin1").add("spin2", "spin1 =+2").to(heads[1], 2, { rotation: 90, transformOrigin: "center center" }, "spin2").to(heads[1], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin2 =+2").call(playSFX, [spinAudio2], this, "spin2").add("spin3", "spin1 =+2.3").to(heads[2], 2, { rotation: 90, transformOrigin: "center center" }, "spin3").to(heads[2], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin3 =+2").call(playSFX, [spinAudio3], this, "spin3");
+  }
+
   function setStartPos() {
     TweenMax.set(kodamas[0], { scale: 0.8, transformOrigin: "bottom center" });
-    TweenMax.set(log, { y: -700 });
     for (var i = 0; i < layers.length; i++) {
       TweenMax.set(layers[i], { y: -150 * i });
+      TweenMax.set(foreground, { y: -400 });
     }
   }
 
@@ -2350,10 +2362,10 @@ var kodamaProject = function () {
     // Unbind events if any
     setStartPos();
     parallaxLayers();
-    playMusic();
+    //playMusic();
     playMainTl();
 
-    // System discrimination
+    // System discrimination, default, more, less
     if (true) {
       dancingFireflies();
       swingingVines();
@@ -2373,11 +2385,11 @@ var kodamaProject = function () {
   }
 
   function parallaxLayers() {
-    TweenMax.to(log, 10, { y: 0 });
-
     for (var i = 0; i < layers.length; i++) {
       TweenMax.to(layers[i], 10, { y: 0 });
     }
+
+    TweenMax.to(foreground, 10, { y: 0 });
   }
 
   function playMusic() {
@@ -2386,7 +2398,24 @@ var kodamaProject = function () {
     ambientAudio.play();
   }
 
+  function toggleMusic() {
+    if (ambientAudio.volume === 0) {
+      ambientAudio.volume = 0.1;
+      spinAudio1.volume = 1;
+      spinAudio2.volume = 1;
+      spinAudio3.volume = 1;
+    } else {
+      ambientAudio.volume = 0;
+      spinAudio1.volume = 0;
+      spinAudio2.volume = 0;
+      spinAudio3.volume = 0;
+    }
+  }
+
   function playSFX(audio) {
+    if (musicMuted) {
+      audio.volume = 0;
+    }
     audio.currentTime = 0;
     audio.play();
   }
@@ -2455,11 +2484,12 @@ var kodamaProject = function () {
 
   // reveal kodamas
   function playMainTl() {
-    mainTl.add("revealKodamas").to(kodamas[0], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 7).to(kodamas[1], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 9.5).to(kodamas[2], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 10.5).call(bindEvents, [""], this, 7).add("revealTitle").to(text[0], 3, { autoAlpha: 1, ease: Power3.easeOut }, 11.3).to(text[1], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 12.2).add("spinHeads").add("spin1").to(heads[0], 2, { rotation: 90, transformOrigin: "center center" }, "spin1").to(heads[0], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin1 =+2").call(playSFX, [spinAudio1], this, "spin1").add("spin2", "spin1 =+2").to(heads[1], 2, { rotation: 90, transformOrigin: "center center" }, "spin2").to(heads[1], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin2 =+2").call(playSFX, [spinAudio2], this, "spin2").add("spin3", "spin1 =+2.3").to(heads[2], 2, { rotation: 90, transformOrigin: "center center" }, "spin3").to(heads[2], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin3 =+2").call(playSFX, [spinAudio3], this, "spin3");
+    mainTl.restart();
   }
 
   return {
-    playScene: playScene
+    replay: playScene,
+    mute: toggleMusic
   };
 }();
 
@@ -2474,3 +2504,4 @@ function mobileStart() {
   ambient.loadeddata = start();
 }
 */
+"use strict";

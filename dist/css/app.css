@@ -3,32 +3,31 @@
   left: 50%;
   transform: translateX(-50%); }
 
+.transparent {
+  opacity: 0; }
+
 body {
-  width: 100%;
-  height: 100%;
   margin: 0;
-  background-color: #000; }
+  background-color: #000;
+  overflow: visible; }
+
+#header {
+  position: fixed;
+  z-index: -1;
+  overflow: hidden;
+  height: 600px;
+  width: 100%;
+  top: 0; }
+
+#kodama-graphic {
+  height: 100%; }
 
 #text {
   position: relative;
   top: 600px;
   width: 100%;
-  color: #eee;
   background-color: #000;
-  height: 600px;
-  z-index: 1; }
-  #text #kodama-graphic--log {
-    top: -660px;
-    overflow: visible; }
-
-#header {
-  position: fixed;
-  overflow: hidden;
-  height: 600px;
-  width: 100%;
-  top: 0; }
-  #header #kodama-graphic {
-    height: 600px; }
-
-.transparent {
-  opacity: 0; }
+  min-height: 800px;
+  color: #eee; }
+  #text svg {
+    top: -150px; }
