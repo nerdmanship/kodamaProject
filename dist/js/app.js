@@ -2244,16 +2244,11 @@ var _gsScope = typeof module !== "undefined" && module.exports && typeof global 
 })("TimelineMax");
 "use strict";
 
-// Log
-// Make graphic
-// Layout with specific goals
-
-// Change copy "a tribute to"?
-// Make text floaty feel?
-// Correct grads
-
+// Make text floaty
+// Reveal fireflies on que
+// Write text
+// Solve scroll behavior
 // Make mobile
-// Light and title are static, exclude from animation array
 
 function random(min, max) {
   if (max === null) {
@@ -2263,7 +2258,7 @@ function random(min, max) {
 }
 
 // Init
-var kodamaProject = function () {
+var kodamaProject = function kodamaProject() {
 
   // CacheDOM
   var header = document.querySelector("[data-header]");console.log(header);
@@ -2513,7 +2508,9 @@ var kodamaProject = function () {
     replay: playScene,
     mute: toggleAudio
   };
-}();
+};
+
+kodamaProject();
 
 /*
 

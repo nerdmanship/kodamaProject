@@ -1,13 +1,8 @@
-// Log
-  // Make graphic
-  // Layout with specific goals
-
-// Change copy "a tribute to"?
-// Make text floaty feel?
-// Correct grads
-
+// Make text floaty
+// Reveal fireflies on que
+// Write text
+// Solve scroll behavior
 // Make mobile
-// Light and title are static, exclude from animation array
 
 function random(min, max) {
   if (max === null) { max = min; min = 0; }
@@ -15,7 +10,7 @@ function random(min, max) {
 }
 
 // Init
-const kodamaProject = (function() {
+const kodamaProject = function() {
 
   // CacheDOM
   const header = document.querySelector("[data-header]"); console.log(header);
@@ -318,7 +313,10 @@ const kodamaProject = (function() {
     mute: toggleAudio
   };
 
-}) ();
+}
+
+kodamaProject();
+
 
 
 
