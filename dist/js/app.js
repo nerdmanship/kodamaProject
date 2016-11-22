@@ -2268,6 +2268,7 @@ var kodamaProject = function () {
   // CacheDOM
   var header = document.querySelector("[data-header]");console.log(header);
   var layers = header.querySelectorAll("[data-layer]");console.log(layers);
+  var light = header.querySelector("[data-light]");console.log(light);
   var kodamas = header.querySelectorAll("[data-kodama]");console.log(kodamas);
   var heads = header.querySelectorAll("[data-head]");console.log(heads);
   var ff = header.querySelectorAll("[data-ff]");console.log(ff);
@@ -2347,10 +2348,18 @@ var kodamaProject = function () {
   }
 
   function setStartPos() {
+    // Light pollution off
+    TweenMax.set(light, { autoAlpha: 0 });
+
+    // Resize background Kodama
     TweenMax.set(kodamas[0], { scale: 0.8, transformOrigin: "bottom center" });
+
+    // Foreground start position
+    TweenMax.set(foreground, { y: -600 });
+
+    // All layers start position
     for (var i = 0; i < layers.length; i++) {
       TweenMax.set(layers[i], { y: -150 * i });
-      TweenMax.set(foreground, { y: -400 });
     }
   }
 
@@ -2370,6 +2379,7 @@ var kodamaProject = function () {
       dancingFireflies();
       swingingVines();
       pulsatingShrooms();
+      pulseLight();
     } else {}
     // Remove everything fancy
     // Hide lights
@@ -2389,7 +2399,7 @@ var kodamaProject = function () {
       TweenMax.to(layers[i], 10, { y: 0 });
     }
 
-    TweenMax.to(foreground, 10, { y: 0 });
+    TweenMax.to(foreground, 10, { y: 470 });
   }
 
   function playMusic() {
@@ -2481,6 +2491,8 @@ var kodamaProject = function () {
       pulsatingShrooms();
     }, 5000);
   }
+
+  function pulseLight() {}
 
   // reveal kodamas
   function playMainTl() {

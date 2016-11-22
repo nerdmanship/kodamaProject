@@ -32,6 +32,11 @@ body {
   height: 100%;
 }
 
+#foreground {
+  width: 100%;
+  min-width: 1280px;
+}
+
 #text {
   position: relative;
   top: $headerHeight;
@@ -39,7 +44,5 @@ body {
   background-color: #000;
   min-height: 800px;
   color: #eee;
-  svg {
-    top: -150px;
-  }
 }
+
