@@ -2279,6 +2279,9 @@ var kodamaProject = function () {
 
   var foreground = document.querySelector("[data-foreground]");console.log(foreground);
 
+  var muteButton = document.querySelector("[data-btn=mute]");console.log(muteButton);
+  var replayButton = document.querySelector("[data-btn=replay]");console.log(replayButton);
+
   var audioGroup = document.querySelector("[data-audio-group]");
   var ambientAudio = audioGroup.querySelector("[data-audio=ambient]");console.log(ambientAudio);
   var spinAudio1 = audioGroup.querySelector("[data-audio=spin1]");console.log(spinAudio1);
@@ -2287,24 +2290,28 @@ var kodamaProject = function () {
 
   var mainTl = new TimelineMax({ paused: true });
 
+  var musicMuted = false;
+
   var mouseX = 0;
   var mouseY = 0;
   var scrollDist = 0;
 
-  var musicMuted = false;
-
   // Bind
   function bindEvents() {
+    muteButton.addEventListener("click", toggleAudio);
+    replayButton.addEventListener("click", playScene);
+  }
+
+  function bindPanEvents() {
     document.addEventListener("mousemove", function (e) {
       moveArt(e);
     });
-    document.addEventListener("scroll", function (e) {
-      scrollArt(e);
-    });
+    // document.addEventListener("scroll", function(e) { scrollArt(e); });
   }
 
   // Start
-  createTimeline();
+  bindEvents(); // Bind Events
+  createTimeline(); // Create main timeline
   setStartPos(); // prepare all elements
   revealScene(); // fade to black
   playScene(); // start animation
@@ -2344,7 +2351,7 @@ var kodamaProject = function () {
    }*/
 
   function createTimeline() {
-    mainTl.add("revealKodamas").to(kodamas[0], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 7).to(kodamas[1], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 9.5).to(kodamas[2], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 10.5).call(bindEvents, [""], this, 7).add("revealTitle").to(text[0], 3, { autoAlpha: 1, ease: Power3.easeOut }, 11.3).to(text[1], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 12.2).add("spinHeads").add("spin1").to(heads[0], 2, { rotation: 90, transformOrigin: "center center" }, "spin1").to(heads[0], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin1 =+2").call(playSFX, [spinAudio1], this, "spin1").add("spin2", "spin1 =+2").to(heads[1], 2, { rotation: 90, transformOrigin: "center center" }, "spin2").to(heads[1], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin2 =+2").call(playSFX, [spinAudio2], this, "spin2").add("spin3", "spin1 =+2.3").to(heads[2], 2, { rotation: 90, transformOrigin: "center center" }, "spin3").to(heads[2], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin3 =+2").call(playSFX, [spinAudio3], this, "spin3");
+    mainTl.add("revealKodamas").to(kodamas[0], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 7).to(kodamas[1], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 9.5).to(kodamas[2], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 10.5).call(bindPanEvents, [""], this, 7).add("revealTitle").to(text[0], 3, { autoAlpha: 1, ease: Power3.easeOut }, 11.3).to(text[1], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 12.2).add("spinHeads").add("spin1").to(heads[0], 2, { rotation: 90, transformOrigin: "center center" }, "spin1").to(heads[0], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin1 =+2").call(playSFX, [spinAudio1], this, "spin1").add("spin2", "spin1 =+2").to(heads[1], 2, { rotation: 90, transformOrigin: "center center" }, "spin2").to(heads[1], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin2 =+2").call(playSFX, [spinAudio2], this, "spin2").add("spin3", "spin1 =+2.3").to(heads[2], 2, { rotation: 90, transformOrigin: "center center" }, "spin3").to(heads[2], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin3 =+2").call(playSFX, [spinAudio3], this, "spin3");
   }
 
   function setStartPos() {
@@ -2355,7 +2362,7 @@ var kodamaProject = function () {
     TweenMax.set(kodamas[0], { scale: 0.8, transformOrigin: "bottom center" });
 
     // Foreground start position
-    TweenMax.set(foreground, { y: -600 });
+    TweenMax.set(foreground, { y: -200 });
 
     // All layers start position
     for (var i = 0; i < layers.length; i++) {
@@ -2371,7 +2378,7 @@ var kodamaProject = function () {
     // Unbind events if any
     setStartPos();
     parallaxLayers();
-    //playMusic();
+    playMusic();
     playMainTl();
 
     // System discrimination, default, more, less
@@ -2400,6 +2407,7 @@ var kodamaProject = function () {
     }
 
     TweenMax.to(foreground, 10, { y: 470 });
+    TweenMax.to(light, 3, { autoAlpha: 0.2, delay: 10 });
   }
 
   function playMusic() {
@@ -2408,17 +2416,19 @@ var kodamaProject = function () {
     ambientAudio.play();
   }
 
-  function toggleMusic() {
+  function toggleAudio() {
     if (ambientAudio.volume === 0) {
       ambientAudio.volume = 0.1;
       spinAudio1.volume = 1;
       spinAudio2.volume = 1;
       spinAudio3.volume = 1;
+      musicMuted = false;
     } else {
       ambientAudio.volume = 0;
       spinAudio1.volume = 0;
       spinAudio2.volume = 0;
       spinAudio3.volume = 0;
+      musicMuted = true;
     }
   }
 
@@ -2501,7 +2511,7 @@ var kodamaProject = function () {
 
   return {
     replay: playScene,
-    mute: toggleMusic
+    mute: toggleAudio
   };
 }();
 

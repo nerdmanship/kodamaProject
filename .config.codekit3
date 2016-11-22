@@ -161,14 +161,6 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/src\/jade\/artworkOpt.jade": {
-		"cOD": 1,
-		"ft": 512,
-		"oA": 1,
-		"oAP": "\/dist\/jade\/artworkOpt.html",
-		"oF": 0,
-		"oS": 0
-		},
 	"\/src\/jade\/audio.jade": {
 		"cOD": 1,
 		"ft": 512,
@@ -182,6 +174,14 @@
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/dist\/jade\/head.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/src\/jade\/header.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/dist\/jade\/header.html",
 		"oF": 0,
 		"oS": 0
 		},
