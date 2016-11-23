@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 $headerHeight: 600px;
 
 // Gist: center, mqueries
@@ -37,29 +38,63 @@ body {
   min-width: 1280px;
 }
 
-#text {
+#main {
   position: relative;
   top: $headerHeight;
   width: 100%;
   background-color: #000;
-  min-height: 800px;
-  color: #eee;
+  font-family: 'Roboto', sans-serif;
+  color: #9DD0E0;
 }
 
-.buttons {
-  position: absolute;
+.controls {
+  position: relative;
   top: 0;
   z-index: 1;
   width: 100%;
+  max-width: 960px;
+  text-align: center;
+  p {
+    margin: 0;
+  }
   
-  .mute {
+  .btn {
+    position: relative;
+    cursor: pointer;
+    opacity: 0.25;
+   
+    p { font-size: 12px; }
+
+    .icon {
+      width: 30px;
+      height: 50px;
+    }
+  }
+
+  .mute-btn {
     float: left;
-    margin-left: 20px;
+    margin-left: 30px;
+    
+
   }
   
-  .replay {
-    float: right;
-    margin-right: 20px;
+  .scroll-ind {
+    opacity: 0;
+    .scroll-icon {
+      width: 20px;
+    }
   }
+
+  .replay-btn {
+    float: right;
+    margin-right: 30px;
+  }
+
+}
+
+.text {
+  position: relative;
+  top: 100px;
+  max-width: 500px;
 }
 

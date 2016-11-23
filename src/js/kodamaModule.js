@@ -1,7 +1,12 @@
 // Make text floaty
+// Add hover state on buttons
+// If muted, stay muted on replay
 // Reveal fireflies on que
 // Write text
 // Solve scroll behavior
+// System discriminatio
+// Add scroll indicator
+// Remove panorama interaction on replay
 // Make mobile
 
 function random(min, max) {
@@ -185,6 +190,7 @@ const kodamaProject = function() {
     }
 
     TweenMax.to(foreground, 10, { y: 470 });
+    TweenMax.set(light, { autoAlpha: 0, delay: 9.9});
     TweenMax.to(light, 3, { autoAlpha: 0.2, delay: 10});
   }
 

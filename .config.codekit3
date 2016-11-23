@@ -87,6 +87,24 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/src\/assets\/svg\/mute.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/svg\/mute.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/src\/assets\/svg\/mute.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/dist\/assets\/svg\/mute.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/src\/assets\/svg\/optimised\/artworkOpt.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -161,6 +179,72 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/src\/assets\/svg\/optimised\/muteOpt.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/dist\/assets\/svg\/optimised\/muteOpt.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/assets\/svg\/optimised\/replayOpt.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/dist\/assets\/svg\/optimised\/replayOpt.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/assets\/svg\/optimised\/scrollOpt.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/dist\/assets\/svg\/optimised\/scrollOpt.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/assets\/svg\/replay.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/svg\/replay.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/src\/assets\/svg\/replay.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/dist\/assets\/svg\/replay.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/assets\/svg\/scroll.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/svg\/scroll.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/src\/assets\/svg\/scroll.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/dist\/assets\/svg\/scroll.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/src\/jade\/audio.jade": {
 		"cOD": 1,
 		"ft": 512,
@@ -201,11 +285,11 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/src\/jade\/placeholder.jade": {
+	"\/src\/jade\/main.jade": {
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/dist\/jade\/placeholder.html",
+		"oAP": "\/dist\/jade\/main.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -296,7 +380,7 @@
 	"displayValue": "kodamaProject",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-karate",
-	"lastBuiltDate": 500229409
+	"lastBuiltDate": 501581173
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
