@@ -2244,15 +2244,17 @@ var _gsScope = typeof module !== "undefined" && module.exports && typeof global 
 })("TimelineMax");
 "use strict";
 
+// Add scroll indicator after x sec
+
 // Make text floaty
-// Add hover state on buttons
-// If muted, stay muted on replay
+
+// Light pulse
 // Reveal fireflies on que
 // Write text
-// Solve scroll behavior
+
 // System discriminatio
 // Add scroll indicator
-// Remove panorama interaction on replay
+
 // Make mobile
 
 function random(min, max) {
@@ -2277,10 +2279,16 @@ var kodamaProject = function kodamaProject() {
   var text = header.querySelectorAll("[data-text]");console.log(text);
   var textMobile = header.querySelectorAll("[data-text-mobile]");console.log(textMobile);
 
+  var sticks = document.querySelectorAll("[data-stick]");console.log(sticks);
+
   var foreground = document.querySelector("[data-foreground]");console.log(foreground);
 
+  var buttons = document.querySelectorAll("[data-btn]");console.log(buttons);
   var muteButton = document.querySelector("[data-btn=mute]");console.log(muteButton);
   var replayButton = document.querySelector("[data-btn=replay]");console.log(replayButton);
+
+  var scrollInd = document.querySelector("[data-scrollInd]");console.log(scrollInd);
+  var arrows = scrollInd.querySelectorAll("[data-arrow]");console.log(arrows);
 
   var audioGroup = document.querySelector("[data-audio-group]");
   var ambientAudio = audioGroup.querySelector("[data-audio=ambient]");console.log(ambientAudio);
@@ -2288,7 +2296,7 @@ var kodamaProject = function kodamaProject() {
   var spinAudio2 = audioGroup.querySelector("[data-audio=spin2]");console.log(spinAudio2);
   var spinAudio3 = audioGroup.querySelector("[data-audio=spin3]");console.log(spinAudio3);
 
-  var mainTl = new TimelineMax({ paused: true });
+  var mainTl = new TimelineMax({ paused: true, onComplete: revealScrollInd });
 
   var musicMuted = false;
 
@@ -2300,13 +2308,20 @@ var kodamaProject = function kodamaProject() {
   function bindEvents() {
     muteButton.addEventListener("click", toggleAudio);
     replayButton.addEventListener("click", playScene);
+
+    buttons[0].addEventListener("mouseover", highlightIcon);
+    buttons[1].addEventListener("mouseover", highlightIcon);
+
+    buttons[0].addEventListener("mouseout", dimIcon);
+    buttons[1].addEventListener("mouseout", dimIcon);
   }
 
-  function bindPanEvents() {
-    document.addEventListener("mousemove", function (e) {
-      moveArt(e);
-    });
-    // document.addEventListener("scroll", function(e) { scrollArt(e); });
+  function bindParallax() {
+    document.addEventListener("mousemove", moveArt);
+  }
+
+  function unbindParallax() {
+    document.removeEventListener("mousemove", moveArt);
   }
 
   // Start
@@ -2314,6 +2329,7 @@ var kodamaProject = function kodamaProject() {
   createTimeline(); // Create main timeline
   setStartPos(); // prepare all elements
   revealScene(); // fade to black
+  animateMuteIcon(); // Display audio options
   playScene(); // start animation
 
 
@@ -2339,19 +2355,8 @@ var kodamaProject = function kodamaProject() {
     }
   }
 
-  /* function scrollArt(e) {
-   // Enable/disable panning while scrolling
-     scrollDist = window.pageYOffset;
-     for (let i = 0; i < layers.length; i++) {
-       var layerOffsetAmount = 1;
-       var layerPosY = scrollDist;
-       
-       // TweenMax.set(layers[i], { y: -layerPosY });
-     }
-   }*/
-
   function createTimeline() {
-    mainTl.add("revealKodamas").to(kodamas[0], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 7).to(kodamas[1], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 9.5).to(kodamas[2], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 10.5).call(bindPanEvents, [""], this, 7).add("revealTitle").to(text[0], 3, { autoAlpha: 1, ease: Power3.easeOut }, 11.3).to(text[1], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 12.2).add("spinHeads").add("spin1").to(heads[0], 2, { rotation: 90, transformOrigin: "center center" }, "spin1").to(heads[0], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin1 =+2").call(playSFX, [spinAudio1], this, "spin1").add("spin2", "spin1 =+2").to(heads[1], 2, { rotation: 90, transformOrigin: "center center" }, "spin2").to(heads[1], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin2 =+2").call(playSFX, [spinAudio2], this, "spin2").add("spin3", "spin1 =+2.3").to(heads[2], 2, { rotation: 90, transformOrigin: "center center" }, "spin3").to(heads[2], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin3 =+2").call(playSFX, [spinAudio3], this, "spin3");
+    mainTl.add("revealKodamas").to(kodamas[0], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 7).to(kodamas[1], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 9.5).to(kodamas[2], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 10.5).call(bindParallax, [""], this, 7).add("revealTitle").to(text[0], 3, { autoAlpha: 1, ease: Power3.easeOut }, 11.3).to(text[1], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 12.2).add("spinHeads").add("spin1").to(heads[0], 2, { rotation: 90, transformOrigin: "center center" }, "spin1").to(heads[0], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin1 =+2").call(playSFX, [spinAudio1], this, "spin1").add("spin2", "spin1 =+2").to(heads[1], 2, { rotation: 90, transformOrigin: "center center" }, "spin2").to(heads[1], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin2 =+2").call(playSFX, [spinAudio2], this, "spin2").add("spin3", "spin1 =+2.3").to(heads[2], 2, { rotation: 90, transformOrigin: "center center" }, "spin3").to(heads[2], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin3 =+2").call(playSFX, [spinAudio3], this, "spin3");
   }
 
   function setStartPos() {
@@ -2374,10 +2379,28 @@ var kodamaProject = function kodamaProject() {
     TweenMax.to(header, 1, { autoAlpha: 1 });
   }
 
+  function animateMuteIcon() {
+    for (var i = 0; i < sticks.length; i++) {
+      var startVal = 1 - 0.1 * i;
+      TweenMax.set(sticks[i], { scaleY: startVal, transformOrigin: "bottom" });
+      TweenMax.to(sticks[i], random(1.2, 1.6), {
+        bezier: { curviness: 1, values: [{ scaleY: startVal }, { scaleY: random(0.3, 0.9) }, { scaleY: random(0.3, 0.9) }, { scaleY: random(0.3, 0.9) }, { scaleY: startVal }] },
+        repeat: -1,
+        ease: Linear.easeNone
+      });
+    }
+  }
+
+  function revealScrollInd() {
+    TweenMax.set(arrows, { opacity: 0.5 });
+    TweenMax.to(scrollInd, 3, { opacity: 1 });
+    TweenMax.staggerTo(arrows, 2, { opacity: 0.1, ease: SlowMo.ease.config(0.1, 0.1, true), repeat: -1 }, 0.5);
+  }
+
   function playScene() {
-    // Unbind events if any
+    unbindParallax();
     setStartPos();
-    parallaxLayers();
+    parallaxIntro();
     playMusic();
     playMainTl();
 
@@ -2387,32 +2410,32 @@ var kodamaProject = function kodamaProject() {
       swingingVines();
       pulsatingShrooms();
       pulseLight();
-    } else {}
-    // Remove everything fancy
-    // Hide lights
-    // Hide blob glows
-    // Hide kodama glows
-    // Make gradients flat
-    // Make bg lighter
-
-
-    // Reveal Kodamas
-    // Reveal Text
-    // Spin heads
+    } else {
+      // Remove everything fancy
+      // Hide lights
+      // Hide blob glows
+      // Hide kodama glows
+      // Make gradients flat
+      // Make bg lighter
+    }
   }
 
-  function parallaxLayers() {
+  function parallaxIntro() {
     for (var i = 0; i < layers.length; i++) {
       TweenMax.to(layers[i], 10, { y: 0 });
     }
 
-    TweenMax.to(foreground, 10, { y: 470 });
+    TweenMax.to(foreground, 10, { y: window.innerHeight - 200 });
     TweenMax.set(light, { autoAlpha: 0, delay: 9.9 });
     TweenMax.to(light, 3, { autoAlpha: 0.2, delay: 10 });
   }
 
   function playMusic() {
-    ambientAudio.volume = 0.1;
+    if (musicMuted) {
+      ambientAudio.volume = 0;
+    } else {
+      ambientAudio.volume = 0.1;
+    }
     ambientAudio.currentTime = 0;
     ambientAudio.play();
   }
@@ -2503,7 +2526,19 @@ var kodamaProject = function kodamaProject() {
     }, 5000);
   }
 
-  function pulseLight() {}
+  function pulseLight() {
+    setTimeout(function () {
+      TweenMax.to(light, 4, { opacity: 0, ease: SlowMo.ease.config(0.1, 0.1, true) });
+    }, 5000);
+  }
+
+  function highlightIcon() {
+    TweenMax.to(this, 0.1, { opacity: .5 });
+  }
+
+  function dimIcon() {
+    TweenMax.to(this, 0.1, { opacity: 0.2 });
+  }
 
   // reveal kodamas
   function playMainTl() {

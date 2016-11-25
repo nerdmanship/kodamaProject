@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-$headerHeight: 600px;
+$headerHeight: 100%;
 
 // Gist: center, mqueries
 
@@ -18,12 +18,14 @@ body {
   margin: 0;
   background-color: #000;
   overflow: visible;
+  font-family: 'Roboto', sans-serif;
+  color: #9DD0E0;
 }
 
 #header {
   position: fixed;
   z-index: -1;
-  overflow: hidden;
+  //overflow: hidden;
   height: $headerHeight;
   width: 100%;
   top: 0;
@@ -34,48 +36,42 @@ body {
 }
 
 #foreground {
+  position: fixed;
+  top: 0;
   width: 100%;
   min-width: 1280px;
 }
 
-#main {
-  position: relative;
-  top: $headerHeight;
-  width: 100%;
-  background-color: #000;
-  font-family: 'Roboto', sans-serif;
-  color: #9DD0E0;
-}
-
 .controls {
-  position: relative;
-  top: 0;
+  position: fixed;
+  bottom: 20px;
   z-index: 1;
   width: 100%;
   max-width: 960px;
   text-align: center;
-  p {
-    margin: 0;
-  }
   
   .btn {
     position: relative;
     cursor: pointer;
     opacity: 0.25;
    
-    p { font-size: 12px; }
 
     .icon {
-      width: 30px;
-      height: 50px;
+      width: 22px;
+    }
+    .btn-label {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      margin: 0;
+      margin-top: 5px;
+      &::selection { background-color: transparent; }
     }
   }
 
   .mute-btn {
     float: left;
     margin-left: 30px;
-    
-
   }
   
   .scroll-ind {
@@ -92,9 +88,21 @@ body {
 
 }
 
-.text {
-  position: relative;
-  top: 100px;
-  max-width: 500px;
-}
 
+
+#main {
+  position: relative;
+  top: 600px;
+
+  .info-sheet {
+    background-color: #111;
+    border-radius: 10px;
+    width: 600px;
+  }
+
+  .text {
+    position: relative;
+    padding: 50px 20px 120px;
+
+  }
+}

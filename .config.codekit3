@@ -146,7 +146,7 @@
 	"\/src\/assets\/svg\/optimised\/foreground3Opt.jade": {
 		"cOD": 1,
 		"ft": 512,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/dist\/assets\/svg\/optimised\/foreground3Opt.html",
 		"oF": 0,
 		"oS": 0
@@ -250,6 +250,14 @@
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/dist\/jade\/audio.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/src\/jade\/foreground.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/dist\/jade\/foreground.html",
 		"oF": 0,
 		"oS": 0
 		},
