@@ -2244,8 +2244,6 @@ var _gsScope = typeof module !== "undefined" && module.exports && typeof global 
 })("TimelineMax");
 "use strict";
 
-// Add scroll indicator after x sec
-
 // Make text floaty
 
 // Light pulse
@@ -2264,8 +2262,11 @@ function random(min, max) {
   return Math.random() * (max - min) + min;
 }
 
-// Init
 var kodamaProject = function kodamaProject() {
+
+  //¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+  //        INITIALIZATION
+  //___________________________________________________________________________________________
 
   // CacheDOM
   var header = document.querySelector("[data-header]");console.log(header);
@@ -2328,7 +2329,6 @@ var kodamaProject = function kodamaProject() {
     document.removeEventListener("mousemove", moveArt);
   }
 
-  // Start
   bindEvents(); // Bind Events
   createTimeline(); // Create main timeline
   setStartPos(); // prepare all elements
@@ -2337,25 +2337,29 @@ var kodamaProject = function kodamaProject() {
   playScene(); // start animation
 
 
-  // Event handlers
-  function moveArt(e) {
-    mouseX = (e.screenX - window.innerWidth / 2) / (window.innerWidth / 2); // -1 / 1
-    mouseY = (e.screenY - window.innerHeight / 2) / (window.innerHeight / 2);
-    scrollDist = window.pageYOffset;
+  //¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+  //        CORE FUNC
+  //___________________________________________________________________________________________
 
-    for (var i = 0; i < layers.length; i++) {
-      var layerOffsetAmount = 10 * i;
-      var layerPosX = layerOffsetAmount * mouseX;
-      var layerPosY = layerOffsetAmount * mouseY;
-      if (false) {
-        // do something...
-      } else {
-        TweenMax.to(layers[i], 5, {
-          x: -layerPosX,
-          y: -layerPosY,
-          ease: Power4.easeOut
-        });
-      }
+  function playScene() {
+    setStartPos();
+    parallaxIntro();
+    playMusic();
+    playMainTl();
+
+    // System discrimination, default, more, less
+    if (true) {
+      dancingFireflies();
+      swingingVines();
+      pulsatingShrooms();
+      pulseLight();
+    } else {
+      // Remove everything fancy
+      // Hide lights
+      // Hide blob glows
+      // Hide kodama glows
+      // Make gradients flat
+      // Make bg lighter
     }
   }
 
@@ -2388,52 +2392,6 @@ var kodamaProject = function kodamaProject() {
     TweenMax.to(header, 1, { autoAlpha: 1 });
   }
 
-  function animateMuteIcon() {
-    for (var i = 0; i < sticks.length; i++) {
-      var startVal = 1 - 0.1 * i;
-      TweenMax.set(sticks[i], { scaleY: startVal, transformOrigin: "bottom" });
-      TweenMax.to(sticks[i], random(1.2, 1.6), {
-        bezier: { curviness: 1, values: [{ scaleY: startVal }, { scaleY: random(0.3, 0.9) }, { scaleY: random(0.3, 0.9) }, { scaleY: random(0.3, 0.9) }, { scaleY: startVal }] },
-        repeat: -1,
-        ease: Linear.easeNone
-      });
-    }
-  }
-
-  function revealScrollInd() {
-    TweenMax.set(arrows, { opacity: 0.5 });
-    TweenMax.to(scrollInd, 3, { opacity: 1 });
-    TweenMax.staggerTo(arrows, 2, { opacity: 0.1, ease: SlowMo.ease.config(0.1, 0.1, true), repeat: -1 }, 0.5);
-  }
-
-  function removeScrollInd() {
-    if (window.pageYOffset > 150) {
-      TweenMax.to(scrollInd, 3, { opacity: 0 });
-    }
-  }
-
-  function playScene() {
-    setStartPos();
-    parallaxIntro();
-    playMusic();
-    playMainTl();
-
-    // System discrimination, default, more, less
-    if (true) {
-      dancingFireflies();
-      swingingVines();
-      pulsatingShrooms();
-      pulseLight();
-    } else {
-      // Remove everything fancy
-      // Hide lights
-      // Hide blob glows
-      // Hide kodama glows
-      // Make gradients flat
-      // Make bg lighter
-    }
-  }
-
   function parallaxIntro() {
     for (var i = 0; i < layers.length; i++) {
       TweenMax.to(layers[i], 10, { y: 0 });
@@ -2442,6 +2400,10 @@ var kodamaProject = function kodamaProject() {
     TweenMax.to(foreground, 10, { y: window.innerHeight - 200 });
     TweenMax.set(light, { autoAlpha: 0, delay: 9.9 });
     TweenMax.to(light, 3, { autoAlpha: 0.2, delay: 10 });
+  }
+
+  function playMainTl() {
+    mainTl.restart();
   }
 
   function playMusic() {
@@ -2454,6 +2416,68 @@ var kodamaProject = function kodamaProject() {
     ambientAudio.play();
   }
 
+  function playSFX(audio) {
+    if (musicMuted) {
+      audio.volume = 0;
+    }
+    audio.currentTime = 0;
+    audio.play();
+  }
+
+  //¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+  //        INTERACTION
+  //___________________________________________________________________________________________
+
+  // Parallax artwork layers when user moves the mouse
+  function moveArt(e) {
+    mouseX = (e.screenX - window.innerWidth / 2) / (window.innerWidth / 2); // -1 / 1
+    mouseY = (e.screenY - window.innerHeight / 2) / (window.innerHeight / 2);
+    scrollDist = window.pageYOffset;
+
+    for (var i = 0; i < layers.length; i++) {
+      var layerOffsetAmount = 10 * i;
+      var layerPosX = layerOffsetAmount * mouseX;
+      var layerPosY = layerOffsetAmount * mouseY;
+      if (false) {
+        // do something...
+      } else {
+        TweenMax.to(layers[i], 5, {
+          x: -layerPosX,
+          y: -layerPosY,
+          ease: Power4.easeOut
+        });
+      }
+    }
+  }
+
+  // Animate volume bars in audio toggle icon
+  function animateMuteIcon() {
+    for (var i = 0; i < sticks.length; i++) {
+      var startVal = 1 - 0.1 * i;
+      TweenMax.set(sticks[i], { scaleY: startVal, transformOrigin: "bottom" });
+      TweenMax.to(sticks[i], random(1.2, 1.6), {
+        bezier: { curviness: 1, values: [{ scaleY: startVal }, { scaleY: random(0.3, 0.9) }, { scaleY: random(0.3, 0.9) }, { scaleY: random(0.3, 0.9) }, { scaleY: startVal }] },
+        repeat: -1,
+        ease: Linear.easeNone
+      });
+    }
+  }
+
+  // Reveal scroll indicator on completion of main timeline
+  function revealScrollInd() {
+    TweenMax.set(arrows, { opacity: 0.5 });
+    TweenMax.to(scrollInd, 3, { opacity: 1 });
+    TweenMax.staggerTo(arrows, 2, { opacity: 0.1, ease: SlowMo.ease.config(0.1, 0.1, true), repeat: -1 }, 0.5);
+  }
+
+  // Remove scroll indicator if user scrolled +150px
+  function removeScrollInd() {
+    if (window.pageYOffset > 150) {
+      TweenMax.to(scrollInd, 1, { opacity: 0 });
+    }
+  }
+
+  // Toggle audio on/off
   function toggleAudio() {
     if (ambientAudio.volume === 0) {
       ambientAudio.volume = 0.1;
@@ -2470,13 +2494,26 @@ var kodamaProject = function kodamaProject() {
     }
   }
 
-  function playSFX(audio) {
-    if (musicMuted) {
-      audio.volume = 0;
-    }
-    audio.currentTime = 0;
-    audio.play();
+  // Highlight icons
+  function highlightIcon() {
+    TweenMax.to(this, 0.1, { opacity: .5 });
   }
+
+  // Dim icons
+  function dimIcon() {
+    TweenMax.to(this, 0.1, { opacity: 0.2 });
+  }
+
+  // Flash icons
+  function feedbackIcon() {
+    TweenMax.to(this, 0.2, { opacity: 1, ease: SlowMo.ease.config(0.1, 0.1, true) });
+  }
+
+  //¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+  //        BONUS FEATURES
+  //___________________________________________________________________________________________
+
+  // Floaty text
 
   function dancingFireflies() {
     var interval = 4,
@@ -2540,28 +2577,11 @@ var kodamaProject = function kodamaProject() {
     }, 5000);
   }
 
-  function pulseLight() {
-    setTimeout(function () {
-      TweenMax.to(light, 4, { opacity: 0, ease: SlowMo.ease.config(0.1, 0.1, true) });
-    }, 5000);
-  }
+  function pulseLight() {}
 
-  function highlightIcon() {
-    TweenMax.to(this, 0.1, { opacity: .5 });
-  }
-
-  function dimIcon() {
-    TweenMax.to(this, 0.1, { opacity: 0.2 });
-  }
-
-  function feedbackIcon() {
-    TweenMax.to(this, 0.2, { opacity: 1, ease: SlowMo.ease.config(0.1, 0.1, true) });
-  }
-
-  // reveal kodamas
-  function playMainTl() {
-    mainTl.restart();
-  }
+  //¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+  //        API
+  //___________________________________________________________________________________________
 
   return {
     replay: playScene,
@@ -2569,6 +2589,7 @@ var kodamaProject = function kodamaProject() {
   };
 };
 
+// Init
 kodamaProject();
 
 /*
