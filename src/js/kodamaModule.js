@@ -66,10 +66,14 @@ const kodamaProject = function() {
 
     buttons[0].addEventListener("mouseout", dimIcon);
     buttons[1].addEventListener("mouseout", dimIcon);
+
+    buttons[0].addEventListener("click", feedbackIcon);
+    buttons[1].addEventListener("click", feedbackIcon);
   }
 
   function bindParallax() {
     document.addEventListener("mousemove", moveArt);
+    document.addEventListener("scroll", removeScrollInd);
   }
 
   function unbindParallax() {
@@ -139,6 +143,11 @@ const kodamaProject = function() {
 
 
   function setStartPos() {
+
+    unbindParallax();
+    
+    TweenMax.set(scrollInd, { opacity: 0 });
+
     // Light pollution off
     TweenMax.set(light, { autoAlpha: 0 });
     
@@ -183,8 +192,13 @@ const kodamaProject = function() {
     TweenMax.staggerTo(arrows, 2, { opacity: 0.1, ease: SlowMo.ease.config(0.1, 0.1, true), repeat: -1 }, 0.5 )
   }
 
+  function removeScrollInd() {
+    if (window.pageYOffset > 150) {
+      TweenMax.to(scrollInd, 3, { opacity: 0 });
+    }
+  }
+
   function playScene() {
-    unbindParallax();
     setStartPos();
     parallaxIntro();
     playMusic();
@@ -345,6 +359,10 @@ const kodamaProject = function() {
   
   function dimIcon() {
     TweenMax.to(this, 0.1, {opacity: 0.2});
+  }
+
+  function feedbackIcon() {
+    TweenMax.to(this, 0.2, {opacity: 1, ease: SlowMo.ease.config(0.1, 0.1, true) });
   }
 
   // reveal kodamas
