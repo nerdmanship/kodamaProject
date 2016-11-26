@@ -30,7 +30,7 @@ const kodamaProject = function() {
   const ff = header.querySelectorAll("[data-ff]"); console.log(ff);
   const vines = header.querySelectorAll("[data-vine]"); console.log(vines);
   const shrooms = header.querySelectorAll("[data-shroom]"); console.log(shrooms);
-  const text = header.querySelectorAll("[data-text]"); console.log(text);
+  const texts = header.querySelectorAll("[data-text]"); console.log(texts);
   const textMobile = header.querySelectorAll("[data-text-mobile]"); console.log(textMobile);
 
   const sticks = document.querySelectorAll("[data-stick]"); console.log(sticks);
@@ -73,14 +73,7 @@ const kodamaProject = function() {
     buttons[1].addEventListener("click", feedbackIcon);
   }
 
-  function bindParallax() {
-    document.addEventListener("mousemove", moveArt);
-    document.addEventListener("scroll", removeScrollInd);
-  }
 
-  function unbindParallax() {
-    document.removeEventListener("mousemove", moveArt);
-  }
 
 
   bindEvents(); // Bind Events
@@ -110,6 +103,7 @@ function playScene() {
       swingingVines();
       pulsatingShrooms();
       pulseLight();
+      floatingText();
 
     } else {
       // Remove everything fancy
@@ -130,8 +124,8 @@ function playScene() {
       .call(bindParallax, [""], this, 7)
 
       .add("revealTitle")
-      .to(text[0], 3, { autoAlpha: 1, ease: Power3.easeOut}, 11.3)
-      .to(text[1], 3, { autoAlpha: 0.7, ease: Power3.easeOut}, 12.2)
+      .to(texts[0], 3, { autoAlpha: 1, ease: Power3.easeOut}, 11.3)
+      .to(texts[1], 3, { autoAlpha: 0.7, ease: Power3.easeOut}, 12.2)
 
       .add("spinHeads")
       .add("spin1")
@@ -216,6 +210,17 @@ function playScene() {
 //¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
 //        INTERACTION
 //___________________________________________________________________________________________
+  
+  // Bind interactions
+  function bindParallax() {
+    document.addEventListener("mousemove", moveArt);
+    document.addEventListener("scroll", removeScrollInd);
+  }
+
+  // Unbind interactions
+  function unbindParallax() {
+    document.removeEventListener("mousemove", moveArt);
+  }
 
   // Parallax artwork layers when user moves the mouse
   function moveArt(e) {
@@ -313,6 +318,10 @@ function playScene() {
 //___________________________________________________________________________________________
 
 // Floaty text
+  function floatingText() {
+    TweenMax.to(texts[0], 4, { y: 10, ease: Power1.easeInOut, repeat: -1, yoyo: true });
+    TweenMax.to(texts[1], 4, { y: 10, ease: Power1.easeInOut, repeat: -1, yoyo: true, delay: 0.8 });
+  }
 
   function dancingFireflies() {
     var interval = 4,

@@ -2277,7 +2277,7 @@ var kodamaProject = function kodamaProject() {
   var ff = header.querySelectorAll("[data-ff]");console.log(ff);
   var vines = header.querySelectorAll("[data-vine]");console.log(vines);
   var shrooms = header.querySelectorAll("[data-shroom]");console.log(shrooms);
-  var text = header.querySelectorAll("[data-text]");console.log(text);
+  var texts = header.querySelectorAll("[data-text]");console.log(texts);
   var textMobile = header.querySelectorAll("[data-text-mobile]");console.log(textMobile);
 
   var sticks = document.querySelectorAll("[data-stick]");console.log(sticks);
@@ -2320,15 +2320,6 @@ var kodamaProject = function kodamaProject() {
     buttons[1].addEventListener("click", feedbackIcon);
   }
 
-  function bindParallax() {
-    document.addEventListener("mousemove", moveArt);
-    document.addEventListener("scroll", removeScrollInd);
-  }
-
-  function unbindParallax() {
-    document.removeEventListener("mousemove", moveArt);
-  }
-
   bindEvents(); // Bind Events
   createTimeline(); // Create main timeline
   setStartPos(); // prepare all elements
@@ -2353,6 +2344,7 @@ var kodamaProject = function kodamaProject() {
       swingingVines();
       pulsatingShrooms();
       pulseLight();
+      floatingText();
     } else {
       // Remove everything fancy
       // Hide lights
@@ -2364,7 +2356,7 @@ var kodamaProject = function kodamaProject() {
   }
 
   function createTimeline() {
-    mainTl.add("revealKodamas").to(kodamas[0], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 7).to(kodamas[1], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 9.5).to(kodamas[2], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 10.5).call(bindParallax, [""], this, 7).add("revealTitle").to(text[0], 3, { autoAlpha: 1, ease: Power3.easeOut }, 11.3).to(text[1], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 12.2).add("spinHeads").add("spin1").to(heads[0], 2, { rotation: 90, transformOrigin: "center center" }, "spin1").to(heads[0], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin1 =+2").call(playSFX, [spinAudio1], this, "spin1").add("spin2", "spin1 =+2").to(heads[1], 2, { rotation: 90, transformOrigin: "center center" }, "spin2").to(heads[1], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin2 =+2").call(playSFX, [spinAudio2], this, "spin2").add("spin3", "spin1 =+2.3").to(heads[2], 2, { rotation: 90, transformOrigin: "center center" }, "spin3").to(heads[2], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin3 =+2").call(playSFX, [spinAudio3], this, "spin3");
+    mainTl.add("revealKodamas").to(kodamas[0], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 7).to(kodamas[1], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 9.5).to(kodamas[2], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 10.5).call(bindParallax, [""], this, 7).add("revealTitle").to(texts[0], 3, { autoAlpha: 1, ease: Power3.easeOut }, 11.3).to(texts[1], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 12.2).add("spinHeads").add("spin1").to(heads[0], 2, { rotation: 90, transformOrigin: "center center" }, "spin1").to(heads[0], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin1 =+2").call(playSFX, [spinAudio1], this, "spin1").add("spin2", "spin1 =+2").to(heads[1], 2, { rotation: 90, transformOrigin: "center center" }, "spin2").to(heads[1], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin2 =+2").call(playSFX, [spinAudio2], this, "spin2").add("spin3", "spin1 =+2.3").to(heads[2], 2, { rotation: 90, transformOrigin: "center center" }, "spin3").to(heads[2], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin3 =+2").call(playSFX, [spinAudio3], this, "spin3");
   }
 
   function setStartPos() {
@@ -2427,6 +2419,17 @@ var kodamaProject = function kodamaProject() {
   //¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
   //        INTERACTION
   //___________________________________________________________________________________________
+
+  // Bind interactions
+  function bindParallax() {
+    document.addEventListener("mousemove", moveArt);
+    document.addEventListener("scroll", removeScrollInd);
+  }
+
+  // Unbind interactions
+  function unbindParallax() {
+    document.removeEventListener("mousemove", moveArt);
+  }
 
   // Parallax artwork layers when user moves the mouse
   function moveArt(e) {
@@ -2514,6 +2517,10 @@ var kodamaProject = function kodamaProject() {
   //___________________________________________________________________________________________
 
   // Floaty text
+  function floatingText() {
+    TweenMax.to(texts[0], 4, { y: 10, ease: Power1.easeInOut, repeat: -1, yoyo: true });
+    TweenMax.to(texts[1], 4, { y: 10, ease: Power1.easeInOut, repeat: -1, yoyo: true, delay: 0.8 });
+  }
 
   function dancingFireflies() {
     var interval = 4,
