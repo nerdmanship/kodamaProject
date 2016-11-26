@@ -37,27 +37,29 @@ const kodamaProject = function() {
     const texts = header.querySelectorAll("[data-text]");
     const textMobile = header.querySelectorAll("[data-text-mobile]");
 
-  const sticks = document.querySelectorAll("[data-stick]"); console.log(sticks);
+  const sticks = document.querySelectorAll("[data-stick]");
 
-  const foreground = document.querySelector("[data-foreground]"); console.log(foreground);
+  const foreground = document.querySelector("[data-foreground]");
 
-  const buttons = document.querySelectorAll("[data-btn]"); console.log(buttons);
-  const muteButton = document.querySelector("[data-btn=mute]"); console.log(muteButton);
-  const replayButton = document.querySelector("[data-btn=replay]"); console.log(replayButton);
+  const buttons = document.querySelectorAll("[data-btn]");
+  const muteButton = document.querySelector("[data-btn=mute]");
+  const replayButton = document.querySelector("[data-btn=replay]");
   
-  const scrollInd = document.querySelector("[data-scrollInd]"); console.log(scrollInd);
-  const arrows = scrollInd.querySelectorAll("[data-arrow]"); console.log(arrows);
+  const scrollInd = document.querySelector("[data-scrollInd]");
+  const arrows = scrollInd.querySelectorAll("[data-arrow]");
 
   const audioGroup = document.querySelector("[data-audio-group]");
-  const ambientAudio = audioGroup.querySelector("[data-audio=ambient]"); console.log(ambientAudio);
-  const spinAudio1 = audioGroup.querySelector("[data-audio=spin1]"); console.log(spinAudio1);
-  const spinAudio2 = audioGroup.querySelector("[data-audio=spin2]"); console.log(spinAudio2);
-  const spinAudio3 = audioGroup.querySelector("[data-audio=spin3]"); console.log(spinAudio3);
+  const ambientAudio = audioGroup.querySelector("[data-audio=ambient]");
+  const spinAudio1 = audioGroup.querySelector("[data-audio=spin1]");
+  const spinAudio2 = audioGroup.querySelector("[data-audio=spin2]");
+  const spinAudio3 = audioGroup.querySelector("[data-audio=spin3]");
 
   const mainTl = new TimelineMax({paused: true, onComplete: revealScrollInd});
 
   let musicMuted = false;
+  let systemDiscriminationMode = "rich";
   let kodamaTransparency = 1;
+  let kodamaGlowValue = 0;
 
   let mouseX = 0;
   let mouseY = 0;
@@ -97,31 +99,33 @@ const kodamaProject = function() {
 //___________________________________________________________________________________________
 
 function playScene() {
-    setStartPos();
-    parallaxIntro();
-    playMusic();
-    playMainTl();
-    
-    // System discrimination, default, more, less
-    if (false) {
+
+    // System discrimination: rich, default, limited
+    if (systemDiscriminationMode === "rich") {
+      setRichValues();
+      setStartPos();
+      parallaxIntro();
+      playMusic();
+      playMainTl();
       dancingFireflies();
       swingingVines();
       pulsatingShrooms();
       pulseLight();
       floatingText();
       lightsOn();
-      kodamaTransparency = 0.7;
-      // hide kodama glow
 
     } else {
-      // Remove everything fancy
-        // Hide lights
-        // Hide blob glows
-        // Hide kodama glows
-        // Make gradients flat
-        // Make bg lighter
+      setStartPos();
+      parallaxIntro();
+      playMusic();
+      playMainTl();      
+      // Hide blob glows
+      // Make gradients flat
+      // Make bg lighter
     }
   }
+
+
 
   function createTimeline() {
     mainTl
@@ -129,7 +133,6 @@ function playScene() {
       .to(kodamas[0], 3, { autoAlpha: kodamaTransparency, ease: Power3.easeOut}, 7)
       .to(kodamas[1], 3, { autoAlpha: kodamaTransparency, ease: Power3.easeOut}, 9.5)
       .to(kodamas[2], 3, { autoAlpha: kodamaTransparency, ease: Power3.easeOut}, 10.5)
-      .call(bindParallax, [""], this, 7) // why here
 
       .add("revealTitle")
       .to(texts[0], 3, { autoAlpha: 1, ease: Power3.easeOut}, 11.3)
@@ -147,7 +150,9 @@ function playScene() {
       .add("spin3", "spin1 =+2.3")
       .to(heads[2], 2, {rotation: 90, transformOrigin: "center center"}, "spin3")
       .to(heads[2], 2, {rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center"}, "spin3 =+2")
-      .call(playSFX, [spinAudio3], this, "spin3");
+      .call(playSFX, [spinAudio3], this, "spin3")
+      .call(bindParallax, [""], this, "spin3");
+
   }
 
 
@@ -156,6 +161,9 @@ function playScene() {
 
     lightsOff();
     unbindParallax();
+
+    // Kodama Glow on
+    TweenMax.set(kodamaGlow, { autoAlpha: kodamaGlowValue});
 
     // Reset page scroll
     window.scroll(0,0);
@@ -217,7 +225,9 @@ function playScene() {
   
   // Bind interactions
   function bindParallax() {
-    document.addEventListener("mousemove", moveArt);
+    if (systemDiscriminationMode === "rich" || systemDiscriminationMode === "default") {
+      document.addEventListener("mousemove", moveArt);  
+    }
     document.addEventListener("scroll", removeScrollInd);
   }
 
@@ -318,8 +328,13 @@ function playScene() {
 
 
 //¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
-//        BONUS FEATURES
+//        SYSTEM DISCRIMINATION
 //___________________________________________________________________________________________
+
+function setRichValues() {
+  kodamaTransparency = 0.7;
+  kodamaGlowValue = 0.15;
+}
 
 // Floaty text
   function floatingText() {
