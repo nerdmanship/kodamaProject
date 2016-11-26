@@ -1,11 +1,13 @@
-// Make text floaty
-
 // Light pulse
-// Reveal fireflies on que
+  // Make light optional
+  // Make pulsing light optional, shifting two grads
+
 // Write text
 
 // System discriminatio
-// Add scroll indicator
+  // Rich: All fancy
+  // Default: Standard fancy
+  // Smart: No fancy
 
 // Make mobile
 
@@ -22,16 +24,18 @@ const kodamaProject = function() {
 //___________________________________________________________________________________________
 
   // CacheDOM
-  const header = document.querySelector("[data-header]"); console.log(header);
-  const layers = header.querySelectorAll("[data-layer]"); console.log(layers);
-  const light = header.querySelector("[data-light]"); console.log(light);
-  const kodamas = header.querySelectorAll("[data-kodama]"); console.log(kodamas);
-  const heads = header.querySelectorAll("[data-head]"); console.log(heads);
-  const ff = header.querySelectorAll("[data-ff]"); console.log(ff);
-  const vines = header.querySelectorAll("[data-vine]"); console.log(vines);
-  const shrooms = header.querySelectorAll("[data-shroom]"); console.log(shrooms);
-  const texts = header.querySelectorAll("[data-text]"); console.log(texts);
-  const textMobile = header.querySelectorAll("[data-text-mobile]"); console.log(textMobile);
+  const header = document.querySelector("[data-header]");
+    const layers = header.querySelectorAll("[data-layer]");
+    const light = header.querySelector("[data-light]");
+    const kodamas = header.querySelectorAll("[data-kodama]");
+    const kodamaGlow = header.querySelectorAll("[data-kodamaGlow]");
+    const heads = header.querySelectorAll("[data-head]");
+    const ffGroups = header.querySelectorAll("[data-ff-group]");
+    const ff = header.querySelectorAll("[data-ff]");
+    const vines = header.querySelectorAll("[data-vine]");
+    const shrooms = header.querySelectorAll("[data-shroom]");
+    const texts = header.querySelectorAll("[data-text]");
+    const textMobile = header.querySelectorAll("[data-text-mobile]");
 
   const sticks = document.querySelectorAll("[data-stick]"); console.log(sticks);
 
@@ -53,6 +57,7 @@ const kodamaProject = function() {
   const mainTl = new TimelineMax({paused: true, onComplete: revealScrollInd});
 
   let musicMuted = false;
+  let kodamaTransparency = 1;
 
   let mouseX = 0;
   let mouseY = 0;
@@ -98,12 +103,15 @@ function playScene() {
     playMainTl();
     
     // System discrimination, default, more, less
-    if (true) {
+    if (false) {
       dancingFireflies();
       swingingVines();
       pulsatingShrooms();
       pulseLight();
       floatingText();
+      lightsOn();
+      kodamaTransparency = 0.7;
+      // hide kodama glow
 
     } else {
       // Remove everything fancy
@@ -118,10 +126,10 @@ function playScene() {
   function createTimeline() {
     mainTl
       .add("revealKodamas")
-      .to(kodamas[0], 3, { autoAlpha: 0.7, ease: Power3.easeOut}, 7)
-      .to(kodamas[1], 3, { autoAlpha: 0.7, ease: Power3.easeOut}, 9.5)
-      .to(kodamas[2], 3, { autoAlpha: 0.7, ease: Power3.easeOut}, 10.5)
-      .call(bindParallax, [""], this, 7)
+      .to(kodamas[0], 3, { autoAlpha: kodamaTransparency, ease: Power3.easeOut}, 7)
+      .to(kodamas[1], 3, { autoAlpha: kodamaTransparency, ease: Power3.easeOut}, 9.5)
+      .to(kodamas[2], 3, { autoAlpha: kodamaTransparency, ease: Power3.easeOut}, 10.5)
+      .call(bindParallax, [""], this, 7) // why here
 
       .add("revealTitle")
       .to(texts[0], 3, { autoAlpha: 1, ease: Power3.easeOut}, 11.3)
@@ -146,12 +154,14 @@ function playScene() {
 
   function setStartPos() {
 
+    lightsOff();
     unbindParallax();
-    
-    TweenMax.set(scrollInd, { opacity: 0 });
 
-    // Light pollution off
-    TweenMax.set(light, { autoAlpha: 0 });
+    // Reset page scroll
+    window.scroll(0,0);
+    
+    // Hide scroll indicator
+    TweenMax.set(scrollInd, { opacity: 0 });
     
     // Resize background Kodama
     TweenMax.set(kodamas[0], { scale: 0.8, transformOrigin: "bottom center" });
@@ -170,18 +180,12 @@ function playScene() {
     TweenMax.to(header, 1, { autoAlpha: 1 });
   }
 
-
-
-  
-
   function parallaxIntro() {    
     for (let i = 0; i < layers.length; i++) {
       TweenMax.to(layers[i], 10, { y: 0 });
     }
 
-    TweenMax.to(foreground, 10, { y: window.innerHeight-200 });
-    TweenMax.set(light, { autoAlpha: 0, delay: 9.9});
-    TweenMax.to(light, 3, { autoAlpha: 0.2, delay: 10});
+    TweenMax.to(foreground, 10, { y: window.innerHeight-200 }); // Revise the position of this
   }
 
   function playMainTl() {
@@ -324,24 +328,40 @@ function playScene() {
   }
 
   function dancingFireflies() {
+    
     var interval = 4,
-        duration = interval;        
+        duration = interval;
 
-    TweenMax.to(["#fireflies1"], random(1,3), {
-      rotation: random(0,60),
-      scale: random(0.5,1),
-      x:random(1250,1350),
-      y: random(25,100)
-    });
+    dance();
+    repeat();
 
-    TweenMax.to(["#fireflies2"], random(2,4), {
-      rotation: random(0,60),
-      scale: random(0.5,1),
-      x:random(1050,1150),
-      y: random(325,400)
-    });
+    function repeat() {
+      setTimeout(function() {
 
-    setTimeout(function() {
+        dance();
+        repeat();
+
+      }, interval*1000);  
+    }
+
+    function dance() {
+
+      TweenMax.to(ffGroups[0], random(1,3), {
+        autoAlpha: 1,
+        rotation: random(0,60),
+        scale: random(0.5,1),
+        x:random(1250,1350),
+        y: random(25,100)
+      });
+
+      TweenMax.to(ffGroups[1], random(2,4), {
+        autoAlpha: 1,
+        rotation: random(0,60),
+        scale: random(0.5,1),
+        x:random(1050,1150),
+        y: random(325,400)
+      });
+
       for (let i = 0; i < ff.length; i++) {
         
         var x = [
@@ -358,13 +378,12 @@ function playScene() {
             { x: x[2], y: x[1] },
             { x: 0+i*10, y: 0+i*10 }
           ]},
-          opacity: random(0.3,1),
+          autoAlpha: random(0.3,1),
           ease: Linear.easeNone
         });
+
       }
-      
-      dancingFireflies();
-    }, interval*1000);  
+    }   
   }
 
   
@@ -395,6 +414,14 @@ function playScene() {
       
       pulsatingShrooms();
     }, 5000);
+  }
+  
+  function lightsOn() {
+    TweenMax.to(light, 3, { autoAlpha: 0.2, delay: 10});
+  }
+
+  function lightsOff() {
+    TweenMax.set(light, { autoAlpha: 0 });
   }
 
   function pulseLight() {
