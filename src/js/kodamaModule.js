@@ -1,3 +1,5 @@
+// Dynamically set the mode and change relevant values
+
 // Light pulse
   // Make light optional
   // Make pulsing light optional, shifting two grads
@@ -19,9 +21,9 @@ function random(min, max) {
 
 const kodamaProject = function() {
 
-//¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
-//        INITIALIZATION
-//___________________________________________________________________________________________
+  //¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+  //        INITIALIZATION
+  //___________________________________________________________________________________________
 
   // CacheDOM
   const header = document.querySelector("[data-header]");
@@ -56,10 +58,12 @@ const kodamaProject = function() {
 
   const mainTl = new TimelineMax({paused: true, onComplete: revealScrollInd});
 
-  let musicMuted = false;
   let systemDiscriminationMode = "rich";
-  let kodamaTransparency = 1;
-  let kodamaGlowValue = 0;
+
+  let kodamaTransparency = 0.7;
+  let kodamaGlowValue = 1;
+  let isLight = false;
+  let isMusicMuted = false;
 
   let mouseX = 0;
   let mouseY = 0;
@@ -94,40 +98,48 @@ const kodamaProject = function() {
 
 
 
-//¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
-//        CORE FUNC
-//___________________________________________________________________________________________
+  //¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+  //        CORE FUNC
+  //___________________________________________________________________________________________
 
-function playScene() {
+  function playScene() {
 
-    // System discrimination: rich, default, limited
+    // System discrimination: rich, limited, default
     if (systemDiscriminationMode === "rich") {
-      setRichValues();
+      
+      // Core features
       setStartPos();
       parallaxIntro();
       playMusic();
       playMainTl();
+
+      // Bonus features
       dancingFireflies();
       swingingVines();
       pulsatingShrooms();
       pulseLight();
       floatingText();
       lightsOn();
+      //pulseLight();
 
-    } else {
+    } else if (systemDiscriminationMode === "limited") {
       setStartPos();
       parallaxIntro();
       playMusic();
-      playMainTl();      
+      playMainTl();
       // Hide blob glows
       // Make gradients flat
       // Make bg lighter
+      // Hide excessive layers and elements
+    } else {
+      // default
     }
   }
 
 
 
   function createTimeline() {
+    
     mainTl
       .add("revealKodamas")
       .to(kodamas[0], 3, { autoAlpha: kodamaTransparency, ease: Power3.easeOut}, 7)
@@ -152,17 +164,19 @@ function playScene() {
       .to(heads[2], 2, {rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center"}, "spin3 =+2")
       .call(playSFX, [spinAudio3], this, "spin3")
       .call(bindParallax, [""], this, "spin3");
-
   }
 
 
 
   function setStartPos() {
 
+    // set system specific values
+    setSystemSpecificValues(systemDiscriminationMode);
+
     lightsOff();
     unbindParallax();
 
-    // Kodama Glow on
+    // Set Kodama Glow
     TweenMax.set(kodamaGlow, { autoAlpha: kodamaGlowValue});
 
     // Reset page scroll
@@ -201,7 +215,7 @@ function playScene() {
     }
 
   function playMusic() {
-    if (musicMuted) {
+    if (isMusicMuted) {
       ambientAudio.volume = 0;
     } else {
       ambientAudio.volume = 0.1;  
@@ -212,17 +226,17 @@ function playScene() {
 
 
   function playSFX(audio) {
-    if (musicMuted) {
+    if (isMusicMuted) {
       audio.volume = 0;  
     }
     audio.currentTime = 0;
     audio.play(); 
   }
 
-//¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
-//        INTERACTION
-//___________________________________________________________________________________________
-  
+  //¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+  //        INTERACTION
+  //___________________________________________________________________________________________
+    
   // Bind interactions
   function bindParallax() {
     if (systemDiscriminationMode === "rich" || systemDiscriminationMode === "default") {
@@ -298,13 +312,13 @@ function playScene() {
       spinAudio1.volume = 1;
       spinAudio2.volume = 1;
       spinAudio3.volume = 1;
-      musicMuted = false;
+      isMusicMuted = false;
     } else {
       ambientAudio.volume = 0;
       spinAudio1.volume = 0;
       spinAudio2.volume = 0;
       spinAudio3.volume = 0;
-      musicMuted = true;
+      isMusicMuted = true;
     }
   }
 
@@ -327,16 +341,22 @@ function playScene() {
 
 
 
-//¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
-//        SYSTEM DISCRIMINATION
-//___________________________________________________________________________________________
+  //¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+  //        SYSTEM DISCRIMINATION
+  //___________________________________________________________________________________________
 
-function setRichValues() {
-  kodamaTransparency = 0.7;
-  kodamaGlowValue = 0.15;
-}
+  function setSystemSpecificValues(mode) {
+    if (mode === "rich") {
+      kodamaTransparency = 0.7;
+      kodamaGlowValue = 0.15;
+    } else if (mode === "limited") {
+      // set values
+    } else {
+      // set default values
+    }
+  }
 
-// Floaty text
+  // Floaty text
   function floatingText() {
     TweenMax.to(texts[0], 4, { y: 10, ease: Power1.easeInOut, repeat: -1, yoyo: true });
     TweenMax.to(texts[1], 4, { y: 10, ease: Power1.easeInOut, repeat: -1, yoyo: true, delay: 0.8 });
@@ -432,29 +452,34 @@ function setRichValues() {
   }
   
   function lightsOn() {
-    TweenMax.to(light, 3, { autoAlpha: 0.2, delay: 10});
+    isLight = true;
+    TweenMax.to(light, 3, { autoAlpha: 0.2, delay: 10}); // Tweak timing of lights on
   }
 
   function lightsOff() {
+    isLight = false;
     TweenMax.set(light, { autoAlpha: 0 });
   }
 
   function pulseLight() {
-
+    if (isLight) {
+      TweenMax.to(light, 3, { autoAlpha: 0.5, repeat: -1, yoyo: true });
+    }
   }
 
 
 
 
 
-//¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
-//        API
-//___________________________________________________________________________________________
+  //¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+  //        API
+  //___________________________________________________________________________________________
 
   return {
     replay: playScene,
-    mute: toggleAudio
-  };
+    mute: toggleAudio,
+    mode: systemDiscriminationMode
+  }
 
 
 

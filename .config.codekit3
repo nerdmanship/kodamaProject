@@ -42,9 +42,9 @@
 	"\/src\/assets\/svg\/artwork.svg": {
 		"ft": 2097152,
 		"miP": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/svg\/artwork.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 1,
 		"plM": 3758088191,
 		"prP": 1
@@ -52,17 +52,17 @@
 	"\/src\/assets\/svg\/foreground.jade": {
 		"cOD": 1,
 		"ft": 512,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/svg\/foreground.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/src\/assets\/svg\/foreground.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/src\/assets\/svg\/optimised\/foregroundOpt.svg",
-		"oF": 2,
+		"oF": 3,
 		"opt": 1,
 		"plM": 3758088159,
 		"prP": 1
@@ -70,9 +70,9 @@
 	"\/src\/assets\/svg\/foreground2.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/svg\/foreground2.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
@@ -80,9 +80,9 @@
 	"\/src\/assets\/svg\/foreground3.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/svg\/foreground3.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
@@ -92,15 +92,15 @@
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/dist\/assets\/svg\/mute.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/src\/assets\/svg\/mute.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/svg\/mute.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
@@ -108,9 +108,9 @@
 	"\/src\/assets\/svg\/optimised\/artworkOpt.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/svg\/optimised\/artworkOpt.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
@@ -118,9 +118,9 @@
 	"\/src\/assets\/svg\/optimised\/foreground.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/svg\/optimised\/foreground.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
@@ -128,17 +128,17 @@
 	"\/src\/assets\/svg\/optimised\/foreground2Opt.jade": {
 		"cOD": 1,
 		"ft": 512,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/svg\/optimised\/foreground2Opt.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/src\/assets\/svg\/optimised\/foreground2Opt.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/svg\/optimised\/foreground2Opt.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
@@ -146,17 +146,17 @@
 	"\/src\/assets\/svg\/optimised\/foreground3Opt.jade": {
 		"cOD": 1,
 		"ft": 512,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/svg\/optimised\/foreground3Opt.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/src\/assets\/svg\/optimised\/foreground3Opt.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/svg\/optimised\/foreground3Opt.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
@@ -164,9 +164,9 @@
 	"\/src\/assets\/svg\/optimised\/foregroundOpt.jade": {
 		"cOD": 1,
 		"ft": 512,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/svg\/optimised\/foregroundOpt.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/src\/assets\/svg\/optimised\/foregroundOpt.svg": {
@@ -182,9 +182,9 @@
 	"\/src\/assets\/svg\/optimised\/muteOpt.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/svg\/optimised\/muteOpt.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
@@ -192,9 +192,9 @@
 	"\/src\/assets\/svg\/optimised\/replayOpt.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/svg\/optimised\/replayOpt.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
@@ -202,9 +202,9 @@
 	"\/src\/assets\/svg\/optimised\/scrollOpt.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/svg\/optimised\/scrollOpt.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
@@ -214,15 +214,15 @@
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/dist\/assets\/svg\/replay.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/src\/assets\/svg\/replay.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/svg\/replay.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
@@ -232,15 +232,15 @@
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/dist\/assets\/svg\/scroll.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/src\/assets\/svg\/scroll.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/svg\/scroll.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
@@ -288,9 +288,9 @@
 	"\/src\/jade\/kodamaArtwork.jade": {
 		"cOD": 1,
 		"ft": 512,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/dist\/jade\/kodamaArtwork.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/src\/jade\/main.jade": {
@@ -388,7 +388,7 @@
 	"displayValue": "kodamaProject",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-karate",
-	"lastBuiltDate": 501581173
+	"lastBuiltDate": 502066336
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

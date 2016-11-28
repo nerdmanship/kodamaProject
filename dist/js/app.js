@@ -2244,6 +2244,8 @@ var _gsScope = typeof module !== "undefined" && module.exports && typeof global 
 })("TimelineMax");
 "use strict";
 
+// Dynamically set the mode and change relevant values
+
 // Light pulse
 // Make light optional
 // Make pulsing light optional, shifting two grads
@@ -2303,10 +2305,12 @@ var kodamaProject = function kodamaProject() {
 
   var mainTl = new TimelineMax({ paused: true, onComplete: revealScrollInd });
 
-  var musicMuted = false;
   var systemDiscriminationMode = "rich";
-  var kodamaTransparency = 1;
-  var kodamaGlowValue = 0;
+
+  var kodamaTransparency = 0.7;
+  var kodamaGlowValue = 1;
+  var isLight = false;
+  var isMusicMuted = false;
 
   var mouseX = 0;
   var mouseY = 0;
@@ -2341,20 +2345,24 @@ var kodamaProject = function kodamaProject() {
 
   function playScene() {
 
-    // System discrimination: rich, default, limited
+    // System discrimination: rich, limited, default
     if (systemDiscriminationMode === "rich") {
-      setRichValues();
+
+      // Core features
       setStartPos();
       parallaxIntro();
       playMusic();
       playMainTl();
+
+      // Bonus features
       dancingFireflies();
       swingingVines();
       pulsatingShrooms();
       pulseLight();
       floatingText();
       lightsOn();
-    } else {
+      //pulseLight();
+    } else if (systemDiscriminationMode === "limited") {
       setStartPos();
       parallaxIntro();
       playMusic();
@@ -2362,19 +2370,26 @@ var kodamaProject = function kodamaProject() {
       // Hide blob glows
       // Make gradients flat
       // Make bg lighter
-    }
+      // Hide excessive layers and elements
+    } else {
+        // default
+      }
   }
 
   function createTimeline() {
+
     mainTl.add("revealKodamas").to(kodamas[0], 3, { autoAlpha: kodamaTransparency, ease: Power3.easeOut }, 7).to(kodamas[1], 3, { autoAlpha: kodamaTransparency, ease: Power3.easeOut }, 9.5).to(kodamas[2], 3, { autoAlpha: kodamaTransparency, ease: Power3.easeOut }, 10.5).add("revealTitle").to(texts[0], 3, { autoAlpha: 1, ease: Power3.easeOut }, 11.3).to(texts[1], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 12.2).add("spinHeads").add("spin1").to(heads[0], 2, { rotation: 90, transformOrigin: "center center" }, "spin1").to(heads[0], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin1 =+2").call(playSFX, [spinAudio1], this, "spin1").add("spin2", "spin1 =+2").to(heads[1], 2, { rotation: 90, transformOrigin: "center center" }, "spin2").to(heads[1], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin2 =+2").call(playSFX, [spinAudio2], this, "spin2").add("spin3", "spin1 =+2.3").to(heads[2], 2, { rotation: 90, transformOrigin: "center center" }, "spin3").to(heads[2], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin3 =+2").call(playSFX, [spinAudio3], this, "spin3").call(bindParallax, [""], this, "spin3");
   }
 
   function setStartPos() {
 
+    // set system specific values
+    setSystemSpecificValues(systemDiscriminationMode);
+
     lightsOff();
     unbindParallax();
 
-    // Kodama Glow on
+    // Set Kodama Glow
     TweenMax.set(kodamaGlow, { autoAlpha: kodamaGlowValue });
 
     // Reset page scroll
@@ -2412,7 +2427,7 @@ var kodamaProject = function kodamaProject() {
   }
 
   function playMusic() {
-    if (musicMuted) {
+    if (isMusicMuted) {
       ambientAudio.volume = 0;
     } else {
       ambientAudio.volume = 0.1;
@@ -2422,7 +2437,7 @@ var kodamaProject = function kodamaProject() {
   }
 
   function playSFX(audio) {
-    if (musicMuted) {
+    if (isMusicMuted) {
       audio.volume = 0;
     }
     audio.currentTime = 0;
@@ -2502,13 +2517,13 @@ var kodamaProject = function kodamaProject() {
       spinAudio1.volume = 1;
       spinAudio2.volume = 1;
       spinAudio3.volume = 1;
-      musicMuted = false;
+      isMusicMuted = false;
     } else {
       ambientAudio.volume = 0;
       spinAudio1.volume = 0;
       spinAudio2.volume = 0;
       spinAudio3.volume = 0;
-      musicMuted = true;
+      isMusicMuted = true;
     }
   }
 
@@ -2531,9 +2546,15 @@ var kodamaProject = function kodamaProject() {
   //        SYSTEM DISCRIMINATION
   //___________________________________________________________________________________________
 
-  function setRichValues() {
-    kodamaTransparency = 0.7;
-    kodamaGlowValue = 0.15;
+  function setSystemSpecificValues(mode) {
+    if (mode === "rich") {
+      kodamaTransparency = 0.7;
+      kodamaGlowValue = 0.15;
+    } else if (mode === "limited") {
+      // set values
+    } else {
+        // set default values
+      }
   }
 
   // Floaty text
@@ -2618,14 +2639,20 @@ var kodamaProject = function kodamaProject() {
   }
 
   function lightsOn() {
-    TweenMax.to(light, 3, { autoAlpha: 0.2, delay: 10 });
+    isLight = true;
+    TweenMax.to(light, 3, { autoAlpha: 0.2, delay: 10 }); // Tweak timing of lights on
   }
 
   function lightsOff() {
+    isLight = false;
     TweenMax.set(light, { autoAlpha: 0 });
   }
 
-  function pulseLight() {}
+  function pulseLight() {
+    if (isLight) {
+      TweenMax.to(light, 3, { autoAlpha: 0.5, repeat: -1, yoyo: true });
+    }
+  }
 
   //¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
   //        API
@@ -2633,7 +2660,8 @@ var kodamaProject = function kodamaProject() {
 
   return {
     replay: playScene,
-    mute: toggleAudio
+    mute: toggleAudio,
+    mode: systemDiscriminationMode
   };
 };
 
