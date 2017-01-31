@@ -65,7 +65,8 @@ body {
 
 #main {
   position: relative;
-  top: 600px; }
+  top: 600px;
+  opacity: 0; }
   #main .info-sheet {
     background: #030e11;
     background: -moz-linear-gradient(top, #030e11 0%, #05171c 100%);
