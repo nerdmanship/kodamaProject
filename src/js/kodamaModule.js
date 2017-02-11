@@ -1,512 +1,431 @@
-// Dynamically set the mode and change relevant values
-
-// Light pulse
-  // Make light optional
-  // Make pulsing light optional, shifting two grads
-
-// Write text
-
-// System discriminatio
-  // Rich: All fancy
-  // Default: Standard fancy
-  // Smart: No fancy
-
-// Make mobile
+// Memory leak on mousemove?
 
 function random(min, max) {
   if (max === null) { max = min; min = 0; }
   return Math.random() * (max - min) + min;
 }
 
+const features = {
+      // Show elements
+      vines: true,
+      shrooms: true,
+      fireflies: true,
+      sunrays: true,
+      filters: true,
 
-const kodamaProject = function() {
+      // Allow effects
+      gradients: true,
+      transparency: true,
 
-  //¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
-  //        INITIALIZATION
-  //___________________________________________________________________________________________
+      // Play animations (these do not play if elements are removed)
+      vinesMotion: true,
+      shroomsMotion: true,
+      textMotion: true,
 
-  // CacheDOM
-  const header = document.querySelector("[data-header]");
-    const layers = header.querySelectorAll("[data-layer]");
-    const light = header.querySelector("[data-light]");
-    const kodamas = header.querySelectorAll("[data-kodama]");
-    const kodamaGlow = header.querySelectorAll("[data-kodamaGlow]");
-    const heads = header.querySelectorAll("[data-head]");
-    const ffGroups = header.querySelectorAll("[data-ff-group]");
-    const ff = header.querySelectorAll("[data-ff]");
-    const vines = header.querySelectorAll("[data-vine]");
-    const shrooms = header.querySelectorAll("[data-shroom]");
-    const texts = header.querySelectorAll("[data-text]");
-    const textMobile = header.querySelectorAll("[data-text-mobile]");
+      // Allow interaction
+      parallax: true,
+      shroomTrip: true
+};
 
-  const sticks = document.querySelectorAll("[data-stick]");
+const o = {
 
-  const foreground = document.querySelector("[data-foreground]");
-
-  const buttons = document.querySelectorAll("[data-btn]");
-  const muteButton = document.querySelector("[data-btn=mute]");
-  const replayButton = document.querySelector("[data-btn=replay]");
-  
-  const scrollInd = document.querySelector("[data-scrollInd]");
-  const arrows = scrollInd.querySelectorAll("[data-arrow]");
-
-  const audioGroup = document.querySelector("[data-audio-group]");
-  const ambientAudio = audioGroup.querySelector("[data-audio=ambient]");
-  const spinAudio1 = audioGroup.querySelector("[data-audio=spin1]");
-  const spinAudio2 = audioGroup.querySelector("[data-audio=spin2]");
-  const spinAudio3 = audioGroup.querySelector("[data-audio=spin3]");
-
-  const mainTl = new TimelineMax({paused: true, onComplete: revealScrollInd});
-
-  let systemDiscriminationMode = "rich";
-
-  let kodamaTransparency = 0.7;
-  let kodamaGlowValue = 1;
-  let isLight = false;
-  let isMusicMuted = false;
-
-  let mouseX = 0;
-  let mouseY = 0;
-  let scrollDist = 0;
-
-  // Bind
-  function bindEvents() {
-    muteButton.addEventListener("click", toggleAudio);
-    replayButton.addEventListener("click", playScene);
-
-    buttons[0].addEventListener("mouseover", highlightIcon);
-    buttons[1].addEventListener("mouseover", highlightIcon);
-
-    buttons[0].addEventListener("mouseout", dimIcon);
-    buttons[1].addEventListener("mouseout", dimIcon);
-
-    buttons[0].addEventListener("click", feedbackIcon);
-    buttons[1].addEventListener("click", feedbackIcon);
-  }
-
-
-
-
-  bindEvents(); // Bind Events
-  createTimeline(); // Create main timeline
-  setStartPos(); // prepare all elements
-  revealScene(); // fade to black
-  animateMuteIcon(); // Display audio options
-  playScene(); // start animation
-
-
-
-
-
-  //¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
-  //        CORE FUNC
-  //___________________________________________________________________________________________
-
-  function playScene() {
-
-    // System discrimination: rich, limited, default
-    if (systemDiscriminationMode === "rich") {
-      
-      // Core features
-      setStartPos();
-      parallaxIntro();
-      playMusic();
-      playMainTl();
-
-      // Bonus features
-      dancingFireflies();
-      swingingVines();
-      pulsatingShrooms();
-      pulseLight();
-      floatingText();
-      lightsOn();
-      //pulseLight();
-
-    } else if (systemDiscriminationMode === "limited") {
-      setStartPos();
-      parallaxIntro();
-      playMusic();
-      playMainTl();
-      // Hide blob glows
-      // Make gradients flat
-      // Make bg lighter
-      // Hide excessive layers and elements
-    } else {
-      // default
-    }
-  }
-
-
-
-  function createTimeline() {
+  init: function() {
+    o.cacheDOM();
+    o.bindEvents();
+    o.settings();
+    o.resetStart();
+    o.animate();
+  },
+// Init
+  cacheDOM: function() {
+    o.svg = document.querySelector("[data-svg=artwork]");
+    o.audio = document.querySelector("[data-audio=group]");
     
-    mainTl
+    o.elements = [
+      "sunray"
+      ];
+    o.lists = [
+      "layers",
+      "glows",
+      "kodamas",
+      "kodamaGlows",
+      "heads",
+      "fireflyGroups",
+      "fireflies",
+      "vines",
+      "shrooms",
+      "shroomGroups",
+      "texts",
+      "textsMobile"
+      ];
+    o.el = {};
+    o.li = {};
+
+    for (var i = 0; i < o.elements.length; i++) { o.el[o.elements[i]] = o.svg.querySelector("[data-kodama=" + o.elements[i] + "]"); }
+    for (var j = 0; j < o.lists.length; j++) { o.li[o.lists[j]] = o.svg.querySelectorAll("[data-kodama=" + o.lists[j] + "]"); }
+
+    o.li.offsetLayers = o.svg.querySelectorAll("[data-hax=offsetLayers]");
+    o.li.filters = o.svg.querySelectorAll("[filter]");
+    o.li.grads = o.svg.querySelectorAll("[fill^=url]");
+ 
+    o.muteButton = document.querySelector("[data-btn=mute]");
+    o.replayButton = document.querySelector("[data-btn=replay]");
+
+    o.ambientAudio = o.audio.querySelector("[data-audio=ambient]");
+    o.spinAudio1 = o.audio.querySelector("[data-audio=spin1]");
+    o.spinAudio2 = o.audio.querySelector("[data-audio=spin2]");
+    o.spinAudio3 = o.audio.querySelector("[data-audio=spin3]");
+    
+    
+  },
+  settings: function() {
+    // default settings
+    o.isMute = false;
+    o.mouseX = 0;
+    o.mouseY = 0;
+    o.tl = null;
+
+    // Back Kodama size
+    TweenMax.set(o.li.kodamas[0], { scale: 0.8, transformOrigin: "bottom center" });
+    
+    // Default transparency of kodamas
+    o.kodamaTransparency = 0.65;
+
+    // Set glowy blob things transparency
+    var opacity = [0.65, 0.75, 0.75, 0.45, 0.6, 0.65, 0.75, 1 ];
+    for (var i = 0; i < o.li.glows.length; i++) {
+      TweenMax.set(o.li.glows[i], { autoAlpha: opacity[i] });
+    }
+  },
+  bindEvents: function() {
+    o.muteButton.addEventListener("click", o.toggleAudio);
+    o.replayButton.addEventListener("click", o.replay);
+  },
+  resetStart: function() {
+    o.killTls();
+    o.resetStartPosLayers();
+    o.resetExtras();
+  },
+  animate: function() {
+    o.initExtras();
+    o.revealScene();
+    o.playMusic();
+    o.playTimeline();
+  },
+
+// bind events
+  toggleAudio: function() {
+    if (o.ambientAudio.volume === 0) {
+      o.ambientAudio.volume = 0.1;
+      o.spinAudio1.volume = 1;
+      o.spinAudio2.volume = 1;
+      o.spinAudio3.volume = 1;
+      o.isMute = false;
+    } else {
+      o.ambientAudio.volume = 0;
+      o.spinAudio1.volume = 0;
+      o.spinAudio2.volume = 0;
+      o.spinAudio3.volume = 0;
+      o.isMute = true;
+    }
+  },
+  replay: function() {
+    o.resetStart();
+    o.animate();
+  },
+
+// reset start
+  killTls: function() {
+    if (o.tl !== null) {
+      o.tl.kill();  
+    }
+  },
+  resetStartPosLayers: function() {
+    TweenMax.set(o.li.layers[0], { y: -0 });
+    TweenMax.set(o.li.layers[1], { y: -50 });
+    TweenMax.set(o.li.layers[2], { y: -100 });
+    TweenMax.set(o.li.layers[3], { y: -200 });
+    TweenMax.set(o.li.layers[4], { y: -300 });
+    TweenMax.set(o.li.layers[5], { y: -300 });
+    TweenMax.set(o.li.layers[6], { y: -400 });
+    TweenMax.set(o.li.layers[7], { y: -500 });
+
+    TweenMax.set(o.li.offsetLayers, { x: -50 });
+  },
+  resetExtras: function() {
+    // Hide elements by default
+    TweenMax.set([o.svg, o.li.kodamas, o.li.texts, o.li.textsMobile, o.el.sunray], { autoAlpha: 0 });
+    // Unbind parallax
+    document.removeEventListener("mousemove", o.moveArt);
+  },
+
+// animate
+  revealScene: function() {
+    TweenMax.to(o.svg, 1, { autoAlpha: 1 });
+  },
+  playTimeline: function() {
+    o.tl = o.getTimeline();
+    o.tl.play();
+  },
+  playMusic: function() {
+    if (o.isMute) {
+      o.ambientAudio.volume = 0;
+    } else {
+      o.ambientAudio.volume = 0.1;  
+    }
+    o.ambientAudio.currentTime = 0;
+    o.ambientAudio.play();
+  },
+  initExtras: function() {
+    // Call if false
+    if (!features.vines) { o.removeVines(); }
+    if (!features.shrooms) { o.removeShrooms(); }
+    if (!features.fireflies) { o.removeFireflies(); } else { o.playFireflies(); }
+    if (!features.sunrays) { o.removeSunrays(); } else { o.playSunrays(); }
+    if (!features.filters) { o.removeFilters(); }
+    if (!features.gradients) { o.setFlatFills(); }
+    if (!features.transparency) { o.removeTransparency(); }
+    
+    // Call if true
+    if (features.vinesMotion) { o.playVines(); }
+    if (features.shroomsMotion) { o.playShrooms(); }
+    if (features.textMotion) { o.playText(); }
+    if (features.parallax) { o.bindParallax(); }
+    if (features.shroomTrip) { o.bindShrooms(); }
+    if (features.shyKodama) { o.bindKodamas(); }
+    if (features.shyFirefly) { o.bindFireflies(); }
+  },
+  getTimeline: function() {
+    var tl = new TimelineMax({ paused: true });
+
+    tl
+      .add("layers")
+      .to(o.li.layers, 9, { y: 50, ease: Back.easeOut }, 0)
       .add("revealKodamas")
-      .to(kodamas[0], 3, { autoAlpha: kodamaTransparency, ease: Power3.easeOut}, 7)
-      .to(kodamas[1], 3, { autoAlpha: kodamaTransparency, ease: Power3.easeOut}, 9.5)
-      .to(kodamas[2], 3, { autoAlpha: kodamaTransparency, ease: Power3.easeOut}, 10.5)
+      .to(o.li.kodamas[0], 3, { autoAlpha: o.kodamaTransparency, ease: Power3.easeOut}, 7)
+      .to(o.li.kodamas[1], 3, { autoAlpha: o.kodamaTransparency, ease: Power3.easeOut}, 9.5)
+      .to(o.li.kodamas[2], 3, { autoAlpha: o.kodamaTransparency, ease: Power3.easeOut}, 10.5)
 
       .add("revealTitle")
-      .to(texts[0], 3, { autoAlpha: 1, ease: Power3.easeOut}, 11.3)
-      .to(texts[1], 3, { autoAlpha: 0.7, ease: Power3.easeOut}, 12.2)
+      .to(o.li.texts[0], 3, { autoAlpha: 1, ease: Power3.easeOut}, 11.3)
+      .to(o.li.texts[1], 3, { autoAlpha: 0.7, ease: Power3.easeOut}, 12.2)
 
       .add("spinHeads")
       .add("spin1")
-      .to(heads[0], 2, {rotation: 90, transformOrigin: "center center"}, "spin1")
-      .to(heads[0], 2, {rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center"}, "spin1 =+2")
-      .call(playSFX, [spinAudio1], this, "spin1")
+      .to(o.li.heads[0], 2, {rotation: 90, transformOrigin: "center center"}, "spin1")
+      .to(o.li.heads[0], 2, {rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center"}, "spin1 =+2")
+      .call(o.playSFX, [o.spinAudio1], this, "spin1")
       .add("spin2", "spin1 =+2")
-      .to(heads[1], 2, {rotation: 90, transformOrigin: "center center"}, "spin2")
-      .to(heads[1], 2, {rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center"}, "spin2 =+2")
-      .call(playSFX, [spinAudio2], this, "spin2")
+      .to(o.li.heads[1], 2, {rotation: 90, transformOrigin: "center center"}, "spin2")
+      .to(o.li.heads[1], 2, {rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center"}, "spin2 =+2")
+      .call(o.playSFX, [o.spinAudio2], this, "spin2")
       .add("spin3", "spin1 =+2.3")
-      .to(heads[2], 2, {rotation: 90, transformOrigin: "center center"}, "spin3")
-      .to(heads[2], 2, {rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center"}, "spin3 =+2")
-      .call(playSFX, [spinAudio3], this, "spin3")
-      .call(bindParallax, [""], this, "spin3");
-  }
+      .to(o.li.heads[2], 2, {rotation: 90, transformOrigin: "center center"}, "spin3")
+      .to(o.li.heads[2], 2, {rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center"}, "spin3 =+2")
+      .call(o.playSFX, [o.spinAudio3], this, "spin3")
+      ;
 
-
-
-  function setStartPos() {
-
-    // set system specific values
-    setSystemSpecificValues(systemDiscriminationMode);
-
-    lightsOff();
-    unbindParallax();
-
-    // Set Kodama Glow
-    TweenMax.set(kodamaGlow, { autoAlpha: kodamaGlowValue});
-
-    // Reset page scroll
-    window.scroll(0,0);
-    
-    // Hide scroll indicator
-    TweenMax.set(scrollInd, { opacity: 0 });
-    
-    // Resize background Kodama
-    TweenMax.set(kodamas[0], { scale: 0.8, transformOrigin: "bottom center" });
-    
-    // Foreground start position
-    TweenMax.set(foreground, { y: -200 });
-
-    // All layers start position
-    for (let i = 0; i < layers.length; i++) {
-      TweenMax.set(layers[i], {y: -150*i});
-    }
-  }
-
-
-  function revealScene() {
-    TweenMax.to(header, 1, { autoAlpha: 1 });
-  }
-
-  function parallaxIntro() {    
-    for (let i = 0; i < layers.length; i++) {
-      TweenMax.to(layers[i], 10, { y: 0 });
-    }
-
-    TweenMax.to(foreground, 10, { y: window.innerHeight-200 }); // Revise the position of this
-  }
-
-  function playMainTl() {
-      mainTl.restart();
-    }
-
-  function playMusic() {
-    if (isMusicMuted) {
-      ambientAudio.volume = 0;
-    } else {
-      ambientAudio.volume = 0.1;  
-    }
-    ambientAudio.currentTime = 0;
-    ambientAudio.play();
-  }
-
-
-  function playSFX(audio) {
-    if (isMusicMuted) {
+    return tl;
+  },
+  playSFX: function(audio) {
+    if (o.isMute) {
       audio.volume = 0;  
     }
     audio.currentTime = 0;
     audio.play(); 
-  }
+  },
 
-  //¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
-  //        INTERACTION
-  //___________________________________________________________________________________________
-    
-  // Bind interactions
-  function bindParallax() {
-    if (systemDiscriminationMode === "rich" || systemDiscriminationMode === "default") {
-      document.addEventListener("mousemove", moveArt);  
-    }
-    document.addEventListener("scroll", removeScrollInd);
-  }
+// features
+  removeVines: function() {
+    if(o.li.shroomGroups[0].parentNode) {
+      console.log("removing");
+      for (var i = 0; i < o.li.vines.length; i++) {
 
-  // Unbind interactions
-  function unbindParallax() {
-    document.removeEventListener("mousemove", moveArt);
-  }
-
-  // Parallax artwork layers when user moves the mouse
-  function moveArt(e) {
-    mouseX = (e.screenX - window.innerWidth/2)/(window.innerWidth/2); // -1 / 1
-    mouseY = (e.screenY - window.innerHeight/2)/(window.innerHeight/2);
-    scrollDist = window.pageYOffset;
-
-    for (let i = 0; i < layers.length; i++) {
-      var layerOffsetAmount = 10 * i;
-      var layerPosX = layerOffsetAmount * mouseX;
-      var layerPosY = layerOffsetAmount * mouseY;
-      if (false) {
-        // do something...
-      } else {
-        TweenMax.to(layers[i], 5, {
-          x: -layerPosX,
-          y: -layerPosY,
-          ease: Power4.easeOut
-        });
+        o.li.vines[i].parentNode.removeChild(o.li.vines[i]);
       }
-    }
-  }
-
-  // Animate volume bars in audio toggle icon
-  function animateMuteIcon() {
-    for (var i = 0; i < sticks.length; i++) {
-      var startVal = (1 - (0.1*i));
-      TweenMax.set(sticks[i], { scaleY: startVal, transformOrigin: "bottom" });
-      TweenMax.to(sticks[i], random(1.2,1.6), {
-        bezier: { curviness:1, values: [
-            { scaleY: startVal },
-            { scaleY: random(0.3,0.9) },
-            { scaleY: random(0.3,0.9) },
-            { scaleY: random(0.3,0.9) },
-            { scaleY: startVal }
-          ]},
-          repeat: -1,
-          ease: Linear.easeNone
-      });
-    }
-  }
-
-  // Reveal scroll indicator on completion of main timeline
-  function revealScrollInd() {
-    TweenMax.set(arrows, { opacity: 0.5 });
-    TweenMax.to(scrollInd, 3, { opacity: 1 });
-    TweenMax.staggerTo(arrows, 2, { opacity: 0.1, ease: SlowMo.ease.config(0.1, 0.1, true), repeat: -1 }, 0.5 )
-  }
-
-  // Remove scroll indicator if user scrolled +150px
-  function removeScrollInd() {
-    if (window.pageYOffset > 150) {
-      TweenMax.to(scrollInd, 1, { opacity: 0 });
-    }
-  }
-  
-  // Toggle audio on/off
-  function toggleAudio() {
-    if (ambientAudio.volume === 0) {
-      ambientAudio.volume = 0.1;
-      spinAudio1.volume = 1;
-      spinAudio2.volume = 1;
-      spinAudio3.volume = 1;
-      isMusicMuted = false;
     } else {
-      ambientAudio.volume = 0;
-      spinAudio1.volume = 0;
-      spinAudio2.volume = 0;
-      spinAudio3.volume = 0;
-      isMusicMuted = true;
-    }
-  }
-
-  // Highlight icons
-  function highlightIcon() {
-    TweenMax.to(this, 0.1, {opacity: .5});
-  }
-  
-  // Dim icons
-  function dimIcon() {
-    TweenMax.to(this, 0.1, {opacity: 0.2});
-  }
-
-  // Flash icons
-  function feedbackIcon() {
-    TweenMax.to(this, 0.2, {opacity: 1, ease: SlowMo.ease.config(0.1, 0.1, true) });
-  }
-
-
-
-
-
-  //¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
-  //        SYSTEM DISCRIMINATION
-  //___________________________________________________________________________________________
-
-  function setSystemSpecificValues(mode) {
-    if (mode === "rich") {
-      kodamaTransparency = 0.7;
-      kodamaGlowValue = 0.15;
-    } else if (mode === "limited") {
-      // set values
-    } else {
-      // set default values
-    }
-  }
-
-  // Floaty text
-  function floatingText() {
-    TweenMax.to(texts[0], 4, { y: 10, ease: Power1.easeInOut, repeat: -1, yoyo: true });
-    TweenMax.to(texts[1], 4, { y: 10, ease: Power1.easeInOut, repeat: -1, yoyo: true, delay: 0.8 });
-  }
-
-  function dancingFireflies() {
-    
-    var interval = 4,
-        duration = interval;
-
-    dance();
-    repeat();
-
-    function repeat() {
-      setTimeout(function() {
-
-        dance();
-        repeat();
-
-      }, interval*1000);  
-    }
-
-    function dance() {
-
-      TweenMax.to(ffGroups[0], random(1,3), {
-        autoAlpha: 1,
-        rotation: random(0,60),
-        scale: random(0.5,1),
-        x:random(1250,1350),
-        y: random(25,100)
-      });
-
-      TweenMax.to(ffGroups[1], random(2,4), {
-        autoAlpha: 1,
-        rotation: random(0,60),
-        scale: random(0.5,1),
-        x:random(1050,1150),
-        y: random(325,400)
-      });
-
-      for (let i = 0; i < ff.length; i++) {
-        
-        var x = [
-              random(-15,15)*(i+2)/3,
-              random(-15,15)*(i+2)/3,
-              random(-15,15)*(i+2)/3
-            ];
-
-        TweenMax.to(ff[i], duration, {
-          bezier: { curviness:1, values: [
-            { x: 0+i*10, y: 0+i*10 },
-            { x: x[0], y: x[2] },
-            { x: x[1], y: 0 },
-            { x: x[2], y: x[1] },
-            { x: 0+i*10, y: 0+i*10 }
-          ]},
-          autoAlpha: random(0.3,1),
-          ease: Linear.easeNone
-        });
-
+      console.log("adding");
+      for (var i = 0; i < o.li.vines.length; i++) {
+        o.li.vines[i].parentNode.appendChild(o.li.vines[i]);
       }
-    }   
-  }
+    }
+  },
+  playVines: function() {
+    for (var i = 0; i < o.li.vines.length; i++) {
+      o.swingVine(i);
+    }
+  },
+  swingVine: function(i) {
+    var duration = random(3,5);
+    var rotation = random(-5,5);
 
-  
-  function swingingVines() {
-
-    setTimeout(function() {
-      for (let i = 0; i < vines.length; i++) {
-        TweenMax.to(vines[i], random(5,5), {
-          rotation: random(-3,3), transformOrigin: "top center", ease: Linear.easeNone});  
+    TweenMax.to(o.li.vines[i], duration, {
+      rotation: rotation,
+      transformOrigin: "top center",
+      ease: Power1.easeInOut,
+      onComplete: o.swingVine,
+      onCompleteParams: [i]
+    });
+  },
+  removeShrooms: function() {
+    if(o.li.shroomGroups[0].parentNode) {
+      for (var i = 0; i < o.li.shroomGroups.length; i++) {
+        o.li.shroomGroups[i].parentNode.removeChild(o.li.shroomGroups[i]);
       }
+    }
+  },
+  playShrooms: function() {
+    for (var i = 0; i < o.li.shrooms.length; i++) {
+      o.pulseShroom(i);
+    }
+  },
+  pulseShroom: function(i) {
+    var duration = random(0.5,1);
+    var scale = random(1.1,1.3);
+    var delay = random(1,4);
+
+    TweenMax.to(o.li.shrooms[i], duration, {
+      scale: scale,
+      transformOrigin: "center center",
+      ease: SlowMo.ease.config(0.1, 0.1, true),
+      delay: delay,
+      onComplete: o.pulseShroom,
+      onCompleteParams: [i]
+    });
+  },
+  bindShrooms: function() {
+    for (var i = 0; i < o.li.shroomGroups.length; i++) {
+      o.li.shroomGroups[i].addEventListener("click", o.eatShroom);
+    }
+  },
+  eatShroom: function() {
+    console.log("click shroom");
+  },
+  removeFireflies: function() {
+    if(o.li.fireflyGroups[0].parentNode) {
+      for (var i = 0; i < o.li.fireflyGroups.length; i++) {
+        o.li.fireflyGroups[i].parentNode.removeChild(o.li.fireflyGroups[i]);
+      }
+    }
+  },
+  playFireflies: function() {
+    TweenMax.set(o.li.fireflyGroups, { autoAlpha: 1 });
+    for (var i = 0; i < o.li.fireflyGroups.length; i++) {
+      o.newFireflyGroupPos(i);
+    }
+
+    for (var j = 0; j < o.li.fireflies.length; j++) {
+      o.newFireflyPos(j);
+    }
+  },
+  newFireflyGroupPos: function(i) {
+
+    var duration = random(1,5);
+    var rotation = random(0,360);
+    var scale = random(0.5,1);
+    var x = [random(1250,1350), random(1050,1150)];
+    var y = [random(25,100), random(325,400)];
+
+    TweenMax.to(
+      o.li.fireflyGroups[i], 
+      duration, {
+        rotation: rotation[i],
+        scale: scale,
+        x: x[i],
+        y: y[i],
+        ease: Power1.easeInOut,
+        onComplete: o.newFireflyGroupPos,
+        onCompleteParams: [i]
+      }
+    );
+  },
+  newFireflyPos: function(i) {
+
+    var duration = random(5,7);
+    var x = [
+      random(-45,45),
+      random(-45,45),
+      random(-45,45),
+      random(-45,45),
+      random(-45,45)
+      ];
+  
+    TweenMax.to(o.li.fireflies[i], duration, {
+      bezier: { curviness:1, values: [
+        { x: x[0], y: x[1] },
+        { x: x[1], y: x[2] },
+        { x: x[2], y: x[3] },
+        { x: x[3], y: x[4] },
+        { x: x[4], y: x[0] }
+      ]},
+      scale: random(0.2,1.3),
+      autoAlpha: random(0.7,1),
+      ease: Linear.easeNone,
+      onComplete: o.newFireflyPos,
+      onCompleteParams: [i]
+    });
+  },
+  removeSunrays: function() {
+    if(o.el.sunray.parentNode) {
+      o.el.sunray.parentNode.removeChild(o.el.sunray);
+    }
+  },
+  playSunrays: function() {
+    TweenMax.to(o.el.sunray, 3, { autoAlpha: 0.2, delay: 10});
+  },
+  removeFilters: function() {
+    if(o.li.filters[0].parentNode) {
+      for (var i = 0; i < o.li.filters.length; i++) {
+        o.li.filters[i].parentNode.removeChild(o.li.filters[i]);
+      }
+    }
+  },
+  setFlatFills: function() {
+    for (var i = 0; i < o.li.grads.length; i++) {
+      var newFill = o.li.grads[i].getAttribute("data-fill");
+      if (newFill) {
+        o.li.grads[i].setAttribute("fill", newFill);
+      }
+    }
+  },
+  removeTransparency: function() {
+    o.kodamaTransparency = 1;
+  },
+  playText: function() {
+    TweenMax.to(o.li.texts[0], 6, { y: 20, ease: Power1.easeInOut, repeat: -1, yoyo: true });
+    TweenMax.to(o.li.texts[1], 6, { y: 20, ease: Power1.easeInOut, repeat: -1, yoyo: true, delay: 1.8 });
+  },
+  bindParallax: function() {
+    document.addEventListener("mousemove", o.moveArt);
+  },
+  moveArt: function(e) {
+    o.mouseX = (e.clientX - window.innerWidth/2)/(window.innerWidth/2);
+    o.mouseY = (e.clientY - window.innerHeight/2)/(window.innerHeight/2);
+
+    for (var i = 0; i < o.li.layers.length; i++) {
+      var offset = 20 * i;
+      var x = offset * o.mouseX;
+      var y = (offset/2) * o.mouseY;
       
-      swingingVines();
-    }, 5000);
-  }
-
-  
-  function pulsatingShrooms() {
-  
-    setTimeout(function() {
-      for (let i = 0; i < shrooms.length; i++) {
-        TweenMax.to(shrooms[i], 0.5, {
-          scale: random(1.1,1.3),
-          transformOrigin: "center center",
-          ease: SlowMo.ease.config(0.1, 0.1, true),
-          delay: random(1,4)
-        });  
-      }
-      
-      pulsatingShrooms();
-    }, 5000);
-  }
-  
-  function lightsOn() {
-    isLight = true;
-    TweenMax.to(light, 3, { autoAlpha: 0.2, delay: 10}); // Tweak timing of lights on
-  }
-
-  function lightsOff() {
-    isLight = false;
-    TweenMax.set(light, { autoAlpha: 0 });
-  }
-
-  function pulseLight() {
-    if (isLight) {
-      TweenMax.to(light, 3, { autoAlpha: 0.5, repeat: -1, yoyo: true });
+      TweenMax.to(o.li.layers[i], 5, { x: -x, y: -y+50, ease: Power4.easeOut });
     }
   }
+};
 
+window.addEventListener("load", o.init);
 
+// Instead of creating a Tween object on every mousemove event there is one contiuous Tween object that get updated by the modifierPlugin
+// This pen: http://codepen.io/osublake/pen/4160082f5a86a3cd0410fb836a74fa68
+// This post: http://codepen.io/nerdmanship/details/ZLoyPG#comment-id-172097
+// Sharing invaluable insight about normalising, linear interpolation and mapping. Little utility functions that will make your animation workflow smarter, easier and more powerful. It might seem like scary math, but it's actually very straight forward, it just needs some time to settle. If you're already in a coding environment and you enjoy animating, it's definitely worth your while.
 
+// The artwork is "inspired" by the original art of Mononoke Hime
+// https://i.ytimg.com/vi/eq2JhDDw-L4/maxresdefault.jpg
 
+// Explore this by forking this pen and change the features object
+// features = {
+//  feature: true/false
+// }
 
-  //¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
-  //        API
-  //___________________________________________________________________________________________
-
-  return {
-    replay: playScene,
-    mute: toggleAudio,
-    mode: systemDiscriminationMode
-  }
-
-
-
-
-
-}
-
-
-
-
-
-
-// Init
-kodamaProject();
-
-
-
-
-
-/*
-
-function mobileStart() {
-  spin1.load();
-  spin2.load();
-  spin3.load();
-  
-  ambient.load();
-  ambient.loadeddata = start();
-}
-*/
+// Even if a theory makes sense when you read it, it's such an effective way to internalize it and make it yours by fiddling around with it and applying it in a project
+// Start experimenting!

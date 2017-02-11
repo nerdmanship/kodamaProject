@@ -253,11 +253,11 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/src\/jade\/foreground.jade": {
+	"\/src\/jade\/ctrls.jade": {
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/dist\/jade\/foreground.html",
+		"oAP": "\/dist\/jade\/ctrls.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -283,22 +283,6 @@
 		"oA": 0,
 		"oAP": "\/dist\/index.html",
 		"oF": 2,
-		"oS": 0
-		},
-	"\/src\/jade\/kodamaArtwork.jade": {
-		"cOD": 1,
-		"ft": 512,
-		"oA": 1,
-		"oAP": "\/dist\/jade\/kodamaArtwork.html",
-		"oF": 1,
-		"oS": 0
-		},
-	"\/src\/jade\/main.jade": {
-		"cOD": 1,
-		"ft": 512,
-		"oA": 1,
-		"oAP": "\/dist\/jade\/main.html",
-		"oF": 0,
 		"oS": 0
 		},
 	"\/src\/jade\/scripts.jade": {
@@ -327,21 +311,12 @@
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/js\/TimelineMax.js": {
-		"ft": 64,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/dist\/js\/TimelineMax.js",
-		"oF": 0,
-		"sC": 2,
-		"tS": 1
-		},
 	"\/src\/js\/TweenMax.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 1,
+		"oA": 2,
 		"oAP": "\/dist\/js\/TweenMax.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
@@ -365,20 +340,8 @@
 	"\/src\/js\/app.js": [
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/src\/js\/TweenMax.js",
-			"position": 0,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/src\/js\/TimelineMax.js",
-			"position": 1,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/src\/js\/kodamaModule.js",
-			"position": 2,
+			"position": 0,
 			"type": 0
 			}
 		]
@@ -388,7 +351,7 @@
 	"displayValue": "kodamaProject",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-karate",
-	"lastBuiltDate": 502066336
+	"lastBuiltDate": 508502175
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

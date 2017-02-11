@@ -25,15 +25,14 @@ body {
 #header {
   position: fixed;
   z-index: -1;
-  //overflow: hidden;
   height: $headerHeight;
   width: 100%;
   top: 0;
-  opacity: 0;
 }
 
 #kodama-graphic {
   height: 100%;
+  opacity: 0;
 }
 
 #foreground {
