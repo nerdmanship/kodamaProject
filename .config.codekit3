@@ -3747,6 +3747,531 @@
 		"sC": 2,
 		"tS": 1
 		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/docs.html": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/docs.html",
+		"oF": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/getting_started.html": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/getting_started.html",
+		"oF": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/easing\/EasePack.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/easing\/EasePack.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/jquery.gsap.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/jquery.gsap.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/AttrPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/AttrPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/BezierPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/BezierPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/ColorPropsPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/ColorPropsPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/CSSPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/CSSPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/CSSRulePlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/CSSRulePlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/DirectionalRotationPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/DirectionalRotationPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/DrawSVGPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/DrawSVGPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/EaselPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/EaselPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/EndArrayPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/EndArrayPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/KineticPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/KineticPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/MorphSVGPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/MorphSVGPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/Physics2DPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/Physics2DPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/PhysicsPropsPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/PhysicsPropsPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/RaphaelPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/RaphaelPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/RoundPropsPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/RoundPropsPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/ScrambleTextPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/ScrambleTextPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/ScrollToPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/ScrollToPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/TextPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/TextPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/ThrowPropsPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/ThrowPropsPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/TimelineLite.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/TimelineLite.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/TimelineMax.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/TimelineMax.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/TweenLite.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/TweenLite.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/TweenMax.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 2,
+		"oAP": "\/dist\/js\/TweenMax.min.js",
+		"oF": 3,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/utils\/CSSTransform.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/utils\/CSSTransform.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/utils\/Draggable.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/utils\/Draggable.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/utils\/SplitText.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/utils\/SplitText.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/easing\/EasePack.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/easing\/EasePack.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/jquery.gsap.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/jquery.gsap.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/AttrPlugin.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/AttrPlugin.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/BezierPlugin.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/BezierPlugin.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/ColorPropsPlugin.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/ColorPropsPlugin.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/CSSPlugin.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/CSSPlugin.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/CSSRulePlugin.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/CSSRulePlugin.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/DirectionalRotationPlugin.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/DirectionalRotationPlugin.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/DrawSVGPlugin.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/DrawSVGPlugin.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/EaselPlugin.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/EaselPlugin.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/EndArrayPlugin.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/EndArrayPlugin.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/KineticPlugin.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/KineticPlugin.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/MorphSVGPlugin.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/MorphSVGPlugin.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/Physics2DPlugin.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/Physics2DPlugin.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/PhysicsPropsPlugin.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/PhysicsPropsPlugin.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/RaphaelPlugin.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/RaphaelPlugin.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/RoundPropsPlugin.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/RoundPropsPlugin.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/ScrambleTextPlugin.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/ScrambleTextPlugin.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/ScrollToPlugin.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/ScrollToPlugin.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/TEMPLATE_Plugin.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/TEMPLATE_Plugin.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/TextPlugin.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/TextPlugin.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/ThrowPropsPlugin.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/ThrowPropsPlugin.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/TimelineLite.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/TimelineLite.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/TimelineMax.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/TimelineMax.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/TweenLite.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/TweenLite.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/TweenMax-2.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/TweenMax-2.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/TweenMax.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/TweenMax.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/utils\/Draggable.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/utils\/Draggable.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/utils\/SplitText.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/utils\/SplitText.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
 	"\/src\/assets\/svg\/artwork.svg": {
 		"ft": 2097152,
 		"miP": 1,
@@ -4019,15 +4544,6 @@
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/js\/TweenMax.js": {
-		"ft": 64,
-		"mi": 0,
-		"oA": 2,
-		"oAP": "\/dist\/js\/TweenMax.js",
-		"oF": 1,
-		"sC": 2,
-		"tS": 1
-		},
 	"\/src\/scss\/app.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -4059,7 +4575,7 @@
 	"displayValue": "kodamaProject",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-karate",
-	"lastBuiltDate": 508503242
+	"lastBuiltDate": 508504141
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
