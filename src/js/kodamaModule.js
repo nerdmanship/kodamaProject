@@ -1,9 +1,21 @@
-// Memory leak on mousemove?
+// Kill TweenMax objects on restart
+// Try to name them and kill them in killAll function
+
+// Install Modernizr
+// Do specific feature settings on touch
+
+// Make shroom tripå
+// Inventory trippy effects to trigger on shroom munch
 
 function random(min, max) {
   if (max === null) { max = min; min = 0; }
   return Math.random() * (max - min) + min;
 }
+
+function map(value, sourceMin, sourceMax, destinationMin, destinationMax) {
+  return destinationMin + (destinationMax - destinationMin) * ((value - sourceMin) / (sourceMax - sourceMin)) || 0;
+}
+
 
 const features = {
       // Show elements
@@ -23,8 +35,8 @@ const features = {
       textMotion: true,
 
       // Allow interaction
-      parallax: true,
-      shroomTrip: true
+      mouseAction: true,
+      shroomTrip: true,
 };
 
 const o = {
@@ -81,8 +93,10 @@ const o = {
   settings: function() {
     // default settings
     o.isMute = false;
-    o.mouseX = 0;
-    o.mouseY = 0;
+    o.mouse = { x: 0, y: 0 };
+    o.vw = 0;
+    o.vh = 0;
+    o.acceleration = { val: 0 };
     o.tl = null;
 
     // Back Kodama size
@@ -96,10 +110,18 @@ const o = {
     for (var i = 0; i < o.li.glows.length; i++) {
       TweenMax.set(o.li.glows[i], { autoAlpha: opacity[i] });
     }
+    // Set values depending on screensize
+    o.resize();
+  },
+  resize: function() {
+    o.vw = window.innerWidth;
+    o.vh = window.innerHeight;
+    console.log("Resized: " + o.vw + " " + o.vh);
   },
   bindEvents: function() {
     o.muteButton.addEventListener("click", o.toggleAudio);
     o.replayButton.addEventListener("click", o.replay);
+    window.addEventListener("resize", o.resize);
   },
   resetStart: function() {
     o.killTls();
@@ -153,9 +175,11 @@ const o = {
     TweenMax.set(o.li.offsetLayers, { x: -50 });
   },
   resetExtras: function() {
+    // Reset acceleration value
+    o.acceleration.val = 0;
+    console.log(o.acceleration.val);
     // Hide elements by default
     TweenMax.set([o.svg, o.li.kodamas, o.li.texts, o.li.textsMobile, o.el.sunray], { autoAlpha: 0 });
-    // Unbind parallax
     document.removeEventListener("mousemove", o.moveArt);
   },
 
@@ -185,22 +209,19 @@ const o = {
     if (!features.filters) { o.removeFilters(); }
     if (!features.gradients) { o.setFlatFills(); }
     if (!features.transparency) { o.removeTransparency(); }
+    if (!features.mouseAction) { o.playIntro(); }
     
     // Call if true
     if (features.vinesMotion) { o.playVines(); }
     if (features.shroomsMotion) { o.playShrooms(); }
     if (features.textMotion) { o.playText(); }
-    if (features.parallax) { o.bindParallax(); }
+    if (features.mouseAction) { o.bindParallax(); }
     if (features.shroomTrip) { o.bindShrooms(); }
-    if (features.shyKodama) { o.bindKodamas(); }
-    if (features.shyFirefly) { o.bindFireflies(); }
   },
   getTimeline: function() {
     var tl = new TimelineMax({ paused: true });
 
     tl
-      .add("layers")
-      .to(o.li.layers, 9, { y: 50, ease: Back.easeOut }, 0)
       .add("revealKodamas")
       .to(o.li.kodamas[0], 3, { autoAlpha: o.kodamaTransparency, ease: Power3.easeOut}, 7)
       .to(o.li.kodamas[1], 3, { autoAlpha: o.kodamaTransparency, ease: Power3.easeOut}, 9.5)
@@ -371,6 +392,7 @@ const o = {
     }
   },
   playSunrays: function() {
+
     TweenMax.to(o.el.sunray, 3, { autoAlpha: 0.2, delay: 10});
   },
   removeFilters: function() {
@@ -389,32 +411,83 @@ const o = {
     }
   },
   removeTransparency: function() {
+
     o.kodamaTransparency = 1;
   },
   playText: function() {
     TweenMax.to(o.li.texts[0], 6, { y: 20, ease: Power1.easeInOut, repeat: -1, yoyo: true });
     TweenMax.to(o.li.texts[1], 6, { y: 20, ease: Power1.easeInOut, repeat: -1, yoyo: true, delay: 1.8 });
   },
-  bindParallax: function() {
-    document.addEventListener("mousemove", o.moveArt);
-  },
-  moveArt: function(e) {
-    o.mouseX = (e.clientX - window.innerWidth/2)/(window.innerWidth/2);
-    o.mouseY = (e.clientY - window.innerHeight/2)/(window.innerHeight/2);
+  playIntro: function() {
 
-    for (var i = 0; i < o.li.layers.length; i++) {
-      var offset = 20 * i;
-      var x = offset * o.mouseX;
-      var y = (offset/2) * o.mouseY;
-      
-      TweenMax.to(o.li.layers[i], 5, { x: -x, y: -y+50, ease: Power4.easeOut });
+    TweenMax.to(o.li.layers, 9, { y: 50, ease: Back.easeOut });
+  },
+  bindParallax: function() {
+    o.svg.addEventListener("mousemove", o.updateMouseObj);
+    o.svg.addEventListener("touchmove", o.updateMouseObj);
+    o.createLayerObjects();
+    o.connectArt();
+  },
+  createLayerObjects: function() {
+    o.layerObj = [];
+    for (let i = 0; i < o.li.layers.length; i++) {
+      const offset = 20*i;
+      o.layerObj[i] = {
+        pos: o.li.layers[i]._gsTransform,
+        x: 0,
+        xMin: offset,
+        xMax: -offset,
+        y: 0,
+        yMin: offset,
+        yMax: -offset
+      };
+    
+    }
+  },
+  connectArt: function() {
+    TweenMax.to(o.acceleration, 10, { val: 0.05 });
+    for (let i = 0; i < o.li.layers.length; i++) {
+
+      TweenMax.to(o.li.layers[i], 1000, { x: 0, y: 0, repeat: -1, ease: Linear.easeNone,
+        modifiers: {
+          x: function() {
+            return o.getLayerX(i);
+          },
+          y: function() {
+            return o.getLayerY(i);
+          }
+        }
+      });
+
+    }
+  },
+  getLayerX: function(i) {
+    
+    var obj = o.layerObj[i];
+    obj.x = map(o.mouse.x, 0, o.vw, obj.xMin, obj.xMax);
+    return obj.pos.x + ( obj.x - obj.pos.x ) * o.acceleration.val;
+  },
+  getLayerY: function(i) {
+    var elPos = o.li.layers[i]._gsTransform.y;
+    var obj = o.layerObj[i];
+    obj.y = map(o.mouse.y, 0, o.vw, obj.yMin, obj.yMax);
+    return elPos + ( obj.y - elPos ) * o.acceleration.val;
+  },
+  updateMouseObj: function(e) {
+    if (e.targetTouches && e.targetTouches[0]) {
+      e.preventDefault();
+      o.mouse.x = e.targetTouches[0].clientX;
+      o.mouse.y = e.targetTouches[0].clientY;           
+    } else {
+      o.mouse.x = e.clientX;
+      o.mouse.y = e.clientY;
     }
   }
 };
 
 window.addEventListener("load", o.init);
 
-// Instead of creating a Tween object on every mousemove event there is one contiuous Tween object that get updated by the modifierPlugin
+// Instead of creating a Tween object on every mousemove event there is one Tween object that contiuous get updated by the modifierPlugin
 // This pen: http://codepen.io/osublake/pen/4160082f5a86a3cd0410fb836a74fa68
 // This post: http://codepen.io/nerdmanship/details/ZLoyPG#comment-id-172097
 // Sharing invaluable insight about normalising, linear interpolation and mapping. Little utility functions that will make your animation workflow smarter, easier and more powerful. It might seem like scary math, but it's actually very straight forward, it just needs some time to settle. If you're already in a coding environment and you enjoy animating, it's definitely worth your while.
@@ -429,3 +502,6 @@ window.addEventListener("load", o.init);
 
 // Even if a theory makes sense when you read it, it's such an effective way to internalize it and make it yours by fiddling around with it and applying it in a project
 // Start experimenting!
+
+
+

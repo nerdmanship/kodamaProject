@@ -49,2556 +49,2556 @@
 		},
 	"\/src\/assets\/bower_components\/modernizr\/.bower.json": {
 		"ft": 524288,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/.bower.json",
-		"oF": 0,
+		"oF": 1,
 		"oO": 0,
 		"oS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/.coveralls.yml": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/.coveralls.yml",
-		"oF": 0
+		"oF": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/.editorconfig": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/.editorconfig",
-		"oF": 0
+		"oF": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/.gitattributes": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/.gitattributes",
-		"oF": 0
+		"oF": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/.gitignore": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/.gitignore",
-		"oF": 0
+		"oF": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/.jscsrc": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/.jscsrc",
-		"oF": 0
+		"oF": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/.jshintignore": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/.jshintignore",
-		"oF": 0
+		"oF": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/.jshintrc": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/.jshintrc",
-		"oF": 0
+		"oF": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/.npmignore": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/.npmignore",
-		"oF": 0
+		"oF": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/.travis.yml": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/.travis.yml",
-		"oF": 0
+		"oF": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/appveyor.yml": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/appveyor.yml",
-		"oF": 0
+		"oF": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/bin\/modernizr": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/bin\/modernizr",
-		"oF": 0
+		"oF": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/a\/download.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/a\/download.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/ambientlight.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/ambientlight.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/applicationcache.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/applicationcache.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/audio.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/audio.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/audio\/loop.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/audio\/loop.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/audio\/preload.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/audio\/preload.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/audio\/webaudio.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/audio\/webaudio.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/battery.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/battery.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/battery\/lowbattery.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/battery\/lowbattery.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/blob.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/blob.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/canvas.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/canvas.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/canvas\/blending.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/canvas\/blending.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/canvas\/todataurl.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/canvas\/todataurl.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/canvas\/winding.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/canvas\/winding.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/canvastext.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/canvastext.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/contenteditable.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/contenteditable.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/contextmenu.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/contextmenu.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/cookies.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/cookies.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/cors.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/cors.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/crypto.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/crypto.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/crypto\/getrandomvalues.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/crypto\/getrandomvalues.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/all.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/all.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/animations.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/animations.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/appearance.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/appearance.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/backdropfilter.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/backdropfilter.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/backgroundblendmode.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/backgroundblendmode.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/backgroundcliptext.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/backgroundcliptext.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/backgroundposition-shorthand.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/backgroundposition-shorthand.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/backgroundposition-xy.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/backgroundposition-xy.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/backgroundrepeat.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/backgroundrepeat.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/backgroundsize.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/backgroundsize.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/backgroundsizecover.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/backgroundsizecover.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/borderimage.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/borderimage.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/borderradius.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/borderradius.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/boxshadow.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/boxshadow.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/boxsizing.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/boxsizing.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/calc.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/calc.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/checked.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/checked.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/chunit.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/chunit.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/columns.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/columns.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/cubicbezierrange.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/cubicbezierrange.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/displayrunin.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/displayrunin.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/displaytable.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/displaytable.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/ellipsis.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/ellipsis.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/escape.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/escape.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/exunit.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/exunit.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/filters.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/filters.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/flexbox.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/flexbox.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/flexboxlegacy.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/flexboxlegacy.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/flexboxtweener.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/flexboxtweener.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/flexwrap.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/flexwrap.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/fontface.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/fontface.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/generatedcontent.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/generatedcontent.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/gradients.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/gradients.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/hairline.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/hairline.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/hsla.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/hsla.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/hyphens.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/hyphens.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/invalid.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/invalid.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/lastchild.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/lastchild.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/mask.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/mask.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/mediaqueries.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/mediaqueries.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/multiplebgs.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/multiplebgs.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/nthchild.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/nthchild.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/objectfit.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/objectfit.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/opacity.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/opacity.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/overflow-scrolling.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/overflow-scrolling.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/pointerevents.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/pointerevents.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/positionsticky.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/positionsticky.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/pseudoanimations.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/pseudoanimations.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/pseudotransitions.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/pseudotransitions.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/reflections.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/reflections.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/regions.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/regions.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/remunit.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/remunit.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/resize.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/resize.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/rgba.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/rgba.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/scrollbars.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/scrollbars.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/scrollsnappoints.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/scrollsnappoints.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/shapes.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/shapes.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/siblinggeneral.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/siblinggeneral.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/subpixelfont.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/subpixelfont.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/supports.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/supports.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/target.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/target.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/textalignlast.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/textalignlast.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/textshadow.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/textshadow.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/transforms.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/transforms.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/transforms3d.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/transforms3d.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/transformstylepreserve3d.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/transformstylepreserve3d.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/transitions.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/transitions.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/userselect.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/userselect.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/valid.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/valid.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/vhunit.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/vhunit.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/vmaxunit.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/vmaxunit.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/vminunit.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/vminunit.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/vwunit.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/vwunit.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/will-change.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/will-change.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/css\/wrapflow.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/css\/wrapflow.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/custom-protocol-handler.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/custom-protocol-handler.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/customevent.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/customevent.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/dart.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/dart.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/dataview-api.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/dataview-api.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/dom\/classlist.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/dom\/classlist.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/dom\/createElement-attrs.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/dom\/createElement-attrs.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/dom\/dataset.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/dom\/dataset.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/dom\/documentfragment.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/dom\/documentfragment.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/dom\/hidden.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/dom\/hidden.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/dom\/microdata.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/dom\/microdata.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/dom\/mutationObserver.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/dom\/mutationObserver.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/elem\/bdi.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/elem\/bdi.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/elem\/datalist.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/elem\/datalist.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/elem\/details.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/elem\/details.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/elem\/output.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/elem\/output.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/elem\/picture.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/elem\/picture.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/elem\/progress-meter.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/elem\/progress-meter.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/elem\/ruby.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/elem\/ruby.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/elem\/template.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/elem\/template.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/elem\/time.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/elem\/time.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/elem\/track.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/elem\/track.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/elem\/unknown.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/elem\/unknown.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/emoji.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/emoji.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/es5\/array.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/es5\/array.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/es5\/date.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/es5\/date.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/es5\/function.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/es5\/function.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/es5\/object.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/es5\/object.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/es5\/specification.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/es5\/specification.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/es5\/strictmode.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/es5\/strictmode.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/es5\/string.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/es5\/string.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/es5\/syntax.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/es5\/syntax.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/es5\/undefined.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/es5\/undefined.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/es6\/array.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/es6\/array.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/es6\/collections.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/es6\/collections.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/es6\/contains.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/es6\/contains.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/es6\/generators.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/es6\/generators.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/es6\/math.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/es6\/math.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/es6\/number.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/es6\/number.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/es6\/object.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/es6\/object.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/es6\/promises.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/es6\/promises.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/es6\/string.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/es6\/string.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/event\/deviceorientation-motion.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/event\/deviceorientation-motion.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/event\/oninput.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/event\/oninput.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/eventlistener.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/eventlistener.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/exif-orientation.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/exif-orientation.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/file\/api.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/file\/api.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/file\/filesystem.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/file\/filesystem.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/flash.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/flash.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/forcetouch.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/forcetouch.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/forms\/capture.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/forms\/capture.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/forms\/fileinput.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/forms\/fileinput.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/forms\/fileinputdirectory.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/forms\/fileinputdirectory.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/forms\/formattribute.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/forms\/formattribute.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/forms\/inputnumber-l10n.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/forms\/inputnumber-l10n.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/forms\/placeholder.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/forms\/placeholder.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/forms\/requestautocomplete.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/forms\/requestautocomplete.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/forms\/validation.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/forms\/validation.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/fullscreen-api.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/fullscreen-api.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/gamepad.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/gamepad.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/geolocation.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/geolocation.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/hashchange.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/hashchange.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/hiddenscroll.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/hiddenscroll.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/history.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/history.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/htmlimports.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/htmlimports.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/ie8compat.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/ie8compat.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/iframe\/sandbox.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/iframe\/sandbox.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/iframe\/seamless.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/iframe\/seamless.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/iframe\/srcdoc.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/iframe\/srcdoc.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/img\/apng.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/img\/apng.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/img\/crossorigin.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/img\/crossorigin.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/img\/jpeg2000.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/img\/jpeg2000.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/img\/jpegxr.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/img\/jpegxr.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/img\/sizes.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/img\/sizes.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/img\/srcset.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/img\/srcset.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/img\/webp-alpha.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/img\/webp-alpha.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/img\/webp-animation.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/img\/webp-animation.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/img\/webp-lossless.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/img\/webp-lossless.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/img\/webp.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/img\/webp.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/indexeddb.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/indexeddb.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/indexeddbblob.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/indexeddbblob.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/input.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/input.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/input\/formaction.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/input\/formaction.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/input\/formenctype.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/input\/formenctype.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/input\/formmethod.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/input\/formmethod.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/input\/formtarget.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/input\/formtarget.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/inputsearchevent.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/inputsearchevent.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/inputtypes.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/inputtypes.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/intl.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/intl.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/json.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/json.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/ligatures.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/ligatures.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/lists-reversed.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/lists-reversed.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/mathml.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/mathml.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/network\/beacon.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/network\/beacon.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/network\/connection.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/network\/connection.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/network\/eventsource.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/network\/eventsource.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/network\/fetch.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/network\/fetch.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/network\/xhr-responsetype-arraybuffer.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/network\/xhr-responsetype-arraybuffer.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/network\/xhr-responsetype-blob.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/network\/xhr-responsetype-blob.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/network\/xhr-responsetype-document.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/network\/xhr-responsetype-document.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/network\/xhr-responsetype-json.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/network\/xhr-responsetype-json.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/network\/xhr-responsetype-text.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/network\/xhr-responsetype-text.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/network\/xhr-responsetype.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/network\/xhr-responsetype.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/network\/xhr2.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/network\/xhr2.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/notification.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/notification.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/pagevisibility-api.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/pagevisibility-api.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/performance.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/performance.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/pointerevents.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/pointerevents.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/pointerlock-api.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/pointerlock-api.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/postmessage.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/postmessage.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/proximity.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/proximity.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/queryselector.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/queryselector.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/quota-management-api.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/quota-management-api.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/requestanimationframe.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/requestanimationframe.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/script\/async.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/script\/async.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/script\/defer.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/script\/defer.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/serviceworker.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/serviceworker.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/speech\/speech-recognition.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/speech\/speech-recognition.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/speech\/speech-synthesis.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/speech\/speech-synthesis.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/storage\/localstorage.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/storage\/localstorage.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/storage\/sessionstorage.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/storage\/sessionstorage.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/storage\/websqldatabase.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/storage\/websqldatabase.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/style\/scoped.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/style\/scoped.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/svg.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/svg.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/svg\/asimg.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/svg\/asimg.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/svg\/clippaths.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/svg\/clippaths.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/svg\/filters.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/svg\/filters.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/svg\/foreignobject.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/svg\/foreignobject.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/svg\/inline.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/svg\/inline.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/svg\/smil.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/svg\/smil.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/templatestrings.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/templatestrings.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/textarea\/maxlength.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/textarea\/maxlength.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/touchevents.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/touchevents.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/typed-arrays.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/typed-arrays.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/unicode-range.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/unicode-range.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/unicode.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/unicode.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/url\/bloburls.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/url\/bloburls.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/url\/data-uri.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/url\/data-uri.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/url\/parser.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/url\/parser.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/userdata.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/userdata.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/vibration.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/vibration.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/video.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/video.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/video\/autoplay.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/video\/autoplay.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/video\/loop.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/video\/loop.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/video\/preload.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/video\/preload.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/vml.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/vml.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/web-intents.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/web-intents.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/webanimations.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/webanimations.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/webgl.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/webgl.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/webgl\/extensions.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/webgl\/extensions.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/webrtc\/datachannel.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/webrtc\/datachannel.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/webrtc\/getusermedia.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/webrtc\/getusermedia.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/webrtc\/peerconnection.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/webrtc\/peerconnection.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/websockets.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/websockets.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/websockets\/binary.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/websockets\/binary.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/window\/atob-btoa.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/window\/atob-btoa.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/window\/framed.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/window\/framed.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/window\/matchmedia.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/window\/matchmedia.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/workers\/blobworkers.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/workers\/blobworkers.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/workers\/dataworkers.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/workers\/dataworkers.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/workers\/sharedworkers.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/workers\/sharedworkers.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/workers\/transferables.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/workers\/transferables.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/workers\/webworkers.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/workers\/webworkers.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/feature-detects\/xdomainrequest.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/feature-detects\/xdomainrequest.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/Gruntfile.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/Gruntfile.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/lib\/.jshintrc": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/lib\/.jshintrc",
-		"oF": 0
+		"oF": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/lib\/build-query.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/lib\/build-query.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/lib\/build.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/lib\/build.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/lib\/cli.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/lib\/cli.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/lib\/config-all.json": {
 		"ft": 524288,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/lib\/config-all.json",
-		"oF": 0,
+		"oF": 1,
 		"oO": 0,
 		"oS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/lib\/generate-banner.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/lib\/generate-banner.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/lib\/metadata.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/lib\/metadata.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/lib\/options.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/lib\/options.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/lib\/polyfills.json": {
 		"ft": 524288,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/lib\/polyfills.json",
-		"oF": 0,
+		"oF": 1,
 		"oO": 0,
 		"oS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/LICENSE": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/LICENSE",
-		"oF": 0
+		"oF": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/media\/.gitattributes": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/media\/.gitattributes",
-		"oF": 0
+		"oF": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/media\/Modernizr 2 Logo vertical big.ai": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/media\/Modernizr 2 Logo vertical big.ai",
-		"oF": 0
+		"oF": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/media\/Modernizr 2 Logo vertical medium.ai": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/media\/Modernizr 2 Logo vertical medium.ai",
-		"oF": 0
+		"oF": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/media\/Modernizr 2 Logo vertical small.ai": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/media\/Modernizr 2 Logo vertical small.ai",
-		"oF": 0
+		"oF": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/media\/Modernizr 2 Logo.ai": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/media\/Modernizr 2 Logo.ai",
-		"oF": 0
+		"oF": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/media\/Modernizr 2 Logo.eps": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/media\/Modernizr 2 Logo.eps",
-		"oF": 0
+		"oF": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/media\/Modernizr 2 Logo.pdf": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/media\/Modernizr 2 Logo.pdf",
-		"oF": 0
+		"oF": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/media\/Modernizr 2 Logo.png": {
 		"ft": 32768,
 		"iS": 14823,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/media\/Modernizr 2 Logo.png",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0
 		},
 	"\/src\/assets\/bower_components\/modernizr\/media\/Modernizr 2 Logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/media\/Modernizr 2 Logo.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -2606,32 +2606,32 @@
 	"\/src\/assets\/bower_components\/modernizr\/media\/Modernizr-2-Logo-vertical-big.png": {
 		"ft": 32768,
 		"iS": 8420,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/media\/Modernizr-2-Logo-vertical-big.png",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0
 		},
 	"\/src\/assets\/bower_components\/modernizr\/media\/Modernizr-2-Logo-vertical-medium.png": {
 		"ft": 32768,
 		"iS": 7712,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/media\/Modernizr-2-Logo-vertical-medium.png",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0
 		},
 	"\/src\/assets\/bower_components\/modernizr\/media\/Modernizr-2-Logo-vertical-small.png": {
 		"ft": 32768,
 		"iS": 8634,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/media\/Modernizr-2-Logo-vertical-small.png",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0
 		},
 	"\/src\/assets\/bower_components\/modernizr\/package.json": {
 		"ft": 524288,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/package.json",
-		"oF": 0,
+		"oF": 1,
 		"oO": 0,
 		"oS": 1
 		},
@@ -2643,9 +2643,9 @@
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/readme.md",
-		"oF": 0,
+		"oF": 1,
 		"oFM": 0,
 		"oS": 0,
 		"pHT": 0,
@@ -2656,429 +2656,429 @@
 	"\/src\/assets\/bower_components\/modernizr\/src\/addTest.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/addTest.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/atRule.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/atRule.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/classes.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/classes.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/contains.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/contains.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/createElement.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/createElement.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/cssomPrefixes.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/cssomPrefixes.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/cssToDOM.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/cssToDOM.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/docElement.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/docElement.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/domPrefixes.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/domPrefixes.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/domToCSS.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/domToCSS.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/fnBind.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/fnBind.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/generate.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/generate.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/getBody.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/getBody.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/hasEvent.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/hasEvent.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/hasOwnProp.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/hasOwnProp.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/html5printshiv.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/html5printshiv.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/html5shiv.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/html5shiv.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/injectElementWithStyles.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/injectElementWithStyles.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/inputElem.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/inputElem.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/is.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/is.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/isSVG.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/isSVG.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/load.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/load.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/modElem.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/modElem.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/Modernizr.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
-		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/Modernizr.js",
-		"oF": 0,
+		"oA": 1,
+		"oAP": "\/dist\/js\/Modernizr.js",
+		"oF": 3,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/ModernizrProto.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/ModernizrProto.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/mq.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/mq.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/mStyle.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/mStyle.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/nativeTestProps.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/nativeTestProps.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/omPrefixes.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/omPrefixes.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/prefixed.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/prefixed.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/prefixedCSS.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/prefixedCSS.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/prefixedCSSValue.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/prefixedCSSValue.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/prefixes.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/prefixes.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/roundedEquals.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/roundedEquals.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/setClasses.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/setClasses.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/slice.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/slice.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/testAllProps.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/testAllProps.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/testDOMProps.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/testDOMProps.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/testProp.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/testProp.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/testProps.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/testProps.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/testPropsAll.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/testPropsAll.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/testRunner.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/testRunner.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/tests.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/tests.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/testStyles.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/testStyles.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/testXhrType.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/testXhrType.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/src\/toStringFn.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/src\/toStringFn.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/.jshintrc": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/.jshintrc",
-		"oF": 0
+		"oF": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/iframe.jade": {
 		"cOD": 1,
 		"ft": 512,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/iframe.jade",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/integration.css": {
@@ -3086,563 +3086,563 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/integration.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/integration.jade": {
 		"cOD": 1,
 		"ft": 512,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/integration.jade",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/integration\/bools.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/integration\/bools.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/integration\/caniuse.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/integration\/caniuse.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/integration\/classes.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/integration\/classes.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/integration\/global.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/integration\/global.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/integration\/iframe.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/integration\/iframe.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/integration\/prefixed-atRule.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/integration\/prefixed-atRule.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/integration\/prefixed-autobind.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/integration\/prefixed-autobind.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/integration\/prefixed.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/integration\/prefixed.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/integration\/prefixedCSS.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/integration\/prefixedCSS.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/integration\/svg.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/integration\/svg.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/sauce-browsers.json": {
 		"ft": 524288,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/sauce-browsers.json",
-		"oF": 0,
+		"oF": 1,
 		"oO": 0,
 		"oS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/setup.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/setup.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/addTest.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/addTest.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/atRule.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/atRule.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/classes.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/classes.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/contains.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/contains.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/createElement.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/createElement.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/cssomPrefixes.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/cssomPrefixes.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/cssToDOM.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/cssToDOM.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/docElement.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/docElement.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/domPrefixes.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/domPrefixes.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/domToCSS.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/domToCSS.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/fnBind.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/fnBind.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/generate.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/generate.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/getBody.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/getBody.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/hasEvent.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/hasEvent.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/hasOwnProp.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/hasOwnProp.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/html5printshiv.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/html5printshiv.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/html5shiv.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/html5shiv.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/injectElementWithStyles.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/injectElementWithStyles.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/inputElem.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/inputElem.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/is.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/is.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/load.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/load.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/modElem.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/modElem.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/Modernizr.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/Modernizr.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/ModernizrProto.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/ModernizrProto.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/mq.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/mq.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/mStyle.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/mStyle.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/nativeTestProps.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/nativeTestProps.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/omPrefixes.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/omPrefixes.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/prefixed.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/prefixed.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/prefixedCSS.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/prefixedCSS.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/prefixedCSSValue.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/prefixedCSSValue.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/prefixes.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/prefixes.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/roundedEquals.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/roundedEquals.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/setClasses.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/setClasses.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/slice.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/slice.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/testAllProps.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/testAllProps.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/testDOMProps.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/testDOMProps.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/testProp.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/testProp.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/testProps.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/testProps.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/testPropsAll.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/testPropsAll.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/testRunner.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/testRunner.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/tests.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/tests.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/testStyles.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/testStyles.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/testXhrType.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/testXhrType.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/src\/toStringFn.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/src\/toStringFn.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/svgUnit.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/svgUnit.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/browser\/unit.jade": {
 		"cOD": 1,
 		"ft": 512,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/browser\/unit.jade",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/cleanup.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/cleanup.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/img\/integration.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/img\/integration.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -3650,9 +3650,9 @@
 	"\/src\/assets\/bower_components\/modernizr\/test\/img\/unit.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/img\/unit.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -3660,614 +3660,929 @@
 	"\/src\/assets\/bower_components\/modernizr\/test\/js\/lib\/sinon.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/js\/lib\/sinon.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/js\/lib\/uaparser.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/js\/lib\/uaparser.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/mocks\/lib\/build-query.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/mocks\/lib\/build-query.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/mocks\/lib\/metadata.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/mocks\/lib\/metadata.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/node\/lib\/build.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/node\/lib\/build.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/node\/lib\/cli.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/node\/lib\/cli.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/node\/lib\/metadata.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/node\/lib\/metadata.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/node\/lib\/options.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/node\/lib\/options.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/universal\/lib\/build-query.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/universal\/lib\/build-query.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
 	"\/src\/assets\/bower_components\/modernizr\/test\/universal\/lib\/generate-banner.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/dist\/assets\/bower_components\/modernizr\/test\/universal\/lib\/generate-banner.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/docs.html": {
+	"\/src\/assets\/greensock-js-shockingly-green\/docs.html": {
 		"ft": 8192,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/docs.html",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/docs.html",
 		"oF": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/getting_started.html": {
+	"\/src\/assets\/greensock-js-shockingly-green\/getting_started.html": {
 		"ft": 8192,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/getting_started.html",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/getting_started.html",
 		"oF": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/easing\/EasePack.min.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/AttrPlugin.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/easing\/EasePack.min.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/AttrPlugin.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/jquery.gsap.min.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/BezierPlugin.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/jquery.gsap.min.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/BezierPlugin.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/AttrPlugin.min.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/ColorPropsPlugin.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/AttrPlugin.min.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/ColorPropsPlugin.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/BezierPlugin.min.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/CSSPlugin.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/BezierPlugin.min.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/CSSPlugin.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/ColorPropsPlugin.min.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/CSSRulePlugin.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/ColorPropsPlugin.min.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/CSSRulePlugin.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/CSSPlugin.min.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/CustomBounce.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/CSSPlugin.min.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/CustomBounce.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/CSSRulePlugin.min.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/CustomEase.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/CSSRulePlugin.min.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/CustomEase.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/DirectionalRotationPlugin.min.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/CustomWiggle.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/DirectionalRotationPlugin.min.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/CustomWiggle.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/DrawSVGPlugin.min.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/DirectionalRotationPlugin.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/DrawSVGPlugin.min.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/DirectionalRotationPlugin.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/EaselPlugin.min.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/Draggable.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/EaselPlugin.min.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/Draggable.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/EndArrayPlugin.min.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/DrawSVGPlugin.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/EndArrayPlugin.min.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/DrawSVGPlugin.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/KineticPlugin.min.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/EaselPlugin.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/KineticPlugin.min.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/EaselPlugin.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/MorphSVGPlugin.min.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/EasePack.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/MorphSVGPlugin.min.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/EasePack.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/Physics2DPlugin.min.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/EndArrayPlugin.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/Physics2DPlugin.min.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/EndArrayPlugin.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/PhysicsPropsPlugin.min.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/jquery.gsap.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/PhysicsPropsPlugin.min.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/jquery.gsap.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/RaphaelPlugin.min.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/ModifiersPlugin.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/RaphaelPlugin.min.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/ModifiersPlugin.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/RoundPropsPlugin.min.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/MorphSVGPlugin.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/RoundPropsPlugin.min.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/MorphSVGPlugin.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/ScrambleTextPlugin.min.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/Physics2DPlugin.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/ScrambleTextPlugin.min.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/Physics2DPlugin.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/ScrollToPlugin.min.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/PhysicsPropsPlugin.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/ScrollToPlugin.min.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/PhysicsPropsPlugin.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/TextPlugin.min.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/RaphaelPlugin.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/TextPlugin.min.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/RaphaelPlugin.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/ThrowPropsPlugin.min.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/RoundPropsPlugin.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/plugins\/ThrowPropsPlugin.min.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/RoundPropsPlugin.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/TimelineLite.min.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/ScrambleTextPlugin.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/TimelineLite.min.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/ScrambleTextPlugin.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/TimelineMax.min.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/ScrollToPlugin.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/TimelineMax.min.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/ScrollToPlugin.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/TweenLite.min.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/SplitText.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/TweenLite.min.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/SplitText.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/TweenMax.min.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/TextPlugin.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/TextPlugin.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/ThrowPropsPlugin.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/ThrowPropsPlugin.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/TimelineLite.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/TimelineLite.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/TimelineMax.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/TimelineMax.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/TweenLite.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/TweenLite.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/TweenMax.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/commonjs-flat\/TweenMax.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/minified\/easing\/CustomBounce.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/minified\/easing\/CustomBounce.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/minified\/easing\/CustomEase.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/minified\/easing\/CustomEase.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/minified\/easing\/CustomWiggle.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/minified\/easing\/CustomWiggle.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/minified\/easing\/EasePack.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/minified\/easing\/EasePack.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/minified\/jquery.gsap.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/minified\/jquery.gsap.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/AttrPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/AttrPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/BezierPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/BezierPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/ColorPropsPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/ColorPropsPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/CSSPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/CSSPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/CSSRulePlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/CSSRulePlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/DirectionalRotationPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/DirectionalRotationPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/DrawSVGPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/DrawSVGPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/EaselPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/EaselPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/EndArrayPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/EndArrayPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/ModifiersPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/ModifiersPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/MorphSVGPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/MorphSVGPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/Physics2DPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/Physics2DPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/PhysicsPropsPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/PhysicsPropsPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/RaphaelPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/RaphaelPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/RoundPropsPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/RoundPropsPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/ScrambleTextPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/ScrambleTextPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/ScrollToPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/ScrollToPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/TextPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/TextPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/ThrowPropsPlugin.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/minified\/plugins\/ThrowPropsPlugin.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/minified\/TimelineLite.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/minified\/TimelineLite.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/minified\/TimelineMax.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/minified\/TimelineMax.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/minified\/TweenLite.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/minified\/TweenLite.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/minified\/TweenMax.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/minified\/TweenMax.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/minified\/utils\/CSSTransform.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/minified\/utils\/CSSTransform.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/minified\/utils\/Draggable.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/minified\/utils\/Draggable.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/minified\/utils\/SplitText.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/minified\/utils\/SplitText.min.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/easing\/CustomBounce.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/easing\/CustomBounce.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/easing\/CustomEase.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/easing\/CustomEase.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/easing\/CustomWiggle.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/easing\/CustomWiggle.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/easing\/EasePack.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/easing\/EasePack.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/jquery.gsap.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/jquery.gsap.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/AttrPlugin.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/AttrPlugin.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/BezierPlugin.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/BezierPlugin.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/ColorPropsPlugin.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/ColorPropsPlugin.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/CSSPlugin.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/CSSPlugin.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/CSSRulePlugin.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/CSSRulePlugin.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/DirectionalRotationPlugin.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/DirectionalRotationPlugin.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/DrawSVGPlugin.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/DrawSVGPlugin.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/EaselPlugin.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/EaselPlugin.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/EndArrayPlugin.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/EndArrayPlugin.js",
+		"oF": 1,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/ModifiersPlugin.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 2,
-		"oAP": "\/dist\/js\/TweenMax.min.js",
+		"oAP": "\/dist\/js\/ModifiersPlugin.js",
 		"oF": 3,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/utils\/CSSTransform.min.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/MorphSVGPlugin.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/utils\/CSSTransform.min.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/MorphSVGPlugin.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/utils\/Draggable.min.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/Physics2DPlugin.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/utils\/Draggable.min.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/Physics2DPlugin.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/utils\/SplitText.min.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/PhysicsPropsPlugin.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/minified\/utils\/SplitText.min.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/PhysicsPropsPlugin.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/easing\/EasePack.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/RaphaelPlugin.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/easing\/EasePack.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/RaphaelPlugin.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/jquery.gsap.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/RoundPropsPlugin.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/jquery.gsap.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/RoundPropsPlugin.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/AttrPlugin.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/ScrambleTextPlugin.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/AttrPlugin.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/ScrambleTextPlugin.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/BezierPlugin.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/ScrollToPlugin.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/BezierPlugin.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/ScrollToPlugin.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/ColorPropsPlugin.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/TEMPLATE_Plugin.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/ColorPropsPlugin.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/TEMPLATE_Plugin.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/CSSPlugin.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/TextPlugin.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/CSSPlugin.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/TextPlugin.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/CSSRulePlugin.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/ThrowPropsPlugin.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/CSSRulePlugin.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/plugins\/ThrowPropsPlugin.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/DirectionalRotationPlugin.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/TimelineLite.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/DirectionalRotationPlugin.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/TimelineLite.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/DrawSVGPlugin.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/TimelineMax.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/DrawSVGPlugin.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/TimelineMax.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/EaselPlugin.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/TweenLite.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/EaselPlugin.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/TweenLite.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/EndArrayPlugin.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/TweenMax.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 2,
+		"oAP": "\/dist\/js\/TweenMax.js",
+		"oF": 3,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/utils\/Draggable.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/EndArrayPlugin.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/utils\/Draggable.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
 		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/KineticPlugin.js": {
+	"\/src\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/utils\/SplitText.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/KineticPlugin.js",
-		"oF": 1,
-		"sC": 2,
-		"tS": 1
-		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/MorphSVGPlugin.js": {
-		"ft": 64,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/MorphSVGPlugin.js",
-		"oF": 1,
-		"sC": 2,
-		"tS": 1
-		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/Physics2DPlugin.js": {
-		"ft": 64,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/Physics2DPlugin.js",
-		"oF": 1,
-		"sC": 2,
-		"tS": 1
-		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/PhysicsPropsPlugin.js": {
-		"ft": 64,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/PhysicsPropsPlugin.js",
-		"oF": 1,
-		"sC": 2,
-		"tS": 1
-		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/RaphaelPlugin.js": {
-		"ft": 64,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/RaphaelPlugin.js",
-		"oF": 1,
-		"sC": 2,
-		"tS": 1
-		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/RoundPropsPlugin.js": {
-		"ft": 64,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/RoundPropsPlugin.js",
-		"oF": 1,
-		"sC": 2,
-		"tS": 1
-		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/ScrambleTextPlugin.js": {
-		"ft": 64,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/ScrambleTextPlugin.js",
-		"oF": 1,
-		"sC": 2,
-		"tS": 1
-		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/ScrollToPlugin.js": {
-		"ft": 64,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/ScrollToPlugin.js",
-		"oF": 1,
-		"sC": 2,
-		"tS": 1
-		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/TEMPLATE_Plugin.js": {
-		"ft": 64,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/TEMPLATE_Plugin.js",
-		"oF": 1,
-		"sC": 2,
-		"tS": 1
-		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/TextPlugin.js": {
-		"ft": 64,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/TextPlugin.js",
-		"oF": 1,
-		"sC": 2,
-		"tS": 1
-		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/ThrowPropsPlugin.js": {
-		"ft": 64,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/plugins\/ThrowPropsPlugin.js",
-		"oF": 1,
-		"sC": 2,
-		"tS": 1
-		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/TimelineLite.js": {
-		"ft": 64,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/TimelineLite.js",
-		"oF": 1,
-		"sC": 2,
-		"tS": 1
-		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/TimelineMax.js": {
-		"ft": 64,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/TimelineMax.js",
-		"oF": 1,
-		"sC": 2,
-		"tS": 1
-		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/TweenLite.js": {
-		"ft": 64,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/TweenLite.js",
-		"oF": 1,
-		"sC": 2,
-		"tS": 1
-		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/TweenMax-2.js": {
-		"ft": 64,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/TweenMax-2.js",
-		"oF": 1,
-		"sC": 2,
-		"tS": 1
-		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/TweenMax.js": {
-		"ft": 64,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/TweenMax.js",
-		"oF": 1,
-		"sC": 2,
-		"tS": 1
-		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/utils\/Draggable.js": {
-		"ft": 64,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/utils\/Draggable.js",
-		"oF": 1,
-		"sC": 2,
-		"tS": 1
-		},
-	"\/src\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/utils\/SplitText.js": {
-		"ft": 64,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/dist\/assets\/GreenSock-ShockinglyGreen-js\/src\/uncompressed\/utils\/SplitText.js",
+		"oAP": "\/dist\/assets\/greensock-js-shockingly-green\/src\/uncompressed\/utils\/SplitText.js",
 		"oF": 1,
 		"sC": 2,
 		"tS": 1
@@ -4575,7 +4890,7 @@
 	"displayValue": "kodamaProject",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-karate",
-	"lastBuiltDate": 508504141
+	"lastBuiltDate": 508589975
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

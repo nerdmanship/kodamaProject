@@ -1,12 +1,23 @@
 "use strict";
 
-// Memory leak on mousemove?
+// Kill TweenMax objects on restart
+// Try to name them and kill them in killAll function
+
+// Install Modernizr
+// Do specific feature settings on touch
+
+// Make shroom tripå
+// Inventory trippy effects to trigger on shroom munch
 
 function random(min, max) {
   if (max === null) {
     max = min;min = 0;
   }
   return Math.random() * (max - min) + min;
+}
+
+function map(value, sourceMin, sourceMax, destinationMin, destinationMax) {
+  return destinationMin + (destinationMax - destinationMin) * ((value - sourceMin) / (sourceMax - sourceMin)) || 0;
 }
 
 var features = {
@@ -27,7 +38,7 @@ var features = {
   textMotion: true,
 
   // Allow interaction
-  parallax: true,
+  mouseAction: true,
   shroomTrip: true
 };
 
@@ -72,8 +83,10 @@ var o = {
   settings: function settings() {
     // default settings
     o.isMute = false;
-    o.mouseX = 0;
-    o.mouseY = 0;
+    o.mouse = { x: 0, y: 0 };
+    o.vw = 0;
+    o.vh = 0;
+    o.acceleration = { val: 0 };
     o.tl = null;
 
     // Back Kodama size
@@ -87,10 +100,18 @@ var o = {
     for (var i = 0; i < o.li.glows.length; i++) {
       TweenMax.set(o.li.glows[i], { autoAlpha: opacity[i] });
     }
+    // Set values depending on screensize
+    o.resize();
+  },
+  resize: function resize() {
+    o.vw = window.innerWidth;
+    o.vh = window.innerHeight;
+    console.log("Resized: " + o.vw + " " + o.vh);
   },
   bindEvents: function bindEvents() {
     o.muteButton.addEventListener("click", o.toggleAudio);
     o.replayButton.addEventListener("click", o.replay);
+    window.addEventListener("resize", o.resize);
   },
   resetStart: function resetStart() {
     o.killTls();
@@ -144,9 +165,11 @@ var o = {
     TweenMax.set(o.li.offsetLayers, { x: -50 });
   },
   resetExtras: function resetExtras() {
+    // Reset acceleration value
+    o.acceleration.val = 0;
+    console.log(o.acceleration.val);
     // Hide elements by default
     TweenMax.set([o.svg, o.li.kodamas, o.li.texts, o.li.textsMobile, o.el.sunray], { autoAlpha: 0 });
-    // Unbind parallax
     document.removeEventListener("mousemove", o.moveArt);
   },
 
@@ -194,6 +217,9 @@ var o = {
     if (!features.transparency) {
       o.removeTransparency();
     }
+    if (!features.mouseAction) {
+      o.playIntro();
+    }
 
     // Call if true
     if (features.vinesMotion) {
@@ -205,23 +231,17 @@ var o = {
     if (features.textMotion) {
       o.playText();
     }
-    if (features.parallax) {
+    if (features.mouseAction) {
       o.bindParallax();
     }
     if (features.shroomTrip) {
       o.bindShrooms();
     }
-    if (features.shyKodama) {
-      o.bindKodamas();
-    }
-    if (features.shyFirefly) {
-      o.bindFireflies();
-    }
   },
   getTimeline: function getTimeline() {
     var tl = new TimelineMax({ paused: true });
 
-    tl.add("layers").to(o.li.layers, 9, { y: 50, ease: Back.easeOut }, 0).add("revealKodamas").to(o.li.kodamas[0], 3, { autoAlpha: o.kodamaTransparency, ease: Power3.easeOut }, 7).to(o.li.kodamas[1], 3, { autoAlpha: o.kodamaTransparency, ease: Power3.easeOut }, 9.5).to(o.li.kodamas[2], 3, { autoAlpha: o.kodamaTransparency, ease: Power3.easeOut }, 10.5).add("revealTitle").to(o.li.texts[0], 3, { autoAlpha: 1, ease: Power3.easeOut }, 11.3).to(o.li.texts[1], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 12.2).add("spinHeads").add("spin1").to(o.li.heads[0], 2, { rotation: 90, transformOrigin: "center center" }, "spin1").to(o.li.heads[0], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin1 =+2").call(o.playSFX, [o.spinAudio1], this, "spin1").add("spin2", "spin1 =+2").to(o.li.heads[1], 2, { rotation: 90, transformOrigin: "center center" }, "spin2").to(o.li.heads[1], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin2 =+2").call(o.playSFX, [o.spinAudio2], this, "spin2").add("spin3", "spin1 =+2.3").to(o.li.heads[2], 2, { rotation: 90, transformOrigin: "center center" }, "spin3").to(o.li.heads[2], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin3 =+2").call(o.playSFX, [o.spinAudio3], this, "spin3");
+    tl.add("revealKodamas").to(o.li.kodamas[0], 3, { autoAlpha: o.kodamaTransparency, ease: Power3.easeOut }, 7).to(o.li.kodamas[1], 3, { autoAlpha: o.kodamaTransparency, ease: Power3.easeOut }, 9.5).to(o.li.kodamas[2], 3, { autoAlpha: o.kodamaTransparency, ease: Power3.easeOut }, 10.5).add("revealTitle").to(o.li.texts[0], 3, { autoAlpha: 1, ease: Power3.easeOut }, 11.3).to(o.li.texts[1], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 12.2).add("spinHeads").add("spin1").to(o.li.heads[0], 2, { rotation: 90, transformOrigin: "center center" }, "spin1").to(o.li.heads[0], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin1 =+2").call(o.playSFX, [o.spinAudio1], this, "spin1").add("spin2", "spin1 =+2").to(o.li.heads[1], 2, { rotation: 90, transformOrigin: "center center" }, "spin2").to(o.li.heads[1], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin2 =+2").call(o.playSFX, [o.spinAudio2], this, "spin2").add("spin3", "spin1 =+2.3").to(o.li.heads[2], 2, { rotation: 90, transformOrigin: "center center" }, "spin3").to(o.li.heads[2], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin3 =+2").call(o.playSFX, [o.spinAudio3], this, "spin3");
 
     return tl;
   },
@@ -354,6 +374,7 @@ var o = {
     }
   },
   playSunrays: function playSunrays() {
+
     TweenMax.to(o.el.sunray, 3, { autoAlpha: 0.2, delay: 10 });
   },
   removeFilters: function removeFilters() {
@@ -372,32 +393,86 @@ var o = {
     }
   },
   removeTransparency: function removeTransparency() {
+
     o.kodamaTransparency = 1;
   },
   playText: function playText() {
     TweenMax.to(o.li.texts[0], 6, { y: 20, ease: Power1.easeInOut, repeat: -1, yoyo: true });
     TweenMax.to(o.li.texts[1], 6, { y: 20, ease: Power1.easeInOut, repeat: -1, yoyo: true, delay: 1.8 });
   },
-  bindParallax: function bindParallax() {
-    document.addEventListener("mousemove", o.moveArt);
-  },
-  moveArt: function moveArt(e) {
-    o.mouseX = (e.clientX - window.innerWidth / 2) / (window.innerWidth / 2);
-    o.mouseY = (e.clientY - window.innerHeight / 2) / (window.innerHeight / 2);
+  playIntro: function playIntro() {
 
+    TweenMax.to(o.li.layers, 9, { y: 50, ease: Back.easeOut });
+  },
+  bindParallax: function bindParallax() {
+    o.svg.addEventListener("mousemove", o.updateMouseObj);
+    o.svg.addEventListener("touchmove", o.updateMouseObj);
+    o.createLayerObjects();
+    o.connectArt();
+  },
+  createLayerObjects: function createLayerObjects() {
+    o.layerObj = [];
     for (var i = 0; i < o.li.layers.length; i++) {
       var offset = 20 * i;
-      var x = offset * o.mouseX;
-      var y = offset / 2 * o.mouseY;
+      o.layerObj[i] = {
+        pos: o.li.layers[i]._gsTransform,
+        x: 0,
+        xMin: offset,
+        xMax: -offset,
+        y: 0,
+        yMin: offset,
+        yMax: -offset
+      };
+    }
+  },
+  connectArt: function connectArt() {
+    TweenMax.to(o.acceleration, 10, { val: 0.05 });
 
-      TweenMax.to(o.li.layers[i], 5, { x: -x, y: -y + 50, ease: Power4.easeOut });
+    var _loop = function _loop(i) {
+
+      TweenMax.to(o.li.layers[i], 1000, { x: 0, y: 0, repeat: -1, ease: Linear.easeNone,
+        modifiers: {
+          x: function x() {
+            return o.getLayerX(i);
+          },
+          y: function y() {
+            return o.getLayerY(i);
+          }
+        }
+      });
+    };
+
+    for (var i = 0; i < o.li.layers.length; i++) {
+      _loop(i);
+    }
+  },
+  getLayerX: function getLayerX(i) {
+
+    var obj = o.layerObj[i];
+    obj.x = map(o.mouse.x, 0, o.vw, obj.xMin, obj.xMax);
+    return obj.pos.x + (obj.x - obj.pos.x) * o.acceleration.val;
+  },
+  getLayerY: function getLayerY(i) {
+    var elPos = o.li.layers[i]._gsTransform.y;
+    var obj = o.layerObj[i];
+    obj.y = map(o.mouse.y, 0, o.vw, obj.yMin, obj.yMax);
+    return elPos + (obj.y - elPos) * o.acceleration.val;
+  },
+  updateMouseObj: function updateMouseObj(e) {
+    if (e.targetTouches && e.targetTouches[0]) {
+      e.preventDefault();
+      o.mouse.x = e.targetTouches[0].clientX;
+      o.mouse.y = e.targetTouches[0].clientY;
+    } else {
+      o.mouse.x = e.clientX;
+      o.mouse.y = e.clientY;
     }
   }
 };
 
 window.addEventListener("load", o.init);
 
-// Instead of creating a Tween object on every mousemove event there is one contiuous Tween object that get updated by the modifierPlugin
+// Instead of creating a Tween object on every mousemove event there is one Tween object that contiuous get updated by the modifierPlugin
 // This pen: http://codepen.io/osublake/pen/4160082f5a86a3cd0410fb836a74fa68
 // This post: http://codepen.io/nerdmanship/details/ZLoyPG#comment-id-172097
 // Sharing invaluable insight about normalising, linear interpolation and mapping. Little utility functions that will make your animation workflow smarter, easier and more powerful. It might seem like scary math, but it's actually very straight forward, it just needs some time to settle. If you're already in a coding environment and you enjoy animating, it's definitely worth your while.
