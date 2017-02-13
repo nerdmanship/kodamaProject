@@ -1,10 +1,14 @@
+/*! modernizr 3.3.1 (Custom Build) | MIT *
+ * https://modernizr.com/download/?-touchevents-setclasses !*/
+!function(e,n,t){function o(e,n){return typeof e===n}function s(){var e,n,t,s,a,i,r;for(var l in c)if(c.hasOwnProperty(l)){if(e=[],n=c[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(s=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],r=i.split("."),1===r.length?Modernizr[r[0]]=s:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=s),f.push((s?"":"no-")+r.join("-"))}}function a(e){var n=u.className,t=Modernizr._config.classPrefix||"";if(p&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(o,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),p?u.className.baseVal=n:u.className=n)}function i(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):p?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function r(){var e=n.body;return e||(e=i(p?"svg":"body"),e.fake=!0),e}function l(e,t,o,s){var a,l,f,c,d="modernizr",p=i("div"),h=r();if(parseInt(o,10))for(;o--;)f=i("div"),f.id=s?s[o]:d+(o+1),p.appendChild(f);return a=i("style"),a.type="text/css",a.id="s"+d,(h.fake?h:p).appendChild(a),h.appendChild(p),a.styleSheet?a.styleSheet.cssText=e:a.appendChild(n.createTextNode(e)),p.id=d,h.fake&&(h.style.background="",h.style.overflow="hidden",c=u.style.overflow,u.style.overflow="hidden",u.appendChild(h)),l=t(p,e),h.fake?(h.parentNode.removeChild(h),u.style.overflow=c,u.offsetHeight):p.parentNode.removeChild(p),!!l}var f=[],c=[],d={_version:"3.3.1",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){c.push({name:e,fn:n,options:t})},addAsyncTest:function(e){c.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=d,Modernizr=new Modernizr;var u=n.documentElement,p="svg"===u.nodeName.toLowerCase(),h=d._config.usePrefixes?" -webkit- -moz- -o- -ms- ".split(" "):["",""];d._prefixes=h;var m=d.testStyles=l;Modernizr.addTest("touchevents",function(){var t;if("ontouchstart"in e||e.DocumentTouch&&n instanceof DocumentTouch)t=!0;else{var o=["@media (",h.join("touch-enabled),("),"heartz",")","{#modernizr{top:9px;position:absolute}}"].join("");m(o,function(e){t=9===e.offsetTop})}return t}),s(),a(f),delete d.addTest,delete d.addAsyncTest;for(var v=0;v<Modernizr._q.length;v++)Modernizr._q[v]();e.Modernizr=Modernizr}(window,document);
+
+
 // Install Modernizr
 // Do specific feature settings on touch
 
 // Make shroom trip
 // Inventory trippy effects to trigger on shroom munch
 
-// Do gradients?
 
 function random(min, max) {
   if (max === null) { max = min; min = 0; }
@@ -17,25 +21,51 @@ function map(value, sourceMin, sourceMax, destinationMin, destinationMax) {
 
 
 const features = {
+  
+  // Show elements
+  vines: true,
+  shrooms: true,
+  fireflies: true,
+  sunrays: true,
+  filters: false,
+
+  // Allow effects
+  transparency: true,
+
+  // Play animations (these do not play if elements are removed)
+  vinesMotion: true,
+  shroomsMotion: true,
+  textMotion: true,
+
+  // Allow interaction
+  mouseAction: true,
+  shroomTrip: true,
+  init: function() {
+    if (Modernizr.touchevents){
+      console.log("touch");
       // Show elements
-      vines: true,
-      shrooms: true,
-      fireflies: true,
-      sunrays: false,
-      filters: false,
+      this.vines = false;
+      this.shrooms = false;
+      this.fireflies = false;
+      this.sunrays = false;
+      this.filters = false;
 
       // Allow effects
-      gradients: true,
-      transparency: true,
+      this.transparency = false;
 
       // Play animations (these do not play if elements are removed)
-      vinesMotion: true,
-      shroomsMotion: true,
-      textMotion: true,
+      this.vinesMotion = false;
+      this.shroomsMotion = false;
+      this.textMotion = false;
 
       // Allow interaction
-      mouseAction: true,
-      shroomTrip: true,
+      this.mouseAction = false;
+      this.shroomTrip = false;
+    } else {
+      console.log("not mobile");
+    }
+    
+  }
 };
 
 const o = {
@@ -77,7 +107,6 @@ const o = {
 
     o.li.offsetLayers = o.svg.querySelectorAll("[data-hax=offsetLayers]");
     o.li.filters = o.svg.querySelectorAll("[filter]");
-    o.li.grads = o.svg.querySelectorAll("[fill^=url]");
  
     o.muteButton = document.querySelector("[data-btn=mute]");
     o.replayButton = document.querySelector("[data-btn=replay]");
@@ -90,9 +119,11 @@ const o = {
     
   },
   settings: function() {
-    // Set values depending on screensize
+    features.init();
+    // Parallax settings
     o.vw = 0;
     o.vh = 0;
+    o.layerObj = [];
     o.resize();
     
     // default settings
@@ -116,7 +147,6 @@ const o = {
   resize: function() {
     o.vw = window.innerWidth;
     o.vh = window.innerHeight;
-    console.log("Resized: " + o.vw + " " + o.vh);
   },
   bindEvents: function() {
     o.muteButton.addEventListener("click", o.toggleAudio);
@@ -206,7 +236,6 @@ const o = {
     if (!features.fireflies) { o.removeFireflies(); } else { o.playFireflies(); }
     if (!features.sunrays) { o.removeSunrays(); } else { o.playSunrays(); }
     if (!features.filters) { o.removeFilters(); }
-    if (!features.gradients) { o.setFlatFills(); }
     if (!features.transparency) { o.removeTransparency(); }
     if (!features.mouseAction) { o.playIntro(); }
     
@@ -258,13 +287,10 @@ const o = {
 // features
   removeVines: function() {
     if(o.li.shroomGroups[0].parentNode) {
-      console.log("removing");
       for (var i = 0; i < o.li.vines.length; i++) {
-
         o.li.vines[i].parentNode.removeChild(o.li.vines[i]);
       }
     } else {
-      console.log("adding");
       for (var i = 0; i < o.li.vines.length; i++) {
         o.li.vines[i].parentNode.appendChild(o.li.vines[i]);
       }
@@ -401,14 +427,6 @@ const o = {
       }
     }
   },
-  setFlatFills: function() {
-    for (var i = 0; i < o.li.grads.length; i++) {
-      var newFill = o.li.grads[i].getAttribute("data-fill");
-      if (newFill) {
-        o.li.grads[i].setAttribute("fill", newFill);
-      }
-    }
-  },
   removeTransparency: function() {
 
     o.kodamaTransparency = 1;
@@ -427,7 +445,7 @@ const o = {
     
     TweenMax.to(o.acceleration, 10, { val: 0.05, ease: Linear.easeNone });
     
-    o.layerObj = [];
+    
     
     for (var i = 0; i < o.li.layers.length; i++) {
       o.linkLayer(i);
@@ -436,6 +454,7 @@ const o = {
   },
   linkLayer: function(i) {
     const offset = 20*i;
+    
     o.layerObj[i] = {
       pos: o.li.layers[i]._gsTransform,
       x: 0,
