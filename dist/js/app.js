@@ -1,13 +1,12 @@
 "use strict";
 
-// Kill TweenMax objects on restart
-// Try to name them and kill them in killAll function
-
 // Install Modernizr
 // Do specific feature settings on touch
 
-// Make shroom tripå
+// Make shroom trip
 // Inventory trippy effects to trigger on shroom munch
+
+// Do gradients?
 
 function random(min, max) {
   if (max === null) {
@@ -25,8 +24,8 @@ var features = {
   vines: true,
   shrooms: true,
   fireflies: true,
-  sunrays: true,
-  filters: true,
+  sunrays: false,
+  filters: false,
 
   // Allow effects
   gradients: true,
@@ -166,8 +165,7 @@ var o = {
   },
   resetExtras: function resetExtras() {
     // Reset acceleration value
-    o.acceleration.val = 0;
-    console.log(o.acceleration.val);
+    TweenMax.set(o.acceleration, { val: 0 });
     // Hide elements by default
     TweenMax.set([o.svg, o.li.kodamas, o.li.texts, o.li.textsMobile, o.el.sunray], { autoAlpha: 0 });
     document.removeEventListener("mousemove", o.moveArt);
@@ -407,56 +405,39 @@ var o = {
   bindParallax: function bindParallax() {
     o.svg.addEventListener("mousemove", o.updateMouseObj);
     o.svg.addEventListener("touchmove", o.updateMouseObj);
-    o.createLayerObjects();
-    o.connectArt();
-  },
-  createLayerObjects: function createLayerObjects() {
+
+    TweenMax.to(o.acceleration, 10, { val: 0.05, ease: Linear.easeNone });
+
     o.layerObj = [];
+
     for (var i = 0; i < o.li.layers.length; i++) {
-      var offset = 20 * i;
-      o.layerObj[i] = {
-        pos: o.li.layers[i]._gsTransform,
-        x: 0,
-        xMin: offset,
-        xMax: -offset,
-        y: 0,
-        yMin: offset,
-        yMax: -offset
-      };
+      o.linkLayer(i);
     }
   },
-  connectArt: function connectArt() {
-    TweenMax.to(o.acceleration, 10, { val: 0.05 });
-
-    var _loop = function _loop(i) {
-
-      TweenMax.to(o.li.layers[i], 1000, { x: 0, y: 0, repeat: -1, ease: Linear.easeNone,
-        modifiers: {
-          x: function x() {
-            return o.getLayerX(i);
-          },
-          y: function y() {
-            return o.getLayerY(i);
-          }
-        }
-      });
+  linkLayer: function linkLayer(i) {
+    var offset = 20 * i;
+    o.layerObj[i] = {
+      pos: o.li.layers[i]._gsTransform,
+      x: 0,
+      xMin: offset,
+      xMax: -offset,
+      y: 0,
+      yMin: offset,
+      yMax: -offset
     };
 
-    for (var i = 0; i < o.li.layers.length; i++) {
-      _loop(i);
-    }
-  },
-  getLayerX: function getLayerX(i) {
-
-    var obj = o.layerObj[i];
-    obj.x = map(o.mouse.x, 0, o.vw, obj.xMin, obj.xMax);
-    return obj.pos.x + (obj.x - obj.pos.x) * o.acceleration.val;
-  },
-  getLayerY: function getLayerY(i) {
-    var elPos = o.li.layers[i]._gsTransform.y;
-    var obj = o.layerObj[i];
-    obj.y = map(o.mouse.y, 0, o.vw, obj.yMin, obj.yMax);
-    return elPos + (obj.y - elPos) * o.acceleration.val;
+    TweenMax.to(o.li.layers[i], 1000, { x: 0, y: 0, repeat: -1, ease: Linear.easeNone,
+      modifiers: {
+        x: function x() {
+          o.layerObj[i].x = map(o.mouse.x, 0, o.vw, o.layerObj[i].xMin, o.layerObj[i].xMax);
+          return o.layerObj[i].pos.x + (o.layerObj[i].x - o.layerObj[i].pos.x) * o.acceleration.val;
+        },
+        y: function y() {
+          o.layerObj[i].y = map(o.mouse.y, 0, o.vw, o.layerObj[i].yMin, o.layerObj[i].yMax);
+          return o.layerObj[i].pos.y + (o.layerObj[i].y - o.layerObj[i].pos.y) * o.acceleration.val;
+        }
+      }
+    });
   },
   updateMouseObj: function updateMouseObj(e) {
     if (e.targetTouches && e.targetTouches[0]) {

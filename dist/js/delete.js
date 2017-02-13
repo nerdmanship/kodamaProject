@@ -1,13 +1,15 @@
+"use strict";
+
 // Install Modernizr
 // Do specific feature settings on touch
 
 // Make shroom trip
 // Inventory trippy effects to trigger on shroom munch
 
-// Do gradients?
-
 function random(min, max) {
-  if (max === null) { max = min; min = 0; }
+  if (max === null) {
+    max = min;min = 0;
+  }
   return Math.random() * (max - min) + min;
 }
 
@@ -15,70 +17,58 @@ function map(value, sourceMin, sourceMax, destinationMin, destinationMax) {
   return destinationMin + (destinationMax - destinationMin) * ((value - sourceMin) / (sourceMax - sourceMin)) || 0;
 }
 
+var features = {
+  // Show elements
+  vines: true,
+  shrooms: true,
+  fireflies: true,
+  sunrays: true,
+  filters: true,
 
-const features = {
-      // Show elements
-      vines: true,
-      shrooms: true,
-      fireflies: true,
-      sunrays: false,
-      filters: false,
+  // Allow effects
+  gradients: true,
+  transparency: true,
 
-      // Allow effects
-      gradients: true,
-      transparency: true,
+  // Play animations (these do not play if elements are removed)
+  vinesMotion: true,
+  shroomsMotion: true,
+  textMotion: true,
 
-      // Play animations (these do not play if elements are removed)
-      vinesMotion: true,
-      shroomsMotion: true,
-      textMotion: true,
-
-      // Allow interaction
-      mouseAction: true,
-      shroomTrip: true,
+  // Allow interaction
+  mouseAction: true,
+  shroomTrip: true
 };
 
-const o = {
+var o = {
 
-  init: function() {
+  init: function init() {
     o.cacheDOM();
     o.bindEvents();
     o.settings();
     o.resetStart();
     o.animate();
   },
-// Init
-  cacheDOM: function() {
+  // Init
+  cacheDOM: function cacheDOM() {
     o.svg = document.querySelector("[data-svg=artwork]");
     o.audio = document.querySelector("[data-audio=group]");
-    
-    o.elements = [
-      "sunray"
-      ];
-    o.lists = [
-      "layers",
-      "glows",
-      "kodamas",
-      "kodamaGlows",
-      "heads",
-      "fireflyGroups",
-      "fireflies",
-      "vines",
-      "shrooms",
-      "shroomGroups",
-      "texts",
-      "textsMobile"
-      ];
+
+    o.elements = ["sunray"];
+    o.lists = ["layers", "glows", "kodamas", "kodamaGlows", "heads", "fireflyGroups", "fireflies", "vines", "shrooms", "shroomGroups", "texts", "textsMobile"];
     o.el = {};
     o.li = {};
 
-    for (var i = 0; i < o.elements.length; i++) { o.el[o.elements[i]] = o.svg.querySelector("[data-kodama=" + o.elements[i] + "]"); }
-    for (var j = 0; j < o.lists.length; j++) { o.li[o.lists[j]] = o.svg.querySelectorAll("[data-kodama=" + o.lists[j] + "]"); }
+    for (var i = 0; i < o.elements.length; i++) {
+      o.el[o.elements[i]] = o.svg.querySelector("[data-kodama=" + o.elements[i] + "]");
+    }
+    for (var j = 0; j < o.lists.length; j++) {
+      o.li[o.lists[j]] = o.svg.querySelectorAll("[data-kodama=" + o.lists[j] + "]");
+    }
 
     o.li.offsetLayers = o.svg.querySelectorAll("[data-hax=offsetLayers]");
     o.li.filters = o.svg.querySelectorAll("[filter]");
     o.li.grads = o.svg.querySelectorAll("[fill^=url]");
- 
+
     o.muteButton = document.querySelector("[data-btn=mute]");
     o.replayButton = document.querySelector("[data-btn=replay]");
 
@@ -86,10 +76,8 @@ const o = {
     o.spinAudio1 = o.audio.querySelector("[data-audio=spin1]");
     o.spinAudio2 = o.audio.querySelector("[data-audio=spin2]");
     o.spinAudio3 = o.audio.querySelector("[data-audio=spin3]");
-    
-    
   },
-  settings: function() {
+  settings: function settings() {
     // default settings
     o.isMute = false;
     o.mouse = { x: 0, y: 0 };
@@ -100,42 +88,41 @@ const o = {
 
     // Back Kodama size
     TweenMax.set(o.li.kodamas[0], { scale: 0.8, transformOrigin: "bottom center" });
-    
+
     // Default transparency of kodamas
     o.kodamaTransparency = 0.65;
 
     // Set glowy blob things transparency
-    var opacity = [0.65, 0.75, 0.75, 0.45, 0.6, 0.65, 0.75, 1 ];
+    var opacity = [0.65, 0.75, 0.75, 0.45, 0.6, 0.65, 0.75, 1];
     for (var i = 0; i < o.li.glows.length; i++) {
       TweenMax.set(o.li.glows[i], { autoAlpha: opacity[i] });
     }
     // Set values depending on screensize
     o.resize();
   },
-  resize: function() {
+  resize: function resize() {
     o.vw = window.innerWidth;
     o.vh = window.innerHeight;
-    console.log("Resized: " + o.vw + " " + o.vh);
   },
-  bindEvents: function() {
+  bindEvents: function bindEvents() {
     o.muteButton.addEventListener("click", o.toggleAudio);
     o.replayButton.addEventListener("click", o.replay);
     window.addEventListener("resize", o.resize);
   },
-  resetStart: function() {
+  resetStart: function resetStart() {
     o.killTls();
     o.resetStartPosLayers();
     o.resetExtras();
   },
-  animate: function() {
+  animate: function animate() {
     o.initExtras();
     o.revealScene();
     o.playMusic();
     o.playTimeline();
   },
 
-// bind events
-  toggleAudio: function() {
+  // bind events
+  toggleAudio: function toggleAudio() {
     if (o.ambientAudio.volume === 0) {
       o.ambientAudio.volume = 0.1;
       o.spinAudio1.volume = 1;
@@ -150,18 +137,18 @@ const o = {
       o.isMute = true;
     }
   },
-  replay: function() {
+  replay: function replay() {
     o.resetStart();
     o.animate();
   },
 
-// reset start
-  killTls: function() {
+  // reset start
+  killTls: function killTls() {
     if (o.tl !== null) {
-      o.tl.kill();  
+      o.tl.kill();
     }
   },
-  resetStartPosLayers: function() {
+  resetStartPosLayers: function resetStartPosLayers() {
     TweenMax.set(o.li.layers[0], { y: -0 });
     TweenMax.set(o.li.layers[1], { y: -50 });
     TweenMax.set(o.li.layers[2], { y: -100 });
@@ -173,7 +160,7 @@ const o = {
 
     TweenMax.set(o.li.offsetLayers, { x: -50 });
   },
-  resetExtras: function() {
+  resetExtras: function resetExtras() {
     // Reset acceleration value
     TweenMax.set(o.acceleration, { val: 0 });
     // Hide elements by default
@@ -181,102 +168,107 @@ const o = {
     document.removeEventListener("mousemove", o.moveArt);
   },
 
-// animate
-  revealScene: function() {
+  // animate
+  revealScene: function revealScene() {
     TweenMax.to(o.svg, 1, { autoAlpha: 1 });
   },
-  playTimeline: function() {
+  playTimeline: function playTimeline() {
     o.tl = o.getTimeline();
     o.tl.play();
   },
-  playMusic: function() {
+  playMusic: function playMusic() {
     if (o.isMute) {
       o.ambientAudio.volume = 0;
     } else {
-      o.ambientAudio.volume = 0.1;  
+      o.ambientAudio.volume = 0.1;
     }
     o.ambientAudio.currentTime = 0;
     o.ambientAudio.play();
   },
-  initExtras: function() {
+  initExtras: function initExtras() {
     // Call if false
-    if (!features.vines) { o.removeVines(); }
-    if (!features.shrooms) { o.removeShrooms(); }
-    if (!features.fireflies) { o.removeFireflies(); } else { o.playFireflies(); }
-    if (!features.sunrays) { o.removeSunrays(); } else { o.playSunrays(); }
-    if (!features.filters) { o.removeFilters(); }
-    if (!features.gradients) { o.setFlatFills(); }
-    if (!features.transparency) { o.removeTransparency(); }
-    if (!features.mouseAction) { o.playIntro(); }
-    
+    if (!features.vines) {
+      o.removeVines();
+    }
+    if (!features.shrooms) {
+      o.removeShrooms();
+    }
+    if (!features.fireflies) {
+      o.removeFireflies();
+    } else {
+      o.playFireflies();
+    }
+    if (!features.sunrays) {
+      o.removeSunrays();
+    } else {
+      o.playSunrays();
+    }
+    if (!features.filters) {
+      o.removeFilters();
+    }
+    if (!features.gradients) {
+      o.setFlatFills();
+    }
+    if (!features.transparency) {
+      o.removeTransparency();
+    }
+    if (!features.mouseAction) {
+      o.playIntro();
+    }
+
     // Call if true
-    if (features.vinesMotion) { o.playVines(); }
-    if (features.shroomsMotion) { o.playShrooms(); }
-    if (features.textMotion) { o.playText(); }
-    if (features.mouseAction) { o.bindParallax(); }
-    if (features.shroomTrip) { o.bindShrooms(); }
+    if (features.vinesMotion) {
+      o.playVines();
+    }
+    if (features.shroomsMotion) {
+      o.playShrooms();
+    }
+    if (features.textMotion) {
+      o.playText();
+    }
+    if (features.mouseAction) {
+      o.bindParallax();
+    }
+    if (features.shroomTrip) {
+      o.bindShrooms();
+    }
   },
-  getTimeline: function() {
+  getTimeline: function getTimeline() {
     var tl = new TimelineMax({ paused: true });
 
-    tl
-      .add("revealKodamas")
-      .to(o.li.kodamas[0], 3, { autoAlpha: o.kodamaTransparency, ease: Power3.easeOut}, 7)
-      .to(o.li.kodamas[1], 3, { autoAlpha: o.kodamaTransparency, ease: Power3.easeOut}, 9.5)
-      .to(o.li.kodamas[2], 3, { autoAlpha: o.kodamaTransparency, ease: Power3.easeOut}, 10.5)
-
-      .add("revealTitle")
-      .to(o.li.texts[0], 3, { autoAlpha: 1, ease: Power3.easeOut}, 11.3)
-      .to(o.li.texts[1], 3, { autoAlpha: 0.7, ease: Power3.easeOut}, 12.2)
-
-      .add("spinHeads")
-      .add("spin1")
-      .to(o.li.heads[0], 2, {rotation: 90, transformOrigin: "center center"}, "spin1")
-      .to(o.li.heads[0], 2, {rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center"}, "spin1 =+2")
-      .call(o.playSFX, [o.spinAudio1], this, "spin1")
-      .add("spin2", "spin1 =+2")
-      .to(o.li.heads[1], 2, {rotation: 90, transformOrigin: "center center"}, "spin2")
-      .to(o.li.heads[1], 2, {rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center"}, "spin2 =+2")
-      .call(o.playSFX, [o.spinAudio2], this, "spin2")
-      .add("spin3", "spin1 =+2.3")
-      .to(o.li.heads[2], 2, {rotation: 90, transformOrigin: "center center"}, "spin3")
-      .to(o.li.heads[2], 2, {rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center"}, "spin3 =+2")
-      .call(o.playSFX, [o.spinAudio3], this, "spin3")
-      ;
+    tl.add("revealKodamas").to(o.li.kodamas[0], 3, { autoAlpha: o.kodamaTransparency, ease: Power3.easeOut }, 7).to(o.li.kodamas[1], 3, { autoAlpha: o.kodamaTransparency, ease: Power3.easeOut }, 9.5).to(o.li.kodamas[2], 3, { autoAlpha: o.kodamaTransparency, ease: Power3.easeOut }, 10.5).add("revealTitle").to(o.li.texts[0], 3, { autoAlpha: 1, ease: Power3.easeOut }, 11.3).to(o.li.texts[1], 3, { autoAlpha: 0.7, ease: Power3.easeOut }, 12.2).add("spinHeads").add("spin1").to(o.li.heads[0], 2, { rotation: 90, transformOrigin: "center center" }, "spin1").to(o.li.heads[0], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin1 =+2").call(o.playSFX, [o.spinAudio1], this, "spin1").add("spin2", "spin1 =+2").to(o.li.heads[1], 2, { rotation: 90, transformOrigin: "center center" }, "spin2").to(o.li.heads[1], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin2 =+2").call(o.playSFX, [o.spinAudio2], this, "spin2").add("spin3", "spin1 =+2.3").to(o.li.heads[2], 2, { rotation: 90, transformOrigin: "center center" }, "spin3").to(o.li.heads[2], 2, { rotation: 0, ease: Elastic.easeOut.config(1.5, 0.1), transformOrigin: "center center" }, "spin3 =+2").call(o.playSFX, [o.spinAudio3], this, "spin3");
 
     return tl;
   },
-  playSFX: function(audio) {
+  playSFX: function playSFX(audio) {
     if (o.isMute) {
-      audio.volume = 0;  
+      audio.volume = 0;
     }
     audio.currentTime = 0;
-    audio.play(); 
+    audio.play();
   },
 
-// features
-  removeVines: function() {
-    if(o.li.shroomGroups[0].parentNode) {
-      console.log("removing");
+  // features
+  removeVines: function removeVines() {
+    if (o.li.shroomGroups[0].parentNode) {
       for (var i = 0; i < o.li.vines.length; i++) {
 
         o.li.vines[i].parentNode.removeChild(o.li.vines[i]);
       }
     } else {
-      console.log("adding");
       for (var i = 0; i < o.li.vines.length; i++) {
         o.li.vines[i].parentNode.appendChild(o.li.vines[i]);
       }
     }
   },
-  playVines: function() {
+  playVines: function playVines() {
     for (var i = 0; i < o.li.vines.length; i++) {
       o.swingVine(i);
     }
   },
-  swingVine: function(i) {
-    var duration = random(3,5);
-    var rotation = random(-5,5);
+  swingVine: function swingVine(i) {
+    var duration = random(3, 5);
+    var rotation = random(-5, 5);
 
     TweenMax.to(o.li.vines[i], duration, {
       rotation: rotation,
@@ -286,22 +278,22 @@ const o = {
       onCompleteParams: [i]
     });
   },
-  removeShrooms: function() {
-    if(o.li.shroomGroups[0].parentNode) {
+  removeShrooms: function removeShrooms() {
+    if (o.li.shroomGroups[0].parentNode) {
       for (var i = 0; i < o.li.shroomGroups.length; i++) {
         o.li.shroomGroups[i].parentNode.removeChild(o.li.shroomGroups[i]);
       }
     }
   },
-  playShrooms: function() {
+  playShrooms: function playShrooms() {
     for (var i = 0; i < o.li.shrooms.length; i++) {
       o.pulseShroom(i);
     }
   },
-  pulseShroom: function(i) {
-    var duration = random(0.5,1);
-    var scale = random(1.1,1.3);
-    var delay = random(1,4);
+  pulseShroom: function pulseShroom(i) {
+    var duration = random(0.5, 1);
+    var scale = random(1.1, 1.3);
+    var delay = random(1, 4);
 
     TweenMax.to(o.li.shrooms[i], duration, {
       scale: scale,
@@ -312,22 +304,22 @@ const o = {
       onCompleteParams: [i]
     });
   },
-  bindShrooms: function() {
+  bindShrooms: function bindShrooms() {
     for (var i = 0; i < o.li.shroomGroups.length; i++) {
       o.li.shroomGroups[i].addEventListener("click", o.eatShroom);
     }
   },
-  eatShroom: function() {
+  eatShroom: function eatShroom() {
     console.log("click shroom");
   },
-  removeFireflies: function() {
-    if(o.li.fireflyGroups[0].parentNode) {
+  removeFireflies: function removeFireflies() {
+    if (o.li.fireflyGroups[0].parentNode) {
       for (var i = 0; i < o.li.fireflyGroups.length; i++) {
         o.li.fireflyGroups[i].parentNode.removeChild(o.li.fireflyGroups[i]);
       }
     }
   },
-  playFireflies: function() {
+  playFireflies: function playFireflies() {
     TweenMax.set(o.li.fireflyGroups, { autoAlpha: 1 });
     for (var i = 0; i < o.li.fireflyGroups.length; i++) {
       o.newFireflyGroupPos(i);
@@ -337,70 +329,55 @@ const o = {
       o.newFireflyPos(j);
     }
   },
-  newFireflyGroupPos: function(i) {
+  newFireflyGroupPos: function newFireflyGroupPos(i) {
 
-    var duration = random(1,5);
-    var rotation = random(0,360);
-    var scale = random(0.5,1);
-    var x = [random(1250,1350), random(1050,1150)];
-    var y = [random(25,100), random(325,400)];
+    var duration = random(1, 5);
+    var rotation = random(0, 360);
+    var scale = random(0.5, 1);
+    var x = [random(1250, 1350), random(1050, 1150)];
+    var y = [random(25, 100), random(325, 400)];
 
-    TweenMax.to(
-      o.li.fireflyGroups[i], 
-      duration, {
-        rotation: rotation[i],
-        scale: scale,
-        x: x[i],
-        y: y[i],
-        ease: Power1.easeInOut,
-        onComplete: o.newFireflyGroupPos,
-        onCompleteParams: [i]
-      }
-    );
+    TweenMax.to(o.li.fireflyGroups[i], duration, {
+      rotation: rotation[i],
+      scale: scale,
+      x: x[i],
+      y: y[i],
+      ease: Power1.easeInOut,
+      onComplete: o.newFireflyGroupPos,
+      onCompleteParams: [i]
+    });
   },
-  newFireflyPos: function(i) {
+  newFireflyPos: function newFireflyPos(i) {
 
-    var duration = random(5,7);
-    var x = [
-      random(-45,45),
-      random(-45,45),
-      random(-45,45),
-      random(-45,45),
-      random(-45,45)
-      ];
-  
+    var duration = random(5, 7);
+    var x = [random(-45, 45), random(-45, 45), random(-45, 45), random(-45, 45), random(-45, 45)];
+
     TweenMax.to(o.li.fireflies[i], duration, {
-      bezier: { curviness:1, values: [
-        { x: x[0], y: x[1] },
-        { x: x[1], y: x[2] },
-        { x: x[2], y: x[3] },
-        { x: x[3], y: x[4] },
-        { x: x[4], y: x[0] }
-      ]},
-      scale: random(0.2,1.3),
-      autoAlpha: random(0.7,1),
+      bezier: { curviness: 1, values: [{ x: x[0], y: x[1] }, { x: x[1], y: x[2] }, { x: x[2], y: x[3] }, { x: x[3], y: x[4] }, { x: x[4], y: x[0] }] },
+      scale: random(0.2, 1.3),
+      autoAlpha: random(0.7, 1),
       ease: Linear.easeNone,
       onComplete: o.newFireflyPos,
       onCompleteParams: [i]
     });
   },
-  removeSunrays: function() {
-    if(o.el.sunray.parentNode) {
+  removeSunrays: function removeSunrays() {
+    if (o.el.sunray.parentNode) {
       o.el.sunray.parentNode.removeChild(o.el.sunray);
     }
   },
-  playSunrays: function() {
+  playSunrays: function playSunrays() {
 
-    TweenMax.to(o.el.sunray, 3, { autoAlpha: 0.2, delay: 10});
+    TweenMax.to(o.el.sunray, 3, { autoAlpha: 0.2, delay: 10 });
   },
-  removeFilters: function() {
-    if(o.li.filters[0].parentNode) {
+  removeFilters: function removeFilters() {
+    if (o.li.filters[0].parentNode) {
       for (var i = 0; i < o.li.filters.length; i++) {
         o.li.filters[i].parentNode.removeChild(o.li.filters[i]);
       }
     }
   },
-  setFlatFills: function() {
+  setFlatFills: function setFlatFills() {
     for (var i = 0; i < o.li.grads.length; i++) {
       var newFill = o.li.grads[i].getAttribute("data-fill");
       if (newFill) {
@@ -408,33 +385,30 @@ const o = {
       }
     }
   },
-  removeTransparency: function() {
+  removeTransparency: function removeTransparency() {
 
     o.kodamaTransparency = 1;
   },
-  playText: function() {
+  playText: function playText() {
     TweenMax.to(o.li.texts[0], 6, { y: 20, ease: Power1.easeInOut, repeat: -1, yoyo: true });
     TweenMax.to(o.li.texts[1], 6, { y: 20, ease: Power1.easeInOut, repeat: -1, yoyo: true, delay: 1.8 });
   },
-  playIntro: function() {
+  playIntro: function playIntro() {
 
     TweenMax.to(o.li.layers, 9, { y: 50, ease: Back.easeOut });
   },
-  bindParallax: function() {
+  bindParallax: function bindParallax() {
     o.svg.addEventListener("mousemove", o.updateMouseObj);
     o.svg.addEventListener("touchmove", o.updateMouseObj);
-    
-    TweenMax.to(o.acceleration, 10, { val: 0.05, ease: Linear.easeNone });
-    
-    o.layerObj = [];
-    
+
+    TweenMax.to(o.acceleration, 10, { val: 0.05 });
+
     for (var i = 0; i < o.li.layers.length; i++) {
       o.linkLayer(i);
     }
-
   },
-  linkLayer: function(i) {
-    const offset = 20*i;
+  linkLayer: function linkLayer(i) {
+    var offset = 20 * i;
     o.layerObj[i] = {
       pos: o.li.layers[i]._gsTransform,
       x: 0,
@@ -444,26 +418,41 @@ const o = {
       yMin: offset,
       yMax: -offset
     };
-    
+
     TweenMax.to(o.li.layers[i], 1000, { x: 0, y: 0, repeat: -1, ease: Linear.easeNone,
       modifiers: {
-        x: function() {
+        x: function x() {
           o.layerObj[i].x = map(o.mouse.x, 0, o.vw, o.layerObj[i].xMin, o.layerObj[i].xMax);
-          return o.layerObj[i].pos.x + ( o.layerObj[i].x - o.layerObj[i].pos.x ) * o.acceleration.val;
+          return o.layerObj[i].pos.x + (o.layerObj[i].x - o.layerObj[i].pos.x) * o.acceleration.val;
         },
-        y: function() {
+        y: function y() {
           o.layerObj[i].y = map(o.mouse.y, 0, o.vw, o.layerObj[i].yMin, o.layerObj[i].yMax);
-          return o.layerObj[i].pos.y + ( o.layerObj[i].y - o.layerObj[i].pos.y ) * o.acceleration.val;
+          return o.layerObj[i].pos.y + (o.layerObj[i].y - o.layerObj[i].pos.y) * o.acceleration.val;
         }
       }
     });
-
   },
-  updateMouseObj: function(e) {
+  getX: function getX() {
+    return 1;
+  },
+  getLayerX: function getLayerX() {
+
+    console.log(o.mouse.x);
+
+    return 1;
+    o.layerObj[i].x = map(o.mouse.x, 0, o.vw, o.layerObj[i].xMin, o.layerObj[i].xMax);
+    return o.layerObj[i].pos.x + (o.layerObj[i].x - o.layerObj[i].pos.x) * o.acceleration.val;
+  },
+  getLayerY: function getLayerY(i) {
+    var obj = o.layerObj[i];
+    obj.y = map(o.mouse.y, 0, o.vw, obj.yMin, obj.yMax);
+    return obj.pos.y + (obj.y - obj.pos.y) * o.acceleration.val;
+  },
+  updateMouseObj: function updateMouseObj(e) {
     if (e.targetTouches && e.targetTouches[0]) {
       e.preventDefault();
       o.mouse.x = e.targetTouches[0].clientX;
-      o.mouse.y = e.targetTouches[0].clientY;           
+      o.mouse.y = e.targetTouches[0].clientY;
     } else {
       o.mouse.x = e.clientX;
       o.mouse.y = e.clientY;
@@ -488,6 +477,3 @@ window.addEventListener("load", o.init);
 
 // Even if a theory makes sense when you read it, it's such an effective way to internalize it and make it yours by fiddling around with it and applying it in a project
 // Start experimenting!
-
-
-

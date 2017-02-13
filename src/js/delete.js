@@ -4,8 +4,6 @@
 // Make shroom trip
 // Inventory trippy effects to trigger on shroom munch
 
-// Do gradients?
-
 function random(min, max) {
   if (max === null) { max = min; min = 0; }
   return Math.random() * (max - min) + min;
@@ -21,8 +19,8 @@ const features = {
       vines: true,
       shrooms: true,
       fireflies: true,
-      sunrays: false,
-      filters: false,
+      sunrays: true,
+      filters: true,
 
       // Allow effects
       gradients: true,
@@ -115,7 +113,6 @@ const o = {
   resize: function() {
     o.vw = window.innerWidth;
     o.vh = window.innerHeight;
-    console.log("Resized: " + o.vw + " " + o.vh);
   },
   bindEvents: function() {
     o.muteButton.addEventListener("click", o.toggleAudio);
@@ -257,13 +254,11 @@ const o = {
 // features
   removeVines: function() {
     if(o.li.shroomGroups[0].parentNode) {
-      console.log("removing");
       for (var i = 0; i < o.li.vines.length; i++) {
 
         o.li.vines[i].parentNode.removeChild(o.li.vines[i]);
       }
     } else {
-      console.log("adding");
       for (var i = 0; i < o.li.vines.length; i++) {
         o.li.vines[i].parentNode.appendChild(o.li.vines[i]);
       }
@@ -424,9 +419,9 @@ const o = {
     o.svg.addEventListener("mousemove", o.updateMouseObj);
     o.svg.addEventListener("touchmove", o.updateMouseObj);
     
-    TweenMax.to(o.acceleration, 10, { val: 0.05, ease: Linear.easeNone });
+    TweenMax.to(o.acceleration, 10, { val: 0.05 });
     
-    o.layerObj = [];
+    
     
     for (var i = 0; i < o.li.layers.length; i++) {
       o.linkLayer(i);
@@ -458,6 +453,24 @@ const o = {
       }
     });
 
+  },
+  getX: function() {
+    return 1;
+  },
+  getLayerX: function() {
+    
+
+    console.log(o.mouse.x);
+
+
+    return 1; 
+    o.layerObj[i].x = map(o.mouse.x, 0, o.vw, o.layerObj[i].xMin, o.layerObj[i].xMax);
+    return o.layerObj[i].pos.x + ( o.layerObj[i].x - o.layerObj[i].pos.x ) * o.acceleration.val;
+  },
+  getLayerY: function(i) {
+    var obj = o.layerObj[i];
+    obj.y = map(o.mouse.y, 0, o.vw, obj.yMin, obj.yMax);
+    return obj.pos.y + ( obj.y - obj.pos.y ) * o.acceleration.val;
   },
   updateMouseObj: function(e) {
     if (e.targetTouches && e.targetTouches[0]) {
