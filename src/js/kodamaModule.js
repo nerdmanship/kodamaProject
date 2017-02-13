@@ -90,11 +90,14 @@ const o = {
     
   },
   settings: function() {
-    // default settings
-    o.isMute = false;
-    o.mouse = { x: 0, y: 0 };
+    // Set values depending on screensize
     o.vw = 0;
     o.vh = 0;
+    o.resize();
+    
+    // default settings
+    o.isMute = false;
+    o.mouse = { x: o.vw/2, y: o.vh/2 };
     o.acceleration = { val: 0 };
     o.tl = null;
 
@@ -109,8 +112,6 @@ const o = {
     for (var i = 0; i < o.li.glows.length; i++) {
       TweenMax.set(o.li.glows[i], { autoAlpha: opacity[i] });
     }
-    // Set values depending on screensize
-    o.resize();
   },
   resize: function() {
     o.vw = window.innerWidth;
