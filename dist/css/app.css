@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+body {
+  margin: 0;
+  background-color: #000;
+  overflow: visible;
+  font-family: 'Roboto', sans-serif;
+  color: #9DD0E0; }
+
 .horizontal-center {
   position: absolute;
   left: 50%;
@@ -7,29 +14,13 @@
 .transparent {
   opacity: 0; }
 
-body {
-  margin: 0;
-  background-color: #000;
-  overflow: visible;
-  font-family: 'Roboto', sans-serif;
-  color: #9DD0E0; }
-
 #header {
-  position: fixed;
-  z-index: -1;
   height: 100%;
-  width: 100%;
-  top: 0; }
+  width: 100%; }
 
 #kodama-graphic {
   height: 100%;
   opacity: 0; }
-
-#foreground {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  min-width: 1280px; }
 
 .controls {
   position: fixed;
@@ -42,39 +33,15 @@ body {
     position: relative;
     cursor: pointer;
     opacity: 0.25; }
-    .controls .btn .icon {
-      width: 22px; }
     .controls .btn .btn-label {
       text-transform: uppercase;
       letter-spacing: 2px;
       font-size: 12px;
       margin: 0;
       margin-top: 5px; }
-      .controls .btn .btn-label::selection {
-        background-color: transparent; }
   .controls .mute-btn {
     float: left;
     margin-left: 30px; }
-  .controls .scroll-ind {
-    opacity: 0; }
-    .controls .scroll-ind .scroll-icon {
-      width: 30px; }
   .controls .replay-btn {
     float: right;
     margin-right: 30px; }
-
-#main {
-  position: relative;
-  top: 600px;
-  opacity: 0; }
-  #main .info-sheet {
-    background: #030e11;
-    background: -moz-linear-gradient(top, #030e11 0%, #05171c 100%);
-    background: -webkit-linear-gradient(top, #030e11 0%, #05171c 100%);
-    background: linear-gradient(to bottom, #030e11 0%, #05171c 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#030e11', endColorstr='#05171c',GradientType=0 );
-    border-radius: 10px;
-    width: 600px; }
-  #main .text {
-    position: relative;
-    padding: 20px 20px 200px; }
