@@ -1,15 +1,3 @@
-/*! modernizr 3.3.1 (Custom Build) | MIT *
- * https://modernizr.com/download/?-touchevents-setclasses !*/
-!function(e,n,t){function o(e,n){return typeof e===n}function s(){var e,n,t,s,a,i,r;for(var l in c)if(c.hasOwnProperty(l)){if(e=[],n=c[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(s=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],r=i.split("."),1===r.length?Modernizr[r[0]]=s:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=s),f.push((s?"":"no-")+r.join("-"))}}function a(e){var n=u.className,t=Modernizr._config.classPrefix||"";if(p&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(o,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),p?u.className.baseVal=n:u.className=n)}function i(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):p?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function r(){var e=n.body;return e||(e=i(p?"svg":"body"),e.fake=!0),e}function l(e,t,o,s){var a,l,f,c,d="modernizr",p=i("div"),h=r();if(parseInt(o,10))for(;o--;)f=i("div"),f.id=s?s[o]:d+(o+1),p.appendChild(f);return a=i("style"),a.type="text/css",a.id="s"+d,(h.fake?h:p).appendChild(a),h.appendChild(p),a.styleSheet?a.styleSheet.cssText=e:a.appendChild(n.createTextNode(e)),p.id=d,h.fake&&(h.style.background="",h.style.overflow="hidden",c=u.style.overflow,u.style.overflow="hidden",u.appendChild(h)),l=t(p,e),h.fake?(h.parentNode.removeChild(h),u.style.overflow=c,u.offsetHeight):p.parentNode.removeChild(p),!!l}var f=[],c=[],d={_version:"3.3.1",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){c.push({name:e,fn:n,options:t})},addAsyncTest:function(e){c.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=d,Modernizr=new Modernizr;var u=n.documentElement,p="svg"===u.nodeName.toLowerCase(),h=d._config.usePrefixes?" -webkit- -moz- -o- -ms- ".split(" "):["",""];d._prefixes=h;var m=d.testStyles=l;Modernizr.addTest("touchevents",function(){var t;if("ontouchstart"in e||e.DocumentTouch&&n instanceof DocumentTouch)t=!0;else{var o=["@media (",h.join("touch-enabled),("),"heartz",")","{#modernizr{top:9px;position:absolute}}"].join("");m(o,function(e){t=9===e.offsetTop})}return t}),s(),a(f),delete d.addTest,delete d.addAsyncTest;for(var v=0;v<Modernizr._q.length;v++)Modernizr._q[v]();e.Modernizr=Modernizr}(window,document);
-
-
-// Install Modernizr
-// Do specific feature settings on touch
-
-// Make shroom trip
-// Inventory trippy effects to trigger on shroom munch
-
-
 function random(min, max) {
   if (max === null) { max = min; min = 0; }
   return Math.random() * (max - min) + min;
@@ -21,55 +9,35 @@ function map(value, sourceMin, sourceMax, destinationMin, destinationMax) {
 
 
 const features = {
-  
-  // Show elements
   vines: true,
   shrooms: true,
   fireflies: true,
-  sunrays: true,
+  sunrays: false,
   filters: false,
-
-  // Allow effects
   transparency: true,
-
-  // Play animations (these do not play if elements are removed)
   vinesMotion: true,
   shroomsMotion: true,
   textMotion: true,
-
-  // Allow interaction
   mouseAction: true,
   shroomTrip: true,
   init: function() {
     if (Modernizr.touchevents){
-      console.log("touch");
-      // Show elements
       this.vines = false;
       this.shrooms = false;
       this.fireflies = false;
       this.sunrays = false;
       this.filters = false;
-
-      // Allow effects
       this.transparency = false;
-
-      // Play animations (these do not play if elements are removed)
       this.vinesMotion = false;
       this.shroomsMotion = false;
       this.textMotion = false;
-
-      // Allow interaction
       this.mouseAction = false;
       this.shroomTrip = false;
-    } else {
-      console.log("not mobile");
     }
-    
   }
 };
 
 const o = {
-
   init: function() {
     o.cacheDOM();
     o.bindEvents();
@@ -77,7 +45,6 @@ const o = {
     o.resetStart();
     o.animate();
   },
-// Init
   cacheDOM: function() {
     o.svg = document.querySelector("[data-svg=artwork]");
     o.audio = document.querySelector("[data-audio=group]");
@@ -115,8 +82,6 @@ const o = {
     o.spinAudio1 = o.audio.querySelector("[data-audio=spin1]");
     o.spinAudio2 = o.audio.querySelector("[data-audio=spin2]");
     o.spinAudio3 = o.audio.querySelector("[data-audio=spin3]");
-    
-    
   },
   settings: function() {
     features.init();
@@ -144,10 +109,6 @@ const o = {
       TweenMax.set(o.li.glows[i], { autoAlpha: opacity[i] });
     }
   },
-  resize: function() {
-    o.vw = window.innerWidth;
-    o.vh = window.innerHeight;
-  },
   bindEvents: function() {
     o.muteButton.addEventListener("click", o.toggleAudio);
     o.replayButton.addEventListener("click", o.replay);
@@ -164,8 +125,6 @@ const o = {
     o.playMusic();
     o.playTimeline();
   },
-
-// bind events
   toggleAudio: function() {
     if (o.ambientAudio.volume === 0) {
       o.ambientAudio.volume = 0.1;
@@ -185,8 +144,6 @@ const o = {
     o.resetStart();
     o.animate();
   },
-
-// reset start
   killTls: function() {
     if (o.tl !== null) {
       o.tl.kill();  
@@ -209,11 +166,10 @@ const o = {
     TweenMax.set(o.acceleration, { val: 0 });
     // Hide elements by default
     TweenMax.set([o.svg, o.li.kodamas, o.li.texts, o.li.textsMobile, o.el.sunray], { autoAlpha: 0 });
-    document.removeEventListener("mousemove", o.moveArt);
+    o.svg.removeEventListener("mousemove", o.updateMouseObj);
   },
-
-// animate
   revealScene: function() {
+
     TweenMax.to(o.svg, 1, { autoAlpha: 1 });
   },
   playTimeline: function() {
@@ -234,7 +190,7 @@ const o = {
     if (!features.vines) { o.removeVines(); }
     if (!features.shrooms) { o.removeShrooms(); }
     if (!features.fireflies) { o.removeFireflies(); } else { o.playFireflies(); }
-    if (!features.sunrays) { o.removeSunrays(); } else { o.playSunrays(); }
+    if (!features.sunrays) { o.removeSunrays(); } //else { o.playSunrays(); }
     if (!features.filters) { o.removeFilters(); }
     if (!features.transparency) { o.removeTransparency(); }
     if (!features.mouseAction) { o.playIntro(); }
@@ -258,6 +214,7 @@ const o = {
       .add("revealTitle")
       .to(o.li.texts[0], 3, { autoAlpha: 1, ease: Power3.easeOut}, 11.3)
       .to(o.li.texts[1], 3, { autoAlpha: 0.7, ease: Power3.easeOut}, 12.2)
+      .to(o.el.sunray, 3, { autoAlpha: 0.2 }, 10)
 
       .add("spinHeads")
       .add("spin1")
@@ -283,16 +240,10 @@ const o = {
     audio.currentTime = 0;
     audio.play(); 
   },
-
-// features
   removeVines: function() {
     if(o.li.shroomGroups[0].parentNode) {
       for (var i = 0; i < o.li.vines.length; i++) {
         o.li.vines[i].parentNode.removeChild(o.li.vines[i]);
-      }
-    } else {
-      for (var i = 0; i < o.li.vines.length; i++) {
-        o.li.vines[i].parentNode.appendChild(o.li.vines[i]);
       }
     }
   },
@@ -345,7 +296,8 @@ const o = {
     }
   },
   eatShroom: function() {
-    console.log("click shroom");
+
+    console.log("Trippy colors, unproportional scale, reverse movement");
   },
   removeFireflies: function() {
     if(o.li.fireflyGroups[0].parentNode) {
@@ -416,10 +368,6 @@ const o = {
       o.el.sunray.parentNode.removeChild(o.el.sunray);
     }
   },
-  playSunrays: function() {
-
-    TweenMax.to(o.el.sunray, 3, { autoAlpha: 0.2, delay: 10});
-  },
   removeFilters: function() {
     if(o.li.filters[0].parentNode) {
       for (var i = 0; i < o.li.filters.length; i++) {
@@ -439,18 +387,19 @@ const o = {
 
     TweenMax.to(o.li.layers, 9, { y: 50, ease: Back.easeOut });
   },
+  resize: function() {
+    o.vw = window.innerWidth;
+    o.vh = window.innerHeight;
+  },
   bindParallax: function() {
     o.svg.addEventListener("mousemove", o.updateMouseObj);
     o.svg.addEventListener("touchmove", o.updateMouseObj);
     
     TweenMax.to(o.acceleration, 10, { val: 0.05, ease: Linear.easeNone });
     
-    
-    
     for (var i = 0; i < o.li.layers.length; i++) {
       o.linkLayer(i);
     }
-
   },
   linkLayer: function(i) {
     const offset = 20*i;
@@ -477,7 +426,6 @@ const o = {
         }
       }
     });
-
   },
   updateMouseObj: function(e) {
     if (e.targetTouches && e.targetTouches[0]) {

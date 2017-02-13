@@ -17,6 +17,12 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"\/dist": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/dist\/dist",
+		"oF": 0
+		},
 	"\/src\/assets\/audio\/ambient.m4a": {
 		"ft": 8192,
 		"oA": 2,
@@ -4844,20 +4850,20 @@
 		"sC": 0,
 		"tS": 1
 		},
-	"\/src\/js\/delete.js": {
-		"ft": 64,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "\/dist\/js\/delete.js",
-		"oF": 0,
-		"sC": 2,
-		"tS": 1
-		},
 	"\/src\/js\/kodamaModule.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
 		"oAP": "\/dist\/js\/kodamaModule.js",
+		"oF": 0,
+		"sC": 2,
+		"tS": 1
+		},
+	"\/src\/js\/modernizr-custom.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/dist\/js\/modernizr-custom.js",
 		"oF": 0,
 		"sC": 2,
 		"tS": 1
@@ -4893,7 +4899,7 @@
 	"displayValue": "kodamaProject",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-karate",
-	"lastBuiltDate": 508661818
+	"lastBuiltDate": 508683049
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
